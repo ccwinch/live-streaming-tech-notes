@@ -1,3 +1,3 @@
 # Summary
 
-- [Overview](./chapter_1.md)
+- [Overview](./overview.md)

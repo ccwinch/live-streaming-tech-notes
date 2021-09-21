@@ -25,7 +25,7 @@ This page is a work in progress. A version with decent highlighting of links is 
 ### Schematic Diagram
 
 ![](./images/schematic.png)
-(click image to view full size)
+(click [here](./images/schematic.png) to view full size)
 
 Notes:
 * (Not shown) Audio input from the sound system feeds via [XLR connectors](https://en.wikipedia.org/wiki/XLR_connector) through the connection panel in the portable rack to the video switcher.
