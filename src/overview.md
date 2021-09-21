@@ -4,4 +4,4 @@ Here are some technical notes on the CCWinch live streaming setup. See the [offi
 
 See also the list of [known issues](https://github.com/ccwinch/live-streaming-tech-notes/issues).
 
-This page is a work in progress. A version with decent highlighting of links is available [HERE](https://ccwinch.github.io/live-streaming-tech-notes/).
+These notes are a work in progress.
