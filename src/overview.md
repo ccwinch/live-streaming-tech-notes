@@ -29,7 +29,7 @@ This page is a work in progress. A version with decent highlighting of links is 
 
 Notes:
 * (Not shown) Audio input from the sound system feeds via [XLR connectors](https://en.wikipedia.org/wiki/XLR_connector) through the connection panel in the portable rack to the video switcher.
-* (Not shown) Both the camera controller and the video switcher connect to the cameras over ethernet to camera IP addresses 192.168.0.181-184 (for cameras 1-4).
+* (Not shown) The camera controller connects to the cameras over ethernet to camera IP addresses 192.168.0.181-184 (for cameras 1-4).
 
 ## Set Up and Set Down
 
