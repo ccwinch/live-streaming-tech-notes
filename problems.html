@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Overview - Christ Church Winchester: Live streaming tech notes</title>
+        <title>Common Problems - Christ Church Winchester: Live streaming tech notes</title>
         <!-- Custom HTML head -->
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
@@ -75,7 +75,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="hardware.html"><strong aria-hidden="true">2.</strong> Hardware</a></li><li class="chapter-item expanded "><a href="operation.html"><strong aria-hidden="true">3.</strong> Operation</a></li><li class="chapter-item expanded "><a href="problems.html"><strong aria-hidden="true">4.</strong> Common Problems</a></li><li class="chapter-item expanded "><a href="tutorials.html"><strong aria-hidden="true">5.</strong> Tutorials</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="hardware.html"><strong aria-hidden="true">2.</strong> Hardware</a></li><li class="chapter-item expanded "><a href="operation.html"><strong aria-hidden="true">3.</strong> Operation</a></li><li class="chapter-item expanded "><a href="problems.html" class="active"><strong aria-hidden="true">4.</strong> Common Problems</a></li><li class="chapter-item expanded "><a href="tutorials.html"><strong aria-hidden="true">5.</strong> Tutorials</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -134,16 +134,44 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="live-streaming-tech-notes"><a class="header" href="#live-streaming-tech-notes">Live Streaming Tech Notes</a></h1>
-<p>Here are some technical notes on the CCWinch live streaming setup. See the <a href="https://www.ccwinch.org.uk/streaming">official site</a> for more operational information.</p>
-<p>See also the list of <a href="https://github.com/ccwinch/live-streaming-tech-notes/issues">known issues</a>.</p>
-<p>These notes are a work in progress.</p>
+                        <p>The following problems are organised by problem symptoms, each with possible explanations and fixes.</p>
+<p>In general, try to narrow down and eventually isolate the cause of the problem. If there is a problem with one or two cameras and you can't fix it before the service starts, you may be able to make do with the remaining cameras.</p>
+<p>Remember the all-important line from &quot;The IT Crowd&quot; TV series: &quot;Have you tried turning it off and back on again?&quot;.</p>
+<h2 id="atem-switcher-is-powered-off-no-lights"><a class="header" href="#atem-switcher-is-powered-off-no-lights">ATEM switcher is powered off (&quot;no lights&quot;)</a></h2>
+<p>This is often caused by the power cable coming loose when the switcher is slid out of the rack for operation. Reach over the back of the switcher and plug the power cable back in on the right hand side.</p>
+<h2 id="the-multiview-monitor-is-black"><a class="header" href="#the-multiview-monitor-is-black">The multiview monitor is black</a></h2>
+<p>Check the monitor power and display cables are securely plugged in at both ends.</p>
+<h2 id="the-camera-controller-is-powered-off-no-lights"><a class="header" href="#the-camera-controller-is-powered-off-no-lights">The camera controller is powered off (&quot;no lights&quot;)</a></h2>
+<p>Check the power cable hasn't come loose.</p>
+<h2 id="the-streaming-pc-display-is-black"><a class="header" href="#the-streaming-pc-display-is-black">The streaming PC display is black</a></h2>
+<p>Check the display power and display cables are securely plugged in at both ends.</p>
+<h2 id="the-video-of-a-camera-does-not-appear-on-the-multiview-display"><a class="header" href="#the-video-of-a-camera-does-not-appear-on-the-multiview-display">The video of a camera does not appear on the multiview display</a></h2>
+<p>This may be because the camera has not been powered on. Use the camera controller to power all the cameras off and back on.</p>
+<p>To see if the camera is powered on, double click the relevant camera icon on the streaming PC desktop. If you see a picture from the camera, it is powered on and the problem may be that the SDI (video) cable is not properly connected to the camera (or to the back of the rack or to the back of the ATEM switcher). Disconnect and reconnect each plug in turn to ensure it is properly connected.</p>
+<h2 id="a-camera-cannot-be-controlled-by-the-camera-controller"><a class="header" href="#a-camera-cannot-be-controlled-by-the-camera-controller">A camera cannot be controlled by the camera controller</a></h2>
+<p>This may be because the power-over-ethernet (PoE) cable has been plugged into the wrong socket on the affected camera. Make sure the cable is plugged into the left-hand socket. When re-plugging PoE cables, it is best to power all the cameras down first and power them back up afterwards.</p>
+<h2 id="the-camera-controller-fails-to-operate-the-cameras"><a class="header" href="#the-camera-controller-fails-to-operate-the-cameras">The camera controller fails to operate the cameras</a></h2>
+<p>The camera controller may still be in menu mode, in which case the &quot;menu&quot; button will be lit. Press the menu button to exit menu mode.</p>
+<p>Alternatively, the controller may be operating a group of cameras other than group 1. You need to select group 1. <em>find out how to do this</em></p>
+<p>Alternatively, it has been known for the camera controller to reset itself to factory defaults.
+Try power-cycling the camera controller to see if this fixes the problem. If not, you may need to go to the setup menu and re-enter the IP address of each of the cameras: 192.168.0.181-184 (for cameras 1-4). The cameras also need to be set to &quot;network&quot; connection rather than &quot;serial&quot; (<em>find out how to do this</em>). When entering an IP address, press F2 to select each &quot;dotted decimal&quot; number of the IP address in turn and turn F2 to change the current number. Refer to &quot;Changing the camera numbers&quot; on page 34 of the <em>basic</em> manual for the camera controller (available under <a href="../hardware.html">Hardware</a>) for how to set camera IP addresses.</p>
+<h2 id="the-live-stream-does-not-appear-in-the-preview-on-youtube"><a class="header" href="#the-live-stream-does-not-appear-in-the-preview-on-youtube">The live stream does not appear in the preview on YouTube</a></h2>
+<p>This may be because the video encoder in the rack is not yet in streaming mode (the &quot;streaming&quot; button needs to be lit in red). Press the streaming button on the video encoder to start streaming. Note: this isn't usually necessary, so be patient while YouTube connects to the stream as this can take up to 20-30 seconds.</p>
+<h2 id="the-live-stream-does-not-appear-on-church-online-even-though-it-is-visible-on-youtube"><a class="header" href="#the-live-stream-does-not-appear-on-church-online-even-though-it-is-visible-on-youtube">The live stream does not appear on church online even though it is visible on YouTube</a></h2>
+<p>This may be because the current service on church online has the wrong link to YouTube. Use the admin area of the church online web site, click on &quot;services&quot; on the left hand side, then edit the content of the current service to check the YouTube link. On the YouTube window, click &quot;preview&quot; to see the YouTube link for the stream. If the link is wrong on church online, copy the correct link in place and click &quot;save&quot;.</p>
+<h2 id="the-internet-is-not-accessible-from-the-live-streaming-pc"><a class="header" href="#the-internet-is-not-accessible-from-the-live-streaming-pc">The internet is not accessible from the live streaming PC</a></h2>
+<p>Ensure the AV desk PC is switched on (it doesn't need to be logged in). Also ensure that the
+network router mains switch is turned on - this is next to the AV desk mains switch (on the wall, low down, at the right hand side of the sound desk).</p>
+<p>Alternatively, the antivirus/firewall software on the streaming PC may be out of date. Temporarily disable the antivirus/firewall from the network settings to work around this.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="next" href="hardware.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="prev" href="operation.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="tutorials.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         <div style="clear: both"></div>
@@ -152,7 +180,10 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="next" href="hardware.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="prev" href="operation.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="tutorials.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
