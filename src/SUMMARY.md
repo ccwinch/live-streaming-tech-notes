@@ -3,5 +3,6 @@
 - [Overview](./overview.md)
 - [Hardware](./hardware.md)
 - [Operation](./operation.md)
-- [Common Problems](./problems.md)
+- [Problem Solving](./problems.md)
+- [Scheduling Services](./scheduling.md)
 - [Tutorials](./tutorials.md)
