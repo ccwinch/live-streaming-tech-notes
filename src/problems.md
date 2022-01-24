@@ -52,6 +52,13 @@ Alternatively, the controller may be operating a group of cameras other than gro
 Alternatively, it has been known for the camera controller to reset itself to factory defaults.
 Try power-cycling the camera controller to see if this fixes the problem. If not, you may need to go to the setup menu and re-enter the IP address of each of the cameras: 192.168.0.181-184 (for cameras 1-4). The cameras also need to be set to "network" connection rather than "serial" (_find out how to do this_). When entering an IP address, press F2 to select each "dotted decimal" number of the IP address in turn and turn F2 to change the current number. Refer to "Changing the camera numbers" on page 34 of the *basic* manual for the camera controller (available under [Hardware](../hardware.md)) for how to set camera IP addresses.
 
+## The encoder stream button flashes red
+
+This may be due to the encoder looking at the wrong input. Open up the encoder software on the streaming PC (there's a shortcut on the desktop, with a note of the admin password on the shortcut), select the "source" tab, and ensure that
+the SDI source is selected (rather than HDMI).
+
+When the encoder is streaming normally, the stream button should be lit red continuously.
+
 ## The "go live" icon is greyed out on YouTube
 
 This may be due to the stream in question having already been used, even if only briefly. You
