@@ -15,6 +15,9 @@
 * tp-link PoE+ switch TL-SL1218MP
   - [Overview of tp-link PoE](https://www.tp-link.com/uk/solution/poe/)
   - [TL-SL1218MP product description](https://www.tp-link.com/uk/business-networking/poe-switch/tl-sl1218mp/)
+* Blackmagic video assist 7" 12G HDR (combined scope/monitor/recorder/viewfinder)
+  - [Product description](https://www.blackmagicdesign.com/uk/products/blackmagicvideoassist)
+  - [manual](https://documents.blackmagicdesign.com/UserManuals/BlackmagicVideoAssistManual.pdf)
 
 ### Schematic Diagram
 
