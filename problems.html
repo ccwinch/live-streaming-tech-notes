@@ -75,7 +75,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="hardware.html"><strong aria-hidden="true">2.</strong> Hardware</a></li><li class="chapter-item expanded "><a href="operation.html"><strong aria-hidden="true">3.</strong> Operation</a></li><li class="chapter-item expanded "><a href="problems.html" class="active"><strong aria-hidden="true">4.</strong> Problem Solving</a></li><li class="chapter-item expanded "><a href="scheduling.html"><strong aria-hidden="true">5.</strong> Scheduling Services</a></li><li class="chapter-item expanded "><a href="tutorials.html"><strong aria-hidden="true">6.</strong> Tutorials</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="hardware.html"><strong aria-hidden="true">2.</strong> Hardware</a></li><li class="chapter-item expanded "><a href="software.html"><strong aria-hidden="true">3.</strong> PC Software</a></li><li class="chapter-item expanded "><a href="operation.html"><strong aria-hidden="true">4.</strong> Operation</a></li><li class="chapter-item expanded "><a href="settings.html"><strong aria-hidden="true">5.</strong> Settings</a></li><li class="chapter-item expanded "><a href="problems.html" class="active"><strong aria-hidden="true">6.</strong> Problem Solving</a></li><li class="chapter-item expanded "><a href="scheduling.html"><strong aria-hidden="true">7.</strong> Scheduling Services</a></li><li class="chapter-item expanded "><a href="tutorials.html"><strong aria-hidden="true">8.</strong> Tutorials</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -164,7 +164,9 @@
 <li>(I presume) Press &quot;1&quot; to select group 1.</li>
 </ul>
 <p>Alternatively, it has been known for the camera controller to reset itself to factory defaults.
-Try power-cycling the camera controller to see if this fixes the problem. If not, you may need to go to the setup menu and re-enter the IP address of each of the cameras: 192.168.0.181-184 (for cameras 1-4). The cameras also need to be set to &quot;network&quot; connection rather than &quot;serial&quot; (<em>find out how to do this</em>). When entering an IP address, press F2 to select each &quot;dotted decimal&quot; number of the IP address in turn and turn F2 to change the current number. Refer to &quot;Changing the camera numbers&quot; on page 34 of the <em>basic</em> manual for the camera controller (available under <a href="../hardware.html">Hardware</a>) for how to set camera IP addresses.</p>
+Try power-cycling the camera controller to see if this fixes the problem. If not, you may need to go to the setup menu and re-enter the IP address of each of the cameras: 192.168.0.181-184 (for cameras 1-4). The cameras also need to be set to &quot;network&quot; connection rather than &quot;serial&quot;. When entering an IP address, press F2 to select each &quot;dotted decimal&quot; number of the IP address in turn and turn F2 to change the current number. Refer to &quot;Changing the camera numbers&quot; on page 34 of the <em>basic</em> manual for the camera controller (available under <a href="../hardware.html">Hardware</a>) for how to set camera IP addresses. The IP address of the camera controller also needs to be set to
+the correct value: 192.168.0.188. If you prefer, you can use the <code>RP50Tool</code> shortcut on the streaming PC desktop to make these changes (but beware that the tool uses the camera controller's IP address to communicate with it, so this will need to be changed as necessary).</p>
+<p>If all else fails, you can gain some basic control of the cameras over TCP/IP using the shortcuts on the streaming PC desktop. See <a href="./software.html">Software</a>.</p>
 <h2 id="the-encoder-stream-button-flashes-red"><a class="header" href="#the-encoder-stream-button-flashes-red">The encoder stream button flashes red</a></h2>
 <p>This may be due to the encoder looking at the wrong input. Open up the encoder software on the streaming PC (there's a shortcut on the desktop, with a note of the admin password on the shortcut), select the &quot;source&quot; tab, and ensure that
 the SDI source is selected (rather than HDMI).</p>
@@ -178,8 +180,10 @@ need to create a fresh stream. See <a href="./scheduling.html">Scheduling servic
 <p>This may be because the current service on Online Church has the wrong link to YouTube. Use the admin area of the Online Church web site, click on &quot;services&quot; on the left hand side, then edit the content of the current service to check the YouTube link. On the YouTube window, click &quot;preview&quot; to see the YouTube link for the stream. If the link is wrong on Online Church, copy the correct link in place and click &quot;save&quot;.</p>
 <h2 id="the-internet-is-not-accessible-from-the-live-streaming-pc"><a class="header" href="#the-internet-is-not-accessible-from-the-live-streaming-pc">The internet is not accessible from the live streaming PC</a></h2>
 <p>Ensure the AV desk PC is switched on (it doesn't need to be logged in). Also ensure that the
-network router mains switch is turned on - this is next to the AV desk mains switch (on the wall, low down, at the right hand side of the sound desk).</p>
+network splitter mains switch is turned on - this is next to the AV desk mains switch (on the wall, low down, at the right hand side of the sound desk).</p>
 <p>Alternatively, the antivirus/firewall software on the streaming PC may be out of date. Temporarily disable the antivirus/firewall from the network settings to work around this.</p>
+<p>Another cause of losing internet (across the whole site!) is if the camera controller has lost its settings and set its IP address to the default of 192.168.0.10 which conflicts with the church's main internet gateway.
+See <a href="./problems.html#the-camera-controller-fails-to-operate-the-cameras">The camera controller fails to operate the cameras</a> for how to set the camera controller settings back to what they should be.</p>
 <h2 id="poor-sound-quality-on-the-live-stream"><a class="header" href="#poor-sound-quality-on-the-live-stream">Poor sound quality on the live stream</a></h2>
 <p>Sometimes the host or a member of the online congregation will point out that the sound is
 poor or that there is a specific problem with the sound. Check the sound level on the &quot;live&quot; panel of the multiview monitor. If it seems too low, check with the sound desk operator that the sound desk is correctly set up. If it's still too low, you can boost the volume by using
@@ -191,7 +195,7 @@ the ATEM switcher software on the live streaming PC. In the audio tab there is a
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="operation.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="settings.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                             <a rel="next" href="scheduling.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
@@ -203,7 +207,7 @@ the ATEM switcher software on the live streaming PC. In the audio tab there is a
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="operation.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="settings.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                     <a rel="next" href="scheduling.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
