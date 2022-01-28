@@ -2,15 +2,15 @@
 
 ## Network IP addresses
 
-```
-192.168.0.180 - datavideo encoder
-192.168.0.181 - Camera 1
-192.168.0.182 - Camera 2
-192.168.0.183 - Camera 3
-192.168.0.184 - Camera 4
-192.168.0.188 - Panasonic RP-50 Camera Controller
-192.168.0.189 - Blackmagic ATEM
-```
+| Device                          | IP address        |
+|---------------------------------|-------------------|
+| Datavideo encoder               | 192.168.0.180     |
+| Camera 1                        | 192.168.0.181     |
+| Camera 2                        | 192.168.0.182     |
+| Camera 3                        | 192.168.0.183     |
+| Camera 4                        | 192.168.0.184     |
+| Panasonic Camera Controller     | 192.168.0.188     |
+| Blackmagic ATEM                 | 192.168.0.189     |
 
 ## Panasonic remote camera controller AW-RP50
 
