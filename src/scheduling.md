@@ -1,4 +1,4 @@
-## Scheduling services
+## Scheduling Services
 
 Each service needs a YouTube stream and a service on the Church Online Platform which refers to the YouTube stream. Essentially, you can create a YouTube stream from a past stream. For Church Online, you need to go to the admin view, click "services" on the left, set the filter to include the required date, and then add (or edit) content to the relevant service. View an old service and copy across all relevant timings, settings, and audience and host help information.
 

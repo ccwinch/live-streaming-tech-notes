@@ -50,7 +50,10 @@ Alternatively, the controller may be operating a group of cameras other than gro
 * (I presume) Press "1" to select group 1.
 
 Alternatively, it has been known for the camera controller to reset itself to factory defaults.
-Try power-cycling the camera controller to see if this fixes the problem. If not, you may need to go to the setup menu and re-enter the IP address of each of the cameras: 192.168.0.181-184 (for cameras 1-4). The cameras also need to be set to "network" connection rather than "serial" (_find out how to do this_). When entering an IP address, press F2 to select each "dotted decimal" number of the IP address in turn and turn F2 to change the current number. Refer to "Changing the camera numbers" on page 34 of the *basic* manual for the camera controller (available under [Hardware](../hardware.md)) for how to set camera IP addresses.
+Try power-cycling the camera controller to see if this fixes the problem. If not, you may need to go to the setup menu and re-enter the IP address of each of the cameras: 192.168.0.181-184 (for cameras 1-4). The cameras also need to be set to "network" connection rather than "serial". When entering an IP address, press F2 to select each "dotted decimal" number of the IP address in turn and turn F2 to change the current number. Refer to "Changing the camera numbers" on page 34 of the *basic* manual for the camera controller (available under [Hardware](../hardware.md)) for how to set camera IP addresses. The IP address of the camera controller also needs to be set to
+the correct value: 192.168.0.188. If you prefer, you can use the `RP50Tool` shortcut on the streaming PC desktop to make these changes (but beware that the tool uses the camera controller's IP address to communicate with it, so this will need to be changed as necessary).
+
+If all else fails, you can gain some basic control of the cameras over TCP/IP using the shortcuts on the streaming PC desktop. See [Software](./software.md).
 
 ## The encoder stream button flashes red
 
@@ -75,9 +78,12 @@ This may be because the current service on Online Church has the wrong link to Y
 ## The internet is not accessible from the live streaming PC
 
 Ensure the AV desk PC is switched on (it doesn't need to be logged in). Also ensure that the
-network router mains switch is turned on - this is next to the AV desk mains switch (on the wall, low down, at the right hand side of the sound desk).
+network splitter mains switch is turned on - this is next to the AV desk mains switch (on the wall, low down, at the right hand side of the sound desk).
 
 Alternatively, the antivirus/firewall software on the streaming PC may be out of date. Temporarily disable the antivirus/firewall from the network settings to work around this.
+
+Another cause of losing internet (across the whole site!) is if the camera controller has lost its settings and set its IP address to the default of 192.168.0.10 which conflicts with the church's main internet gateway.
+See [The camera controller fails to operate the cameras](./problems.md#the-camera-controller-fails-to-operate-the-cameras) for how to set the camera controller settings back to what they should be.
 
 ## Poor sound quality on the live stream
 
