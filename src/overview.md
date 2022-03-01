@@ -14,7 +14,7 @@ Contents:
 * [Audio](./audio.md) describes how to mute the sound or change the volume.
 * [Settings](./settings.md) captures various settings for posterity and problem solving.
 * [Problem Solving](./problems.md) lists some problems we've encountered in the past with their symptoms and how to fix them.
-* [Scheduling Services](./scheduling.md) describes how to schedule streams on YouTube and services on the Church Online Platform.
+* [Scheduling Services](./scheduling.md) describes how to schedule streams on YouTube.
 * [Tutorials](./tutorials.md) links to some basic tutorials on live streaming.
 
 

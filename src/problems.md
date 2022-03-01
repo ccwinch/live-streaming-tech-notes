@@ -71,10 +71,6 @@ need to create a fresh stream. See [Scheduling services](./scheduling.md) for in
 
 This may be because the video encoder in the rack is not yet in streaming mode (the "streaming" button needs to be lit in red). Press the streaming button on the video encoder to start streaming. Note: this isn't usually necessary, so be patient while YouTube connects to the stream as this can take up to 20-30 seconds.
 
-## The live stream does not appear on Online Church even though it is visible on YouTube
-
-This may be because the current service on Online Church has the wrong link to YouTube. Use the admin area of the Online Church web site, click on "services" on the left hand side, then edit the content of the current service to check the YouTube link. On the YouTube window, click "preview" to see the YouTube link for the stream. If the link is wrong on Online Church, copy the correct link in place and click "save".
-
 ## The internet is not accessible from the live streaming PC
 
 Ensure the AV desk PC is switched on (it doesn't need to be logged in). Also ensure that the
@@ -90,7 +86,3 @@ See [The camera controller fails to operate the cameras](./problems.md#the-camer
 Sometimes the host or a member of the online congregation will point out that the sound is
 poor or that there is a specific problem with the sound. Check the sound level on the "live" panel of the multiview monitor. If it seems too low, check with the sound desk operator that the sound desk is correctly set up. If it's still too low, you can boost the volume by using
 the ATEM switcher software on the live streaming PC. In the audio tab there is a master volume slider and a xlr slider which can be increased.
-
-## Incorrect title and/or bible reference showing on Online Church
-
-Edit the current service on Church Online (see [Scheduling Services](./scheduling.md)) to correct the mistake. The bible reference is probably on the service notes which are sent out ahead of time and which are usually made available in printed form on the live streaming desk.
