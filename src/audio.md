@@ -5,7 +5,17 @@ But there are a couple of things you can control, using the audio mixer in the A
 
 You can also get a rough idea of the volume by looking at the programme on the multiview monitor. The volume level shows on the left and should occasionally go into the amber zone or possibly the red zone.
 
-If you need to hear the audio side of the live stream, plug the headphones into the PC, unmute the audio on the PC, and listen to the YouTube stream on Chrome.
+If you need to hear the audio side of the live stream, use the scope (described in see [Hardware](./hardware)):
+
+1. Plug the SDI cable attached to an ATEM output into the SDI input socket of the scope.
+
+2. Screw the scope power connector into the scope.
+
+3. Plug the headphones into the headphone socket of the scope.
+
+4. Turn on the scope by pressing the small power button on the side.
+
+ (You could also plug the headphones into the PC, unmute the audio on the PC, and listen to the YouTube stream on Chrome. The big downside of this approach is that there is a considerable lag between what's happening in church and what appears on YouTube.)
 
 Keep an eye on the chat sections of the Church Online Platform for comments about the sound quality from the host or the online congregation.
 
