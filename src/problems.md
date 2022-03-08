@@ -86,3 +86,13 @@ See [The camera controller fails to operate the cameras](./problems.md#the-camer
 Sometimes the host or a member of the online congregation will point out that the sound is
 poor or that there is a specific problem with the sound. Check the sound level on the "live" panel of the multiview monitor. If it seems too low, check with the sound desk operator that the sound desk is correctly set up. If it's still too low, you can boost the volume by using
 the ATEM switcher software on the live streaming PC. In the audio tab there is a master volume slider and a xlr slider which can be increased.
+
+## Robotic sound when the live stream is displayed on screens in church
+
+Not everyone can hear this problem when it occurs.
+
+The solution is to use the Roland V-8HD menu to Mute HDMI input #2 from the ATEM (and turn it down -70dB to make sure). The menu is shown in the photo. below:
+
+[![](./images/Rolandmuteinput2.jpg)](./images/Rolandmuteinput2.jpg)
+
+For details, see [this issue](https://github.com/ccwinch/live-streaming-tech-notes/issues/7).
