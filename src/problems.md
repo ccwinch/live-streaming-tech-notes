@@ -91,7 +91,7 @@ the ATEM switcher software on the live streaming PC. In the audio tab there is a
 
 Not everyone can hear this problem when it occurs.
 
-The solution is to use the Roland V-8HD menu to Mute HDMI input #2 from the ATEM (and turn it down -70dB to make sure). The menu is shown in the photo. below:
+The solution is to use the Roland V-8HD menu to Mute HDMI input #2 from the ATEM (and turn the level down to -70dB to make sure). The menu is shown in the photograph below:
 
 [![](./images/Rolandmuteinput2.jpg)](./images/Rolandmuteinput2.jpg)
 
