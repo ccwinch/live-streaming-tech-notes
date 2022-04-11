@@ -53,6 +53,8 @@ Alternatively, it has been known for the camera controller to reset itself to fa
 Try power-cycling the camera controller to see if this fixes the problem. If not, you may need to go to the setup menu and re-enter the IP address of each of the cameras: 192.168.0.181-184 (for cameras 1-4). The cameras also need to be set to "network" connection rather than "serial". When entering an IP address, press F2 to select each "dotted decimal" number of the IP address in turn and turn F2 to change the current number. Refer to "Changing the camera numbers" on page 34 of the *basic* manual for the camera controller (available under [Hardware](../hardware.md)) for how to set camera IP addresses. The IP address of the camera controller also needs to be set to
 the correct value: 192.168.0.188. If you prefer, you can use the `RP50Tool` shortcut on the streaming PC desktop to make these changes (but beware that the tool uses the camera controller's IP address to communicate with it, so this will need to be changed as necessary).
 
+If the camera controller cannot be made to work, try using the camera controller software ("RP50Tool") on the streaming PC.
+
 If all else fails, you can gain some basic control of the cameras over TCP/IP using the shortcuts on the streaming PC desktop. See [Software](./software.md).
 
 ## The encoder stream button flashes red
