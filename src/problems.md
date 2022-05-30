@@ -4,7 +4,7 @@ In general, try to narrow down and eventually isolate the cause of the problem. 
 
 Remember the all-important line from "The IT Crowd" TV series: "Have you tried turning it off and back on again?".
 
-If you get stuck, try asking on the "CCW Stream Team" WhatsApp group or see if there's someone around in church who can help.
+If you get stuck, try asking on the "Streaming" Slack channel or see if there's someone around in church who can help.
 
 The following problems are organised by problem symptoms, each with possible explanations and fixes. If you find a problem not listed here, please tell others about it so it can be added.
 
@@ -98,3 +98,13 @@ The solution is to use the Roland V-8HD menu to Mute HDMI input #2 from the ATEM
 [![](./images/Rolandmuteinput2.jpg)](./images/Rolandmuteinput2.jpg)
 
 For details, see [this issue](https://github.com/ccwinch/live-streaming-tech-notes/issues/7).
+
+## Problems with the song words or AV input ("camera 5")
+
+The AV and live streaming desks may have been powered up in the wrong order. Power down the AV and live streaming desks and then power up the live streaming desk and PC before powering up the AV desk and PC. This ensures that the graphics card in the AV PC detects the correct inputs.
+
+There is also a Microsoft Word document on the AV PC which describes the display arrangement ("3, 4, 1|2", where displays 1 and 2 are mirrored) and EasyWorship settings.
+
+## YouTube connection problems
+
+If the live stream fails or YouTube reports buffering problems for more than a second or two, there may be an issue with the internet connection. There's not much you can do about this, but please report it so we can look into it.
