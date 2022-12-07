@@ -6,7 +6,6 @@
         <title>Christ Church Winchester: Live streaming tech notes</title>
         <meta name="robots" content="noindex" />
         <!-- Custom HTML head -->
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
@@ -29,13 +28,13 @@
     </head>
     <body>
         <!-- Provide site root to javascript -->
-        <script type="text/javascript">
+        <script>
             var path_to_root = "";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
-        <script type="text/javascript">
+        <script>
             try {
                 var theme = localStorage.getItem('mdbook-theme');
                 var sidebar = localStorage.getItem('mdbook-sidebar');
@@ -51,7 +50,7 @@
         </script>
 
         <!-- Set the theme before any content is loaded, prevents flash -->
-        <script type="text/javascript">
+        <script>
             var theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
@@ -63,7 +62,7 @@
         </script>
 
         <!-- Hide / unhide sidebar before it is displayed -->
-        <script type="text/javascript">
+        <script>
             var html = document.querySelector('html');
             var sidebar = 'hidden';
             if (document.body.clientWidth >= 1080) {
@@ -94,7 +93,7 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
@@ -125,7 +124,7 @@
                     </div>
                 </div>
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
-                <script type="text/javascript">
+                <script>
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
                     document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
                     Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
@@ -284,10 +283,10 @@ But there are a couple of things you can control, using the audio mixer in the A
 <p>The volume is controlled by the level on the XLR audio input and the Master volume control, both on the udio tab (shown above) of the ATEM switcher software on the live streaming PC.</p>
 <p>To increase the volume, move the XLR and Master sliders up, keeping an eye on the volume level on the multiview monitor.</p>
 <p>To decrease the volume, move the XLR and Master sliders down.</p>
-<p>Initially, both sliders are at about -7.5 dB.</p>
+<p>Initially, both sliders are at about -6.01 dB.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="settings"><a class="header" href="#settings">Settings</a></h1>
 <h2 id="network-ip-addresses"><a class="header" href="#network-ip-addresses">Network IP addresses</a></h2>
-<table><thead><tr><th>Device</th><th>IP address</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Device</th><th>IP address</th></tr></thead><tbody>
 <tr><td>Datavideo encoder</td><td>192.168.0.180</td></tr>
 <tr><td>Camera 1</td><td>192.168.0.181</td></tr>
 <tr><td>Camera 2</td><td>192.168.0.182</td></tr>
@@ -296,6 +295,7 @@ But there are a couple of things you can control, using the audio mixer in the A
 <tr><td>Panasonic Camera Controller</td><td>192.168.0.188</td></tr>
 <tr><td>Blackmagic ATEM</td><td>192.168.0.189</td></tr>
 </tbody></table>
+</div>
 <h2 id="panasonic-remote-camera-controller-aw-rp50"><a class="header" href="#panasonic-remote-camera-controller-aw-rp50">Panasonic remote camera controller AW-RP50</a></h2>
 <p>Launch the RP50Tool program (see <a href="./software.html">Software</a>) and set the RP1 IP address to 192.168.0.188<sup class="footnote-reference"><a href="#ccip">1</a></sup> on the IP Address tab and click the &quot;Set&quot; button. See the image below.</p>
 <p><a href="./images/RP50IPaddress.png"><img src="./images/RP50IPaddress.png" alt="" /></a></p>
@@ -413,18 +413,18 @@ the ATEM switcher software on the live streaming PC. In the audio tab there is a
 
         </div>
 
-        <script type="text/javascript">
+        <script>
             window.playground_copyable = true;
         </script>
-        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
-        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
-        <script type="text/javascript">
+        <script>
         window.addEventListener('load', function() {
             window.setTimeout(window.print, 100);
         });
