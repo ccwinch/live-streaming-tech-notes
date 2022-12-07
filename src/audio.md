@@ -35,4 +35,4 @@ To increase the volume, move the XLR and Master sliders up, keeping an eye on th
 
 To decrease the volume, move the XLR and Master sliders down.
 
-Initially, both sliders are at about -7.5 dB.
+Initially, both sliders are at about -6.01 dB.
