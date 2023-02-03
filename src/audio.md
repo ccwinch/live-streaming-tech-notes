@@ -3,7 +3,7 @@
 The audio on the live stream is largely determined by the input from the sound desk (or the AV desk when a video is being played), how the vocalists in the band use their microphones, and how the congregation sings.
 But there are a couple of things you can control, using the audio mixer in the ATEM software (see [PC Software](./software)).
 
-You can also get a rough idea of the volume by looking at the programme on the multiview monitor. The volume level shows on the left and should occasionally go into the amber zone or possibly the red zone.
+You can also get a rough idea of the volume by looking at the programme on the multiview monitor. The volume level shows on the left and should occasionally reach -5 dB.
 
 If you need to hear the audio side of the live stream, use the scope (described in see [Hardware](./hardware)):
 
@@ -35,4 +35,4 @@ To increase the volume, move the XLR and Master sliders up, keeping an eye on th
 
 To decrease the volume, move the XLR and Master sliders down.
 
-Initially, both sliders are at about -6.01 dB.
+Initially, both sliders are at about -0.6 dB (this figure is shown **below** the slider - the number above is the maximum reached since power on or the number being clicked).
