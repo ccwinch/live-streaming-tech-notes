@@ -5,7 +5,10 @@
         <meta charset="UTF-8">
         <title>Christ Church Winchester: Live streaming tech notes</title>
         <meta name="robots" content="noindex" />
+
+
         <!-- Custom HTML head -->
+        
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
@@ -16,15 +19,18 @@
         <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/chrome.css">
         <link rel="stylesheet" href="css/print.css" media="print">
+
         <!-- Fonts -->
         <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
         <link rel="stylesheet" href="fonts/fonts.css">
+
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="highlight.css">
         <link rel="stylesheet" href="tomorrow-night.css">
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+
     </head>
     <body>
         <!-- Provide site root to javascript -->
@@ -83,7 +89,7 @@
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                <div id="menu-bar-hover-placeholder"></div>
+                                <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky bordered">
                     <div class="left-buttons">
                         <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
@@ -110,6 +116,7 @@
                         <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
+
                     </div>
                 </div>
 
@@ -123,6 +130,7 @@
                         </ul>
                     </div>
                 </div>
+
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
                 <script>
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
@@ -257,7 +265,7 @@
 <div style="break-before: page; page-break-before: always;"></div><h1 id="audio"><a class="header" href="#audio">Audio</a></h1>
 <p>The audio on the live stream is largely determined by the input from the sound desk (or the AV desk when a video is being played), how the vocalists in the band use their microphones, and how the congregation sings.
 But there are a couple of things you can control, using the audio mixer in the ATEM software (see <a href="./software">PC Software</a>).</p>
-<p>You can also get a rough idea of the volume by looking at the programme on the multiview monitor. The volume level shows on the left and should occasionally go into the amber zone or possibly the red zone.</p>
+<p>You can also get a rough idea of the volume by looking at the programme on the multiview monitor. The volume level shows on the left and should occasionally reach -5 dB.</p>
 <p>If you need to hear the audio side of the live stream, use the scope (described in see <a href="./hardware">Hardware</a>):</p>
 <ol>
 <li>
@@ -283,7 +291,7 @@ But there are a couple of things you can control, using the audio mixer in the A
 <p>The volume is controlled by the level on the XLR audio input and the Master volume control, both on the udio tab (shown above) of the ATEM switcher software on the live streaming PC.</p>
 <p>To increase the volume, move the XLR and Master sliders up, keeping an eye on the volume level on the multiview monitor.</p>
 <p>To decrease the volume, move the XLR and Master sliders down.</p>
-<p>Initially, both sliders are at about -6.01 dB.</p>
+<p>Initially, both sliders are at about -0.6 dB (this figure is shown <strong>below</strong> the slider - the number above is the maximum reached since power on or the number being clicked).</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="settings"><a class="header" href="#settings">Settings</a></h1>
 <h2 id="network-ip-addresses"><a class="header" href="#network-ip-addresses">Network IP addresses</a></h2>
 <div class="table-wrapper"><table><thead><tr><th>Device</th><th>IP address</th></tr></thead><tbody>
@@ -403,31 +411,42 @@ the ATEM switcher software on the live streaming PC. In the audio tab there is a
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+
+
                         <div style="clear: both"></div>
                     </nav>
                 </div>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
             </nav>
 
         </div>
 
+
+
+
         <script>
             window.playground_copyable = true;
         </script>
+
+
         <script src="elasticlunr.min.js"></script>
         <script src="mark.min.js"></script>
         <script src="searcher.js"></script>
+
         <script src="clipboard.min.js"></script>
         <script src="highlight.js"></script>
         <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
+
         <script>
         window.addEventListener('load', function() {
             window.setTimeout(window.print, 100);
         });
         </script>
+
     </body>
 </html>
