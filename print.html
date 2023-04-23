@@ -71,10 +71,12 @@
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
             var html = document.querySelector('html');
-            var sidebar = 'hidden';
+            var sidebar = null;
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
             }
             html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
@@ -82,7 +84,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="hardware.html"><strong aria-hidden="true">2.</strong> Hardware</a></li><li class="chapter-item expanded "><a href="software.html"><strong aria-hidden="true">3.</strong> PC Software</a></li><li class="chapter-item expanded "><a href="operation.html"><strong aria-hidden="true">4.</strong> Operation</a></li><li class="chapter-item expanded "><a href="audio.html"><strong aria-hidden="true">5.</strong> Audio</a></li><li class="chapter-item expanded "><a href="settings.html"><strong aria-hidden="true">6.</strong> Settings</a></li><li class="chapter-item expanded "><a href="problems.html"><strong aria-hidden="true">7.</strong> Problem Solving</a></li><li class="chapter-item expanded "><a href="scheduling.html"><strong aria-hidden="true">8.</strong> Scheduling Services</a></li><li class="chapter-item expanded "><a href="tutorials.html"><strong aria-hidden="true">9.</strong> Tutorials</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="hardware.html"><strong aria-hidden="true">2.</strong> Hardware</a></li><li class="chapter-item expanded "><a href="software.html"><strong aria-hidden="true">3.</strong> PC Software</a></li><li class="chapter-item expanded "><a href="operation.html"><strong aria-hidden="true">4.</strong> Operation</a></li><li class="chapter-item expanded "><a href="audio.html"><strong aria-hidden="true">5.</strong> Audio</a></li><li class="chapter-item expanded "><a href="settings.html"><strong aria-hidden="true">6.</strong> Settings</a></li><li class="chapter-item expanded "><a href="problems.html"><strong aria-hidden="true">7.</strong> Problem Solving</a></li><li class="chapter-item expanded "><a href="scheduling.html"><strong aria-hidden="true">8.</strong> Scheduling Services</a></li><li class="chapter-item expanded "><a href="mediaplayers.html"><strong aria-hidden="true">9.</strong> Media Players</a></li><li class="chapter-item expanded "><a href="tutorials.html"><strong aria-hidden="true">10.</strong> Tutorials</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -156,6 +158,7 @@
 <li><a href="./settings.html">Settings</a> captures various settings for posterity and problem solving.</li>
 <li><a href="./problems.html">Problem Solving</a> lists some problems we've encountered in the past with their symptoms and how to fix them.</li>
 <li><a href="./scheduling.html">Scheduling Services</a> describes how to schedule streams on YouTube.</li>
+<li><a href="./mediaplayers.html">Media Players</a> shows how to set the contents of a media player.</li>
 <li><a href="./tutorials.html">Tutorials</a> links to some basic tutorials on live streaming.</li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h2 id="hardware"><a class="header" href="#hardware">Hardware</a></h2>
@@ -251,7 +254,7 @@
 <li>When you have two cameras next to each other, you can cut back and forth between a head and shoulders shot of a speaker and a shot of their full height. Since the angle doesn't change, this is less distracting than cutting from side to side. Here's an <a href="https://www.youtube.com/watch?v=9lR070t_nFA&amp;list=PLz-8ZbAJhahjvkPtduhnB4TzhVcj5ZtfC&amp;t=1916s">example</a>.</li>
 <li>If you aren't sure what a cut will look like, try it out on the preview pane of the multiview monitor by switching the preview between the cameras you are considering cutting between.</li>
 <li>Try to turn off the song words as soon as they are no longer needed. It may be worth having a word with the person on the AV desk before the service starts and asking them to delay a couple of seconds after a song finishes before putting the Christ Church Winchester logo back on the screen as this has a bad appearance on the live stream.</li>
-<li>To display one of the slides, such as the words for use while people are taking communion, select the corresponding media player using either Shift key and, for example, &quot;MP 1&quot;.</li>
+<li>To display one of the slides, such as the words for use while people are taking communion, select media player 1 using either Shift key and &quot;MP 1&quot;.</li>
 <li>When the live stream is being displayed on screens in church, you can use the ATEM switcher software &quot;Auxiliary 1&quot; menu to control what is displayed on the screens. This is usually &quot;clean feed 1&quot; (the live stream programme minus any downstream key, such as the Christ Church logo). But you could set it to a tight shot of the preacher, for example, so that you can cut to a wide shot for the online audience without affecting what appears on the screens in church. Remember to set Auxiliary 1 back to &quot;clean feed 1&quot; afterwards.</li>
 </ul>
 <h3 id="camera-control"><a class="header" href="#camera-control">Camera Control</a></h3>
@@ -401,6 +404,57 @@ the ATEM switcher software on the live streaming PC. In the audio tab there is a
 <h3 id="weddings-and-funerals"><a class="header" href="#weddings-and-funerals">Weddings and Funerals</a></h3>
 <p>For weddings and funerals, create an unlisted YouTube stream with an appropriate thumbnail. Enable &quot;chat&quot;, but disable &quot;chat replay&quot; to be on the safe side.</p>
 <p>Once you've created the stream, look for it in the <a href="https://studio.youtube.com/channel/UCn2CGMGOZT2HqsKvTMTdOQA/videos/live">list of live content</a> in the Christ Church YouTube channel. Click the three dots next to the stream and select &quot;Get sharable link&quot; to get a link which can then be distributed to the family, friends, and others.</p>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="media-players"><a class="header" href="#media-players">Media Players</a></h2>
+<p>Media player 1 on the ATEM is used to display an image on the live stream (independently
+of the AV desk).
+This is useful when the stream audio and/or video has been turned off
+or when the live streaming team need to make an announcement to the online congregation.
+(The YouTube live chat isn't as effective since some viewers don't see the chat.)</p>
+<p>Examples of when this may be appropriate:</p>
+<ul>
+<li>During part of a communion service.</li>
+<li>When copyrighted material is being used in church.</li>
+<li>During a baptism or dedication at the parents' request.</li>
+<li>During a sensitive personal testimony.</li>
+</ul>
+<p>To display a given image on the live stream follow these steps:</p>
+<ol>
+<li>
+<p>Download the image onto the live streaming PC.</p>
+</li>
+<li>
+<p>Add the image to the ATEM's media pool (see below).</p>
+</li>
+<li>
+<p>Load the image from the media pool to media player 1 as follows:</p>
+<p>a. Open up the ATEM software application on the live streaming PC.</p>
+<p>b. Select the &quot;Media&quot; tab.</p>
+<p>c. Drag the required image from the media pool in the centre to media player 1 on the right.</p>
+</li>
+<li>
+<p>On the ATEM, preview media player 1 using either Shift key and &quot;MP 1&quot;.</p>
+</li>
+<li>
+<p>Cut at the appropriate time.</p>
+</li>
+</ol>
+<p>Notes:</p>
+<ul>
+<li>Media player 2 is dedicated to adding the Christ Church logo to the live stream and
+should not be used for displaying images.</li>
+<li>The term &quot;media player&quot; might give the impression that a video can be played, but this
+isn't the case. AVI, MOV, MP4, and similar formats are not supported. It is apparently possible to display &quot;image sequences&quot;, but that seems pretty tricky.</li>
+</ul>
+<h3 id="adding-an-image-to-the-atems-media-pool"><a class="header" href="#adding-an-image-to-the-atems-media-pool">Adding an image to the ATEM's media pool</a></h3>
+<p>An image can be added to the ATEM's media pool by following these steps:</p>
+<ol>
+<li>Download the image onto the live streaming PC.</li>
+<li>Opening up the ATEM software application on the live streaming PC.</li>
+<li>Select the &quot;Media&quot;  (see the screenshot below).</li>
+<li>Locate the image in the Local Library on the left.</li>
+<li>Drag the image to one of the &quot;stills&quot; slots in the centre.</li>
+</ol>
+<p><a href="./images/ATEMMedia.png"><img src="./images/ATEMMedia.png" alt="" /></a></p>
 <div style="break-before: page; page-break-before: always;"></div><h2 id="video-tutorials"><a class="header" href="#video-tutorials">Video Tutorials</a></h2>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=mXTADKmZOnY">Live streaming for beginners</a> - a good place to start</li>
