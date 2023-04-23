@@ -8,4 +8,5 @@
 - [Settings](./settings.md)
 - [Problem Solving](./problems.md)
 - [Scheduling Services](./scheduling.md)
+- [Media Players](./mediaplayers.md)
 - [Tutorials](./tutorials.md)

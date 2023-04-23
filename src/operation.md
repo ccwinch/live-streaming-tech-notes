@@ -24,7 +24,7 @@ Tips:
 * When you have two cameras next to each other, you can cut back and forth between a head and shoulders shot of a speaker and a shot of their full height. Since the angle doesn't change, this is less distracting than cutting from side to side. Here's an [example](https://www.youtube.com/watch?v=9lR070t_nFA&list=PLz-8ZbAJhahjvkPtduhnB4TzhVcj5ZtfC&t=1916s).
 * If you aren't sure what a cut will look like, try it out on the preview pane of the multiview monitor by switching the preview between the cameras you are considering cutting between.
 * Try to turn off the song words as soon as they are no longer needed. It may be worth having a word with the person on the AV desk before the service starts and asking them to delay a couple of seconds after a song finishes before putting the Christ Church Winchester logo back on the screen as this has a bad appearance on the live stream.
-* To display one of the slides, such as the words for use while people are taking communion, select the corresponding media player using either Shift key and, for example, "MP 1".
+* To display one of the slides, such as the words for use while people are taking communion, select media player 1 using either Shift key and "MP 1".
 * When the live stream is being displayed on screens in church, you can use the ATEM switcher software "Auxiliary 1" menu to control what is displayed on the screens. This is usually "clean feed 1" (the live stream programme minus any downstream key, such as the Christ Church logo). But you could set it to a tight shot of the preacher, for example, so that you can cut to a wide shot for the online audience without affecting what appears on the screens in church. Remember to set Auxiliary 1 back to "clean feed 1" afterwards.
 
 ### Camera Control
