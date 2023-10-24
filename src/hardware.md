@@ -35,9 +35,11 @@ To do this:
 * Get a long SDI and a long ethernet cable from the livestreaming box in the store room.
 * Using the ladder (often kept in the store room), plug these leads into the sockets on the column near the band. (Opposite the pillar where camera 3 plugs in.)
 * Put camera 2 on the stage and run the cables across the floor and onto the stage.
-* Be careful to use a cable trip protector and sand bags to avoid a trip hazard.
+* Be careful to use a cable trip protector and sand bags to avoid a trip hazard - see the photograph below.
 * At the back of the live streaming cabinet, unplug the "camera 2" SDI cable from the "input 2" socket and plug the "camera L" SDI cable into that socket. Then unplug the "camera 2" ethernet cable from the "3 cam R" socket and plug the "camera L" ethernet cable into that socket.
 * Afterwards, please be sure to reverse these steps so we are good for the usual Sunday setup.
+
+[![](./images/Camera2AlternativePosition.jpg)](./images/Camera2AlternativePosition.jpg)
 
 ### Blackmagic video assist 7" 12G HDR
 
