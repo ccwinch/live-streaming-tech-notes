@@ -27,6 +27,18 @@
 Notes:
 * (Not shown) Audio input from the sound system feeds via [XLR connectors](https://en.wikipedia.org/wiki/XLR_connector) through the connection panel in the portable rack to the video switcher.
 
+### Camera 2 Alternative Positioning
+
+In some situations (e.g. weddings) it is useful to position camera 2 on the stage (e.g. facing the couple being married).
+
+To do this:
+* Get a long SDI and a long ethernet cable from the livestreaming box in the store room.
+* Using the ladder (often kept in the store room), plug these leads into the sockets on the column near the band. (Opposite the pillar where camera 3 plugs in.)
+* Put camera 2 on the stage and run the cables across the floor and onto the stage.
+* Be careful to use a cable trip protector and sand bags to avoid a trip hazard.
+* At the back of the live streaming cabinet, unplug the "camera 2" SDI cable from the "input 2" socket and plug the "camera L" SDI cable into that socket. Then unplug the "camera 2" ethernet cable from the "3 cam R" socket and plug the "camera L" ethernet cable into that socket.
+* Afterwards, please be sure to reverse these steps so we are good for the usual Sunday setup.
+
 ### Blackmagic video assist 7" 12G HDR
 
 The "scope" that's in the live streaming desk drawer can be used as a high quality monitor or viewfinder, as a "scope" for setting colour and white balance etc., and even to record to SD card or external drive.
