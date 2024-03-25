@@ -85,7 +85,7 @@ You can record the stream to a SD card using the video encoder (NVS-34, at the t
 At the end of the service, press the "RECORD" button on the encoder again. This will end the recording
  and the MP4 file on the SD card can be uploaded to YouTube later.
 
-If there is a temporary internet outage, it may also be possible to [create a new stream](scheduling.md) and record to that.
+(If there is a temporary internet outage and the YouTube stream cannot be connected to after the internet is back up, it may be possible to [create a new stream](scheduling.md) and record to that.)
 
 ## The internet is not accessible from the live streaming PC
 
