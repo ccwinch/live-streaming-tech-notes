@@ -73,6 +73,20 @@ need to create a fresh stream. See [Scheduling services](./scheduling.md) for in
 
 This may be because the video encoder in the rack is not yet in streaming mode (the "streaming" button needs to be lit in red). Press the streaming button on the video encoder to start streaming. Note: this isn't usually necessary, so be patient while YouTube connects to the stream as this can take up to 20-30 seconds.
 
+## YouTube shows "no data" or "poor connection"
+
+This may be an intermittent or permanent problem and means that the stream will not record properly.
+
+You can record the stream to a SD card using the video encoder (NVS-34, at the top of the live streaming rack). Ensure a SD card is inserted and press and hold the
+"RECORD" button for a few seconds. Release the button and, after flashing, it should light up continously red showing that the stream is being recorded to the SD card.
+
+![NVS-34](images/NVS34.jpg)
+
+At the end of the service, press the "RECORD" button on the encoder again. This will end the recording
+ and the MP4 file on the SD card can be uploaded to YouTube later.
+
+If there is a temporary internet outage, it may also be possible to [create a new stream](scheduling.md) and record to that.
+
 ## The internet is not accessible from the live streaming PC
 
 Ensure the AV desk PC is switched on (it doesn't need to be logged in). Also ensure that the
