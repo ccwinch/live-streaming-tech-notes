@@ -222,8 +222,9 @@ need to create a fresh stream. See <a href="./scheduling.html">Scheduling servic
 "RECORD" button for a few seconds. Release the button and, after flashing, it should light up continously red showing that the stream is being recorded to the SD card.</p>
 <p><img src="images/NVS34.jpg" alt="NVS-34" /></p>
 <p>At the end of the service, press the "RECORD" button on the encoder again. This will end the recording
-and the MP4 file on the SD card can be uploaded to YouTube later.</p>
+and the MP4 files on the SD card can be stitched together (each file seems to have a maximum size of 4 GB) and uploaded to YouTube later.</p>
 <p>(If there is a temporary internet outage and the YouTube stream cannot be connected to after the internet is back up, it may be possible to <a href="scheduling.html">create a new stream</a> and record to that.)</p>
+<p>For background information on one such internet problem see <a href="https://github.com/ccwinch/live-streaming-tech-notes/issues/9">this issue</a>.</p>
 <h2 id="the-internet-is-not-accessible-from-the-live-streaming-pc"><a class="header" href="#the-internet-is-not-accessible-from-the-live-streaming-pc">The internet is not accessible from the live streaming PC</a></h2>
 <p>Ensure the AV desk PC is switched on (it doesn't need to be logged in). Also ensure that the
 network splitter mains switch is turned on - this is next to the AV desk mains switch (on the wall, low down, at the right hand side of the sound desk).</p>
@@ -234,6 +235,10 @@ See <a href="./problems.html#the-camera-controller-fails-to-operate-the-cameras"
 <p>Sometimes the host or a member of the online congregation will point out that the sound is
 poor or that there is a specific problem with the sound. Check the sound level on the "live" panel of the multiview monitor. If it seems too low, check with the sound desk operator that the sound desk is correctly set up. If it's still too low, you can boost the volume by using
 the ATEM switcher software on the live streaming PC. In the audio tab there is a master volume slider and a xlr slider which can be increased.</p>
+<h2 id="song-words-not-outlined-in-black"><a class="header" href="#song-words-not-outlined-in-black">Song words not outlined in black</a></h2>
+<p>If the song words are no longer outlined in black, reload the ATEM settings (but not during a live stream in case this interrupts it) and save
+the startup state. A good set of ATEM settings is in the Documents folder of the live streaming PC, dated 31 March 2024. Reload them using the <a href="software.html">ATEM software</a> and use the ATEM
+software to save the startup state.</p>
 <h2 id="robotic-sound-when-the-live-stream-is-displayed-on-screens-in-church"><a class="header" href="#robotic-sound-when-the-live-stream-is-displayed-on-screens-in-church">Robotic sound when the live stream is displayed on screens in church</a></h2>
 <p>Not everyone can hear this problem when it occurs.</p>
 <p>The solution is to use the Roland V-8HD menu to Mute HDMI input #2 from the ATEM (and turn the level down to -70dB to make sure). The menu is shown in the photograph below:</p>
