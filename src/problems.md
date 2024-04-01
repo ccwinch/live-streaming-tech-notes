@@ -83,9 +83,11 @@ You can record the stream to a SD card using the video encoder (NVS-34, at the t
 ![NVS-34](images/NVS34.jpg)
 
 At the end of the service, press the "RECORD" button on the encoder again. This will end the recording
- and the MP4 file on the SD card can be uploaded to YouTube later.
+ and the MP4 files on the SD card can be stitched together (each file seems to have a maximum size of 4 GB) and uploaded to YouTube later.
 
 (If there is a temporary internet outage and the YouTube stream cannot be connected to after the internet is back up, it may be possible to [create a new stream](scheduling.md) and record to that.)
+
+For background information on one such internet problem see [this issue](https://github.com/ccwinch/live-streaming-tech-notes/issues/9).
 
 ## The internet is not accessible from the live streaming PC
 
@@ -102,6 +104,12 @@ See [The camera controller fails to operate the cameras](./problems.md#the-camer
 Sometimes the host or a member of the online congregation will point out that the sound is
 poor or that there is a specific problem with the sound. Check the sound level on the "live" panel of the multiview monitor. If it seems too low, check with the sound desk operator that the sound desk is correctly set up. If it's still too low, you can boost the volume by using
 the ATEM switcher software on the live streaming PC. In the audio tab there is a master volume slider and a xlr slider which can be increased.
+
+## Song words not outlined in black
+
+If the song words are no longer outlined in black, reload the ATEM settings (but not during a live stream in case this interrupts it) and save
+the startup state. A good set of ATEM settings is in the Documents folder of the live streaming PC, dated 31 March 2024. Reload them using the [ATEM software](software.md) and use the ATEM
+software to save the startup state.
 
 ## Robotic sound when the live stream is displayed on screens in church
 
