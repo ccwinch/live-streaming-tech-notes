@@ -7,13 +7,19 @@ You can also get a rough idea of the volume by looking at the programme on the m
 
 If you need to hear the audio side of the live stream, use the scope (described in see [Hardware](./hardware)):
 
-1. Plug the SDI cable attached to an ATEM output into the SDI input socket of the scope.
+![headphones](https://github.com/user-attachments/assets/470b4bbb-938a-45cf-a07c-1bd01d9e36b6)![before](https://github.com/user-attachments/assets/5d1a1d1e-c192-41cb-9575-ec64f0e544f5)
 
-2. Screw the scope power connector into the scope.
 
-3. Plug the headphones into the headphone socket of the scope.
 
-4. Turn on the scope by pressing the small power button on the side.
+1. Plug the SDI cable attached to an ATEM output into the SDI input socket of the scope.![sdi](https://github.com/user-attachments/assets/f7f151e0-2a34-4c07-ae83-e7929f228441)
+
+
+2. Screw the scope power connector into the scope.![power-and-headphones](https://github.com/user-attachments/assets/46b5ddbc-8910-4648-b43a-2bf0021740ab)
+
+
+4. Plug the headphones into the headphone socket of the scope.
+
+5. Turn on the scope by pressing the small power button on the side.
 
  (You could also plug the headphones into the PC, unmute the audio on the PC, and listen to the YouTube stream on Chrome. The big downside of this approach is that there is a considerable lag between what's happening in church and what appears on YouTube.)
 
