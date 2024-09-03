@@ -28,6 +28,19 @@ Check the display power and display cables are securely plugged in at both ends.
 
 The encoder (the topmost unit in the streaming rack) is powered by a lead inside the back of the streaming rack which may become disconnected. Ensure the mains lead is plugged in at both ends.
 
+## No stream appears on the YouTube preview
+
+One cause of this is that the encoderer is not streaming. Check the STREAM button on the NVS-34 encoder at the top of the live streaming rack. It should be lit up continuously in red.
+If it is white or flashing red, there is a problem.
+
+To fix this, power off the encoder using the power button (a rocker switch with "1" printed above "0") on the front of the encoder, wait 10 seconds, and power back on the encoder. It takes 20 seconds or so to boot up, during which time the four right hand buttons on the encoder light up red.
+
+If the STREAM button is white after boot has completed, you can try pressing and holding it to start it flashing and very occasionally it turns to continuous red. But, ideally, rebooting the encoder will result in the STREAM button lighting up continuous in red.
+
+You may need to repeat this encoder reboot sequence five or more times before the STREAM button lights up continuously in red.
+
+Once the STREAM button is lit continuously in red, refresh the YouTube studio web page and see if the preview then displays the live stream. It takes 30-60 seconds or more to preview the stream, so please be patient.
+
 ## The video of a camera does not appear on the multiview display
 
 This may be because the camera has not been powered on. Use the camera controller to power all the cameras off and back on.
