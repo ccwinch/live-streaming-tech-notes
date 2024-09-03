@@ -16,6 +16,7 @@ Contents:
 * [Problem Solving](./problems.md) lists some problems we've encountered in the past with their symptoms and how to fix them.
 * [Scheduling Services](./scheduling.md) describes how to schedule streams on YouTube.
 * [Media Players](./mediaplayers.md) shows how to set the contents of a media player.
+* [Song Words](./songwords.md) describes how words from the AV computer are overlaid on the live stream.
 * [Tutorials](./tutorials.md) links to some basic tutorials on live streaming.
 
 
