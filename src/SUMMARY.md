@@ -9,4 +9,5 @@
 - [Problem Solving](./problems.md)
 - [Scheduling Services](./scheduling.md)
 - [Media Players](./mediaplayers.md)
+- [Song Words](./songwords.md)
 - [Tutorials](./tutorials.md)
