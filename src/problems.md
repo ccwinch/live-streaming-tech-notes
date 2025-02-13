@@ -143,3 +143,30 @@ There is also a Microsoft Word document on the AV PC which describes the display
 ## YouTube connection problems
 
 If the live stream fails or YouTube reports buffering problems for more than a second or two, there may be an issue with the internet connection. There's not much you can do about this, but please report it so we can look into it.
+
+## Framerate problems
+
+Sometimes the YouTube preview shows people moving around much faster than normal.
+This is due to an incorrect framerate being used.
+
+(There is another benign framerate issue when YouTube complains that
+the framerates of the primary and secondary streams are not the same - just ignore that.)
+
+One workaround is to power down the live streaming rack and then power it up again.
+
+Another (faster and more reliable) workaround is to use the ATEM software on the live streaming PC to change the video standard and then change it back again, as follows:
+
+1. Open up the ATEM software (see [PC Software](./software.md)).
+2. Click the gear icon to access the settings:
+[![](./images/framerate1.png)](./images/framerate1.png)
+
+3. Use the drop down menu to set the video standard temporarily to 1080p25:
+[![](./images/framerate2.png)](./images/framerate2.png)
+and click Set. The setting should now look like this:
+[![](./images/framerate3.png)](./images/framerate3.png)
+and the multiview monitor will be black.
+
+4. Now use the same drop down menu to set the video standard back
+to 1080p50 and click Set.
+5. Soon the framerate should be corrected and the YouTube preview
+should show people moving at the normal speed.
