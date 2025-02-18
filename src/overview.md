@@ -4,8 +4,6 @@ Here are some technical notes on the CCWinch live streaming setup. See the [offi
 
 See also the list of [known issues](https://github.com/ccwinch/live-streaming-tech-notes/issues).
 
-**These notes are a work in progress.**
-
 Contents:
 
 * [Hardware](./hardware.md) lists the various hardware devices and how they connect together.
