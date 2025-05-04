@@ -121,8 +121,12 @@ the ATEM switcher software on the live streaming PC. In the audio tab there is a
 ## Song words not outlined in black
 
 If the song words are no longer outlined in black, reload the ATEM settings (but not during a live stream in case this interrupts it) and save
-the startup state. A good set of ATEM settings is in the Documents folder of the live streaming PC, dated 31 March 2024. Reload them using the [ATEM software](software.md) and use the ATEM
-software to save the startup state.
+the startup state. A good set of ATEM settings is in the Documents folder of the live streaming PC. Reload them using the [ATEM software](software.md) and use the ATEM software to save the startup state.
+
+## Christ Church Winchester logo not visible
+
+If the logo does not show, reload the ATEM settings (but not during a live stream in case this interrupts it) and save
+the startup state. A good set of ATEM settings is in the Documents folder of the live streaming PC. Reload them using the [ATEM software](software.md) and use the ATEM software to save the startup state.
 
 ## Robotic sound when the live stream is displayed on screens in church
 
