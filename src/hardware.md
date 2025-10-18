@@ -1,6 +1,8 @@
 ## Hardware
 
-* Cameras - AW-HE40SWEJ
+* Camera 1 - Panasonic AW-UE40KEJ 4K PTZ
+  - [manual](https://pro-av.panasonic.net/manual/pdf/AW-UE50_UE40P.PJ.E.EJ.ED_full(DVQP2618YA)_E.pdf)
+* Cameras 2-4 - Panasonic AW-HE40SWEJ HD PTZ
   - [manual](https://pro-av.panasonic.net/manual/pdf/AW-HE40PE_Operations(SQW0456)_E.pdf)
 * Cables ([SDI](https://en.wikipedia.org/wiki/Serial_digital_interface), Ethernet)
 * Panasonic remote camera controller AW-RP50
@@ -21,30 +23,22 @@
 
 ### Schematic Diagram
 
+The following diagram pre-dates the ABCDE refurbishment in 2025 and is now only an approximation of the set up.
+
 [![](./images/schematic.png)](./images/schematic.png)
 (click image to view full size)
 
 Notes:
-* (Not shown) Audio input from the sound system feeds via [XLR connectors](https://en.wikipedia.org/wiki/XLR_connector) through the connection panel in the portable rack to the video switcher.
-
-### Camera 2 Alternative Positioning
-
-In some situations (e.g. weddings) it is useful to position camera 2 on the stage (e.g. facing the couple being married).
-
-To do this:
-* Get a long SDI and a long ethernet cable from the livestreaming box in the store room.
-* Using the ladder (often kept in the store room), plug these leads into the sockets on the column near the band. (Opposite the pillar where camera 3 plugs in.)
-* Put camera 2 on the stage and run the cables across the floor and onto the stage.
-* Be careful to use a cable trip protector and sand bags to avoid a trip hazard - see the photograph below.
-* At the back of the live streaming cabinet, unplug the "camera 2" SDI cable from the "input 2" socket and plug the "camera L" SDI cable into that socket. Then unplug the "camera 2" ethernet cable from the "3 cam R" socket and plug the "camera L" ethernet cable into that socket.
-* Afterwards, please be sure to reverse these steps so we are good for the usual Sunday setup.
-
-[![](./images/Camera2AlternativePosition.jpg)](./images/Camera2AlternativePosition.jpg)
+* (Not shown) Audio input from the sound system feeds via [XLR connectors](https://en.wikipedia.org/wiki/XLR_connector) to the video switcher.
 
 ### Blackmagic video assist 7" 12G HDR
 
-The "scope" that's in the live streaming desk drawer can be used as a high quality monitor or viewfinder, as a "scope" for setting colour and white balance etc., and even to record to SD card or external drive.
+The "scope" that's in the live streaming desk drawer can be used for setting the colour and white balance of cameras.
 
-It is sometimes a handy way of debugging problems. Simply connect an SDI cable from a SDI output (e.g. one of the spare outputs on the back of the rack) to the SDI input of the scope, plug in and connect the power adapter, and power on.
+Disconnect the SDI cable connected to the aux output of the live streaming Blackmagic ATEM. Connect another SDI cable from aux output of the live streaming  ATEM to the SDI input of the scope, plug in and connect the power adapter, and power on.
 
-It might even be handy for the person using the camera controller to get a better idea of the image (but we'd need to connect the preview to the scope to avoid adjusting live images). The one downside is that it needs a tripod to sit on which it doesn't currently have, although it's fairly easy to prop up.
+To set the cameras up you need to select the vector scope on the Blackmagic Video Assist, and then black balance all the cameras first (close all the iris’s down) and then go through each camera ensuring that the dot on the vector scope is dead centre.
+
+Then to white balance, put a white cloth on the stage and point all the cameras at that so nothing else is in shot (this is the only time it’s okay to use digital zoom!), and use the Auto White Balance (AWB) button on the camera controller. That should line up all the cameras and again, put the dot dead centre on the vector scope. If it doesn’t on some cameras that is where you’ll need to adjust the colour bias on each camera.
+
+When you are done, please reconnect the original cable to the aux output of the ATEM.
