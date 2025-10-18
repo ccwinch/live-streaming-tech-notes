@@ -37,11 +37,23 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc.js"></script>
     </head>
     <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
     <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
@@ -82,10 +94,13 @@
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -119,7 +134,7 @@
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
                     </div>
@@ -136,7 +151,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -170,11 +190,17 @@
 <li><a href="./scheduling.html">Scheduling Services</a> describes how to schedule streams on YouTube.</li>
 <li><a href="./mediaplayers.html">Media Players</a> shows how to set the contents of a media player.</li>
 <li><a href="./songwords.html">Song Words</a> describes how words from the AV computer are overlaid on the live stream.</li>
+<li><a href="./av-feed.html">AV feed</a> describes how to display the live stream on the screens in church.</li>
 <li><a href="./tutorials.html">Tutorials</a> links to some basic tutorials on live streaming.</li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h2 id="hardware"><a class="header" href="#hardware">Hardware</a></h2>
 <ul>
-<li>Cameras - AW-HE40SWEJ
+<li>Camera 1 - Panasonic AW-UE40KEJ 4K PTZ
+<ul>
+<li><a href="https://pro-av.panasonic.net/manual/pdf/AW-UE50_UE40P.PJ.E.EJ.ED_full(DVQP2618YA)_E.pdf">manual</a></li>
+</ul>
+</li>
+<li>Cameras 2-4 - Panasonic AW-HE40SWEJ HD PTZ
 <ul>
 <li><a href="https://pro-av.panasonic.net/manual/pdf/AW-HE40PE_Operations(SQW0456)_E.pdf">manual</a></li>
 </ul>
@@ -212,28 +238,19 @@
 </li>
 </ul>
 <h3 id="schematic-diagram"><a class="header" href="#schematic-diagram">Schematic Diagram</a></h3>
+<p>The following diagram pre-dates the ABCDE refurbishment in 2025 and is now only an approximation of the set up.</p>
 <p><a href="./images/schematic.png"><img src="./images/schematic.png" alt="" /></a>
 (click image to view full size)</p>
 <p>Notes:</p>
 <ul>
-<li>(Not shown) Audio input from the sound system feeds via <a href="https://en.wikipedia.org/wiki/XLR_connector">XLR connectors</a> through the connection panel in the portable rack to the video switcher.</li>
+<li>(Not shown) Audio input from the sound system feeds via <a href="https://en.wikipedia.org/wiki/XLR_connector">XLR connectors</a> to the video switcher.</li>
 </ul>
-<h3 id="camera-2-alternative-positioning"><a class="header" href="#camera-2-alternative-positioning">Camera 2 Alternative Positioning</a></h3>
-<p>In some situations (e.g. weddings) it is useful to position camera 2 on the stage (e.g. facing the couple being married).</p>
-<p>To do this:</p>
-<ul>
-<li>Get a long SDI and a long ethernet cable from the livestreaming box in the store room.</li>
-<li>Using the ladder (often kept in the store room), plug these leads into the sockets on the column near the band. (Opposite the pillar where camera 3 plugs in.)</li>
-<li>Put camera 2 on the stage and run the cables across the floor and onto the stage.</li>
-<li>Be careful to use a cable trip protector and sand bags to avoid a trip hazard - see the photograph below.</li>
-<li>At the back of the live streaming cabinet, unplug the "camera 2" SDI cable from the "input 2" socket and plug the "camera L" SDI cable into that socket. Then unplug the "camera 2" ethernet cable from the "3 cam R" socket and plug the "camera L" ethernet cable into that socket.</li>
-<li>Afterwards, please be sure to reverse these steps so we are good for the usual Sunday setup.</li>
-</ul>
-<p><a href="./images/Camera2AlternativePosition.jpg"><img src="./images/Camera2AlternativePosition.jpg" alt="" /></a></p>
 <h3 id="blackmagic-video-assist-7-12g-hdr"><a class="header" href="#blackmagic-video-assist-7-12g-hdr">Blackmagic video assist 7" 12G HDR</a></h3>
-<p>The "scope" that's in the live streaming desk drawer can be used as a high quality monitor or viewfinder, as a "scope" for setting colour and white balance etc., and even to record to SD card or external drive.</p>
-<p>It is sometimes a handy way of debugging problems. Simply connect an SDI cable from a SDI output (e.g. one of the spare outputs on the back of the rack) to the SDI input of the scope, plug in and connect the power adapter, and power on.</p>
-<p>It might even be handy for the person using the camera controller to get a better idea of the image (but we'd need to connect the preview to the scope to avoid adjusting live images). The one downside is that it needs a tripod to sit on which it doesn't currently have, although it's fairly easy to prop up.</p>
+<p>The "scope" that's in the live streaming desk drawer can be used for setting the colour and white balance of cameras.</p>
+<p>Disconnect the SDI cable connected to the aux output of the live streaming Blackmagic ATEM. Connect another SDI cable from aux output of the live streaming  ATEM to the SDI input of the scope, plug in and connect the power adapter, and power on.</p>
+<p>To set the cameras up you need to select the vector scope on the Blackmagic Video Assist, and then black balance all the cameras first (close all the iris’s down) and then go through each camera ensuring that the dot on the vector scope is dead centre.</p>
+<p>Then to white balance, put a white cloth on the stage and point all the cameras at that so nothing else is in shot (this is the only time it’s okay to use digital zoom!), and use the Auto White Balance (AWB) button on the camera controller. That should line up all the cameras and again, put the dot dead centre on the vector scope. If it doesn’t on some cameras that is where you’ll need to adjust the colour bias on each camera.</p>
+<p>When you are done, please reconnect the original cable to the aux output of the ATEM.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="pc-software"><a class="header" href="#pc-software">PC Software</a></h1>
 <p>The streaming PC desktop has various shortcuts for useful programs.</p>
 <p><a href="./images/Desktop.png"><img src="./images/Desktop.png" alt="" /></a></p>
@@ -550,6 +567,19 @@ The contents of this appears on the live streaming multiview monitor as "HDMI In
 When a song is displayed on EasyWorship, the words appear "thickened" and in white on a black background. The thickening is due to a black outline on the song words.</p>
 </li>
 </ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="av-feed"><a class="header" href="#av-feed">AV feed</a></h1>
+<p>The aux output of the live streaming Blackmagic ATEM is connected to the "spare" input of the AV Blackmagic ATEM.</p>
+<p>The aux output is set, by default, to "clean feed 1" which is the same as the live stream but without the Christ Church logo.
+So it includes song words if these are shown.</p>
+<p>The AV operator can choose to display one of the cameras directly on the screens in church, but this won't include song words.
+Also, if the AV operator chooses a camera that the live streaming operators then pan or zoom, the congregation will see this happening on the screens.
+The AV operator could coordinate with the live streaming operators for a smooth result.</p>
+<p>However, to include the song words overlaid on a camera output on the screens, the AV operator can choose the "spare" input.
+The live streaming operators are then free to choose which camera this displays.</p>
+<p>Note that the ATEM software on the live streaming PC can be used to change what is output by the aux output of the ATEM.
+The default is "clean feed 1" (see above), but it is possible to "pin" the aux output to one of the cameras.
+To do this use the "aux" drop-down menu at the top of the ATEM software application.
+This is handy, for example, for streaming a wide shot which wouldn't be suitable to display on the screens in church.</p>
 <div style="break-before: page; page-break-before: always;"></div><h2 id="video-tutorials"><a class="header" href="#video-tutorials">Video Tutorials</a></h2>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=mXTADKmZOnY">Live streaming for beginners</a> - a good place to start</li>
@@ -597,6 +627,7 @@ When a song is displayed on EasyWorship, the words appear "thickened" and in whi
             window.setTimeout(window.print, 100);
         });
         </script>
+
 
     </div>
     </body>

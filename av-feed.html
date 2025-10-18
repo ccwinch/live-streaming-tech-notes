@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Song Words - Christ Church Winchester: Live streaming tech notes</title>
+        <title>AV feed - Christ Church Winchester: Live streaming tech notes</title>
 
 
         <!-- Custom HTML head -->
@@ -175,33 +175,29 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="song-words"><a class="header" href="#song-words">Song Words</a></h1>
-<p>The following applies to text output from the AV computer including song words, liturgy, and scripture.</p>
-<p>There are two outputs from the AV desk that enable the ATEM to overlay song words on the live stream:</p>
-<ol>
-<li>
-<p>AV output: from EasyWorship running on the AV PC.
-There is a HDMI output of a graphics card in the AV PC which passes, (presumably) via a HDMI to SDI converter, to the live streaming rack.
-The content of this appears on the live streaming multiview monitor as "AV PC" at the bottom left.
-When a song is displayed on EasyWorship, the words appear here as white on a black background.</p>
-</li>
-<li>
-<p>Alpha channel: from EasyWorship running on the AV PC.
-There is a DiplayPort output of a graphics card in the AV PC which passes, (presumably) via a DisplayPort to HDMI converter, to the live streaming rack.
-The contents of this appears on the live streaming multiview monitor as "HDMI Input" at the bottom right.
-When a song is displayed on EasyWorship, the words appear "thickened" and in white on a black background. The thickening is due to a black outline on the song words.</p>
-</li>
-</ol>
+                        <h1 id="av-feed"><a class="header" href="#av-feed">AV feed</a></h1>
+<p>The aux output of the live streaming Blackmagic ATEM is connected to the "spare" input of the AV Blackmagic ATEM.</p>
+<p>The aux output is set, by default, to "clean feed 1" which is the same as the live stream but without the Christ Church logo.
+So it includes song words if these are shown.</p>
+<p>The AV operator can choose to display one of the cameras directly on the screens in church, but this won't include song words.
+Also, if the AV operator chooses a camera that the live streaming operators then pan or zoom, the congregation will see this happening on the screens.
+The AV operator could coordinate with the live streaming operators for a smooth result.</p>
+<p>However, to include the song words overlaid on a camera output on the screens, the AV operator can choose the "spare" input.
+The live streaming operators are then free to choose which camera this displays.</p>
+<p>Note that the ATEM software on the live streaming PC can be used to change what is output by the aux output of the ATEM.
+The default is "clean feed 1" (see above), but it is possible to "pin" the aux output to one of the cameras.
+To do this use the "aux" drop-down menu at the top of the ATEM software application.
+This is handy, for example, for streaming a wide shot which wouldn't be suitable to display on the screens in church.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="mediaplayers.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="songwords.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="av-feed.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="tutorials.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -211,11 +207,11 @@ When a song is displayed on EasyWorship, the words appear "thickened" and in whi
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="mediaplayers.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="songwords.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="av-feed.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="tutorials.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
