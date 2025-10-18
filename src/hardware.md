@@ -21,16 +21,6 @@
   - [Product description](https://www.blackmagicdesign.com/uk/products/blackmagicvideoassist)
   - [manual](https://documents.blackmagicdesign.com/UserManuals/BlackmagicVideoAssistManual.pdf)
 
-### Schematic Diagram
-
-The following diagram pre-dates the ABCDE refurbishment in 2025 and is now only an approximation of the set up.
-
-[![](./images/schematic.png)](./images/schematic.png)
-(click image to view full size)
-
-Notes:
-* (Not shown) Audio input from the sound system feeds via [XLR connectors](https://en.wikipedia.org/wiki/XLR_connector) to the video switcher.
-
 ### Blackmagic video assist 7" 12G HDR
 
 The "scope" that's in the live streaming desk drawer can be used for setting the colour and white balance of cameras.

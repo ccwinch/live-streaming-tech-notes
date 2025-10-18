@@ -18,15 +18,11 @@ Check the monitor power and display cables are securely plugged in at both ends.
 
 ## The camera controller is powered off ("no lights")
 
-Check the power cable hasn't come loose.
+Check the power cable hasn't come loose and that the switch on the back of the camera controller is in the "on" position.
 
 ## The streaming PC display is black
 
 Check the display power and display cables are securely plugged in at both ends.
-
-## The encoder is powered off ("no lights")
-
-The encoder (the topmost unit in the streaming rack) is powered by a lead inside the back of the streaming rack which may become disconnected. Ensure the mains lead is plugged in at both ends.
 
 ## No stream appears on the YouTube preview
 
@@ -140,7 +136,9 @@ For details, see [this issue](https://github.com/ccwinch/live-streaming-tech-not
 
 ## Problems with the song words or AV input ("camera 5")
 
-The AV and live streaming desks may have been powered up in the wrong order. Power down the AV and live streaming desks and then power up the live streaming desk and PC before powering up the AV desk and PC. This ensures that the graphics card in the AV PC detects the correct inputs.
+The AV and live streaming desks may have been powered up in the wrong order.
+This should be impossible following the ABCDE refurbishment: the equipment is powered up in the correct sequence automatically.
+This ensures that the graphics card in the AV PC detects the correct inputs.
 
 There is also a Microsoft Word document on the AV PC which describes the display arrangement ("3, 4, 1|2", where displays 1 and 2 are mirrored) and EasyWorship settings.
 
@@ -156,9 +154,11 @@ This is due to an incorrect framerate being used.
 (There is another benign framerate issue when YouTube complains that
 the framerates of the primary and secondary streams are not the same - just ignore that.)
 
-One workaround is to power down the live streaming rack and then power it up again.
+One workaround is to power down the whole tech desk and then power it up again.
+This takes several minutes and is usually too disruptive to the sound and AV teams.
+It may be possible to work around this by power-cycling just the live streaming Blackmagic ATEM and/or the encoder (the unit at the top of the live streaming rack).
 
-Another (faster and more reliable) workaround is to use the ATEM software on the live streaming PC to change the video standard and then change it back again, as follows:
+Another, more reliable, workaround is to use the ATEM software on the live streaming PC to change the video standard and then change it back again, as follows:
 
 1. Open up the ATEM software (see [PC Software](./software.md)).
 2. Click the gear icon to access the settings:
