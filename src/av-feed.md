@@ -1,4 +1,4 @@
-# AV feed
+# AV Feed
 
 The aux output of the live streaming Blackmagic ATEM is connected to the "Live Stream" input of the AV Blackmagic ATEM.
 

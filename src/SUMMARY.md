@@ -10,5 +10,5 @@
 - [Scheduling Services](./scheduling.md)
 - [Media Players](./mediaplayers.md)
 - [Song Words](./songwords.md)
-- [AV feed](./av-feed.md)
+- [AV Feed](./av-feed.md)
 - [Tutorials](./tutorials.md)

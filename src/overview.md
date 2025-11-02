@@ -15,7 +15,7 @@ Contents:
 * [Scheduling Services](./scheduling.md) describes how to schedule streams on YouTube.
 * [Media Players](./mediaplayers.md) shows how to set the contents of a media player.
 * [Song Words](./songwords.md) describes how words from the AV computer are overlaid on the live stream.
-* [AV feed](./av-feed.md) describes how to display the live stream on the screens in church.
+* [AV Feed](./av-feed.md) describes how to display the live stream on the screens in church.
 * [Tutorials](./tutorials.md) links to some basic tutorials on live streaming.
 
 
