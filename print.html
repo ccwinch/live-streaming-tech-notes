@@ -13,21 +13,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="icon" href="favicon.svg">
-        <link rel="shortcut icon" href="favicon.png">
-        <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/chrome.css">
-        <link rel="stylesheet" href="css/print.css" media="print">
+        <link rel="icon" href="favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="favicon-8114d1fc.png">
+        <link rel="stylesheet" href="css/variables-8adf115d.css">
+        <link rel="stylesheet" href="css/general-2459343d.css">
+        <link rel="stylesheet" href="css/chrome-ae938929.css">
+        <link rel="stylesheet" href="css/print-9e4910d8.css" media="print">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="fonts/fonts-9644e21d.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" id="highlight-css" href="highlight.css">
-        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
-        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+        <link rel="stylesheet" id="mdbook-highlight-css" href="highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
 
         <!-- Custom theme stylesheets -->
 
@@ -37,10 +36,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex.js";
+            window.path_to_searchindex_js = "searchindex-2558672e.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc.js"></script>
+        <script src="toc-e5175835.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -54,7 +53,7 @@
             </div>
         </div>
     </div>
-    <div id="body-container">
+    <div id="mdbook-body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
@@ -83,12 +82,12 @@
             html.classList.add("js");
         </script>
 
-        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
             let sidebar = null;
-            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
@@ -103,39 +102,39 @@
             }
         </script>
 
-        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
             <!-- populated by js -->
             <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
             <noscript>
                 <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
             </noscript>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
             </div>
         </nav>
 
-        <div id="page-wrapper" class="page-wrapper">
+        <div id="mdbook-page-wrapper" class="page-wrapper">
 
             <div class="page">
-                <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
-                            <i class="fa fa-bars"></i>
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
                         </label>
-                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
-                            <i class="fa fa-paint-brush"></i>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
                         </button>
-                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
                         </ul>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
-                            <i class="fa fa-search"></i>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
                         </button>
                     </div>
 
@@ -143,57 +142,59 @@
 
                     <div class="right-buttons">
                         <a href="print.html" title="Print this book" aria-label="Print this book">
-                            <i id="print-button" class="fa fa-print"></i>
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
                         </a>
 
                     </div>
                 </div>
 
-                <div id="search-wrapper" class="hidden">
-                    <form id="searchbar-outer" class="searchbar-outer">
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
                         <div class="search-wrapper">
-                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
                             <div class="spinner-wrapper">
-                                <i class="fa fa-spinner fa-spin"></i>
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
                             </div>
                         </div>
                     </form>
-                    <div id="searchresults-outer" class="searchresults-outer hidden">
-                        <div id="searchresults-header" class="searchresults-header"></div>
-                        <ul id="searchresults">
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
                         </ul>
                     </div>
                 </div>
 
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
                 <script>
-                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
-                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
-                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
 
-                <div id="content" class="content">
+                <div id="mdbook-content" class="content">
                     <main>
                         <h1 id="live-streaming-tech-notes"><a class="header" href="#live-streaming-tech-notes">Live Streaming Tech Notes</a></h1>
 <p>Here are some technical notes on the CCWinch live streaming setup. See the <a href="https://www.ccwinch.org.uk/streaming">official site</a> for more operational information.</p>
 <p>See also the list of <a href="https://github.com/ccwinch/live-streaming-tech-notes/issues">known issues</a>.</p>
 <p>Contents:</p>
 <ul>
-<li><a href="./hardware.html">Hardware</a> lists the various hardware devices and how they connect together.</li>
-<li><a href="./software.html">PC Software</a> lists the useful programs on the streaming PC.</li>
-<li><a href="./operation.html">Operation</a> provides some tips for streaming a service.</li>
-<li><a href="./audio.html">Audio</a> describes how to mute the sound or change the volume.</li>
-<li><a href="./settings.html">Settings</a> captures various settings for posterity and problem solving.</li>
-<li><a href="./problems.html">Problem Solving</a> lists some problems we've encountered in the past with their symptoms and how to fix them.</li>
-<li><a href="./scheduling.html">Scheduling Services</a> describes how to schedule streams on YouTube.</li>
-<li><a href="./mediaplayers.html">Media Players</a> shows how to set the contents of a media player.</li>
-<li><a href="./songwords.html">Song Words</a> describes how words from the AV computer are overlaid on the live stream.</li>
-<li><a href="./av-feed.html">AV Feed</a> describes how to display the live stream on the screens in church.</li>
-<li><a href="./tutorials.html">Tutorials</a> links to some basic tutorials on live streaming.</li>
+<li><a href="#hardware-1">Hardware</a> lists the various hardware devices and how they connect together.</li>
+<li><a href="#pc-software">PC Software</a> lists the useful programs on the streaming PC.</li>
+<li><a href="#operation">Operation</a> provides some tips for streaming a service.</li>
+<li><a href="#audio">Audio</a> describes how to mute the sound or change the volume.</li>
+<li><a href="#settings">Settings</a> captures various settings for posterity and problem solving.</li>
+<li><a href="#problem-solving-1">Problem Solving</a> lists some problems we’ve encountered in the past with their symptoms and how to fix them.</li>
+<li><a href="#scheduling-services-1">Scheduling Services</a> describes how to schedule streams on YouTube.</li>
+<li><a href="#media-players-1">Media Players</a> shows how to set the contents of a media player.</li>
+<li><a href="#song-words">Song Words</a> describes how words from the AV computer are overlaid on the live stream.</li>
+<li><a href="#av-feed">AV Feed</a> describes how to display the live stream on the screens in church.</li>
+<li><a href="#tutorials">Tutorials</a> links to some basic tutorials on live streaming.</li>
 </ul>
-<div style="break-before: page; page-break-before: always;"></div><h2 id="hardware"><a class="header" href="#hardware">Hardware</a></h2>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="hardware-1"><a href="#hardware-1" class="header">Hardware</a></h1>
+<h2 id="hardware"><a class="header" href="#hardware">Hardware</a></h2>
 <ul>
 <li>Camera 1 - Panasonic AW-UE40KEJ 4K PTZ
 <ul>
@@ -230,27 +231,28 @@
 <li><a href="https://www.tp-link.com/uk/business-networking/poe-switch/tl-sl1218mp/">TL-SL1218MP product description</a></li>
 </ul>
 </li>
-<li>Blackmagic video assist 7" 12G HDR (combined scope/monitor/recorder/viewfinder)
+<li>Blackmagic video assist 7“ 12G HDR (combined scope/monitor/recorder/viewfinder)
 <ul>
 <li><a href="https://www.blackmagicdesign.com/uk/products/blackmagicvideoassist">Product description</a></li>
 <li><a href="https://documents.blackmagicdesign.com/UserManuals/BlackmagicVideoAssistManual.pdf">manual</a></li>
 </ul>
 </li>
 </ul>
-<h3 id="blackmagic-video-assist-7-12g-hdr"><a class="header" href="#blackmagic-video-assist-7-12g-hdr">Blackmagic video assist 7" 12G HDR</a></h3>
-<p>The "scope" that's in the live streaming desk drawer can be used for setting the colour and white balance of cameras.</p>
+<h3 id="blackmagic-video-assist-7-12g-hdr"><a class="header" href="#blackmagic-video-assist-7-12g-hdr">Blackmagic video assist 7“ 12G HDR</a></h3>
+<p>The “scope” that’s in the live streaming desk drawer can be used for setting the colour and white balance of cameras.</p>
 <p>Disconnect the SDI cable connected to the aux output of the live streaming Blackmagic ATEM. Connect another SDI cable from aux output of the live streaming  ATEM to the SDI input of the scope, plug in and connect the power adapter, and power on.</p>
 <p>To set the cameras up you need to select the vector scope on the Blackmagic Video Assist, and then black balance all the cameras first (close all the iris’s down) and then go through each camera ensuring that the dot on the vector scope is dead centre.</p>
 <p>Then to white balance, put a white cloth on the stage and point all the cameras at that so nothing else is in shot (this is the only time it’s okay to use digital zoom!), and use the Auto White Balance (AWB) button on the camera controller. That should line up all the cameras and again, put the dot dead centre on the vector scope. If it doesn’t on some cameras that is where you’ll need to adjust the colour bias on each camera.</p>
 <p>When you are done, please reconnect the original cable to the aux output of the ATEM.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="pc-software"><a class="header" href="#pc-software">PC Software</a></h1>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="pc-software"><a class="header" href="#pc-software">PC Software</a></h1>
 <p>The streaming PC desktop has various shortcuts for useful programs.</p>
-<p><a href="./images/Desktop.png"><img src="./images/Desktop.png" alt="" /></a></p>
+<p><a href="images/Desktop.png"><img src="images/Desktop.png" alt=""></a></p>
 <ul>
 <li>Datavideo NVS-34 streaming encoder software
 <ul>
-<li>Log in using "admin" and the password in the shortcut</li>
-<li>See <a href="./settings.html">Settings</a> for its normal settings</li>
+<li>Log in using “admin” and the password in the shortcut</li>
+<li>See <a href="#settings">Settings</a> for its normal settings</li>
 </ul>
 </li>
 <li>Blackmagic ATEM TV Studio Pro 4K (video switcher) software</li>
@@ -261,55 +263,57 @@
 <li>Camera 4 - direct access to camera 4 over TCP/IP</li>
 <li>RP50Tool - software for the Panasonic remote camera controller AW-RP50
 <ul>
-<li>See <a href="./settings.html">Settings</a> for its normal settings</li>
+<li>See <a href="#settings">Settings</a> for its normal settings</li>
 </ul>
 </li>
 </ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="operation"><a class="header" href="#operation">Operation</a></h1>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="operation"><a class="header" href="#operation">Operation</a></h1>
 <h2 id="set-up-and-set-down"><a class="header" href="#set-up-and-set-down">Set Up and Set Down</a></h2>
 <p>See the <a href="https://www.ccwinch.org.uk/streaming">official site</a> for set up and set down instructions.</p>
 <h2 id="during-the-service"><a class="header" href="#during-the-service">During the Service</a></h2>
 <p>Usually one person operates the switcher and another operates the camera controller.</p>
 <h3 id="video-switching"><a class="header" href="#video-switching">Video switching</a></h3>
-<p>Use the ATEM video switcher to choose which camera to stream. Set the preview to the next camera, then use the "cut" button to make it live (or the "auto" button to cross-fade, but use this sparingly - see below).</p>
+<p>Use the ATEM video switcher to choose which camera to stream. Set the preview to the next camera, then use the “cut” button to make it live (or the “auto” button to cross-fade, but use this sparingly - see below).</p>
 <p>Tips:</p>
 <ul>
-<li>To overlay words from the AV team, press the switcher "song words" button.</li>
-<li>Most of the time, cut between the preview and programme (using the "cut" button on the switcher). During "unstructured" periods of a service (e.g. when the service leader suggests a period of reflection while the band plays quietly), cross-fading (using the "auto" button on the switcher) can work ok. Here's an <a href="https://youtu.be/9lR070t_nFA?list=PLz-8ZbAJhahjvkPtduhnB4TzhVcj5ZtfC&amp;t=4022">example</a> of an initial cut followed by cross-fading.</li>
+<li>To overlay words from the AV team, press the switcher “song words” button.</li>
+<li>Most of the time, cut between the preview and programme (using the “cut” button on the switcher). During “unstructured” periods of a service (e.g. when the service leader suggests a period of reflection while the band plays quietly), cross-fading (using the “auto” button on the switcher) can work ok. Here’s an <a href="https://youtu.be/9lR070t_nFA?list=PLz-8ZbAJhahjvkPtduhnB4TzhVcj5ZtfC&amp;t=4022">example</a> of an initial cut followed by cross-fading.</li>
 <li>During worship, cut relatively often when the tempo of the music is fast and less often when the tempo is slow.</li>
 <li>Avoid cutting between cameras showing people from the same angle and with the same size. Better to cut via another shot which is closer, further out, or from another angle.</li>
-<li>Try to avoid "flipping" the direction in which people are facing, e.g. by cutting between two cameras pointing in opposing directions.</li>
+<li>Try to avoid “flipping” the direction in which people are facing, e.g. by cutting between two cameras pointing in opposing directions.</li>
 <li>During speech, try to cut at the beginning of a phrase. During worship, try to cut at the end of a verse, or at least at the end of a line of a song.</li>
-<li>Try to anticipate what's going to happen next. For example, if the service leader is about to hand over to the band, cut via a shot which includes them both.</li>
-<li>If you think someone is going to take a little while to get set up, e.g. someone leading prayers may need to pick up a microphone or remove a face mask, then cutting just before this happens makes the viewers more forgiving of the delay. The cut effectively gives 5-10 seconds of extra attention. Here's an <a href="https://youtu.be/9lR070t_nFA?list=PLz-8ZbAJhahjvkPtduhnB4TzhVcj5ZtfC&amp;t=2143">example</a>.</li>
-<li>When videos are played, don't forget to turn the Christ Church logo off. Also, start with a wide shot of the church which includes the screens and cross-fade to the video as it starts (here's an <a href="https://youtu.be/9lR070t_nFA?list=PLz-8ZbAJhahjvkPtduhnB4TzhVcj5ZtfC&amp;t=1556">example</a>). At the end of the video, either cross-fade back to the wide shot or cut if you think it seems more appropriate.</li>
-<li>When you have two cameras next to each other, you can cut back and forth between a head and shoulders shot of a speaker and a shot of their full height. Since the angle doesn't change, this is less distracting than cutting from side to side. Here's an <a href="https://www.youtube.com/watch?v=9lR070t_nFA&amp;list=PLz-8ZbAJhahjvkPtduhnB4TzhVcj5ZtfC&amp;t=1916s">example</a>.</li>
-<li>If you aren't sure what a cut will look like, try it out on the preview pane of the multiview monitor by switching the preview between the cameras you are considering cutting between.</li>
+<li>Try to anticipate what’s going to happen next. For example, if the service leader is about to hand over to the band, cut via a shot which includes them both.</li>
+<li>If you think someone is going to take a little while to get set up, e.g. someone leading prayers may need to pick up a microphone or remove a face mask, then cutting just before this happens makes the viewers more forgiving of the delay. The cut effectively gives 5-10 seconds of extra attention. Here’s an <a href="https://youtu.be/9lR070t_nFA?list=PLz-8ZbAJhahjvkPtduhnB4TzhVcj5ZtfC&amp;t=2143">example</a>.</li>
+<li>When videos are played, don’t forget to turn the Christ Church logo off. Also, start with a wide shot of the church which includes the screens and cross-fade to the video as it starts (here’s an <a href="https://youtu.be/9lR070t_nFA?list=PLz-8ZbAJhahjvkPtduhnB4TzhVcj5ZtfC&amp;t=1556">example</a>). At the end of the video, either cross-fade back to the wide shot or cut if you think it seems more appropriate.</li>
+<li>When you have two cameras next to each other, you can cut back and forth between a head and shoulders shot of a speaker and a shot of their full height. Since the angle doesn’t change, this is less distracting than cutting from side to side. Here’s an <a href="https://www.youtube.com/watch?v=9lR070t_nFA&amp;list=PLz-8ZbAJhahjvkPtduhnB4TzhVcj5ZtfC&amp;t=1916s">example</a>.</li>
+<li>If you aren’t sure what a cut will look like, try it out on the preview pane of the multiview monitor by switching the preview between the cameras you are considering cutting between.</li>
 <li>Try to turn off the song words as soon as they are no longer needed. It may be worth having a word with the person on the AV desk before the service starts and asking them to delay a couple of seconds after a song finishes before putting the Christ Church Winchester logo back on the screen as this has a bad appearance on the live stream.</li>
-<li>To display one of the slides, such as the words for use while people are taking communion, select media player 1 using either Shift key and "MP 1".</li>
-<li>When the live stream is being displayed on screens in church, you can use the ATEM switcher software "Auxiliary 1" menu to control what is displayed on the screens. This is usually "clean feed 1" (the live stream programme minus any downstream key, such as the Christ Church logo). But you could set it to a tight shot of the preacher, for example, so that you can cut to a wide shot for the online audience without affecting what appears on the screens in church. Remember to set Auxiliary 1 back to "clean feed 1" afterwards.</li>
+<li>To display one of the slides, such as the words for use while people are taking communion, select media player 1 using either Shift key and “MP 1”.</li>
+<li>When the live stream is being displayed on screens in church, you can use the ATEM switcher software “Auxiliary 1” menu to control what is displayed on the screens. This is usually “clean feed 1” (the live stream programme minus any downstream key, such as the Christ Church logo). But you could set it to a tight shot of the preacher, for example, so that you can cut to a wide shot for the online audience without affecting what appears on the screens in church. Remember to set Auxiliary 1 back to “clean feed 1” afterwards.</li>
 </ul>
 <h3 id="camera-control"><a class="header" href="#camera-control">Camera Control</a></h3>
 <p>Use the remote camera controller to operate the remote PTZ cameras.</p>
 <p>Tips:</p>
 <ul>
-<li>Choose a preset or manually zoom/pan each camera unless it is "live" (being displayed on the "programme" pane of the multiview monitor).</li>
-<li>Keep one camera on a wide "safety shot" so the switcher operator can cut to this if necessary, e.g. if the preacher starts moving around suddenly during a sermon. Camera 4 is often a good fallback for a wide shot as its quality isn't the best. Here's an <a href="https://youtu.be/9lR070t_nFA?list=PLz-8ZbAJhahjvkPtduhnB4TzhVcj5ZtfC&amp;t=2602">example</a> where the preacher caught us off-guard, but we recovered using camera 4.</li>
-<li>After the countdown, start with a wide <a href="https://www.studiobinder.com/blog/what-is-an-establishing-shot-definition-examples/">"establishing shot"</a> to set the scene (as well as the tone/mood). Here's an <a href="https://youtu.be/9lR070t_nFA?list=PLz-8ZbAJhahjvkPtduhnB4TzhVcj5ZtfC&amp;t=280">example</a>.</li>
-<li>During worship, sometimes a close shot of one or two people in the band (here's an <a href="https://youtu.be/9lR070t_nFA?list=PLz-8ZbAJhahjvkPtduhnB4TzhVcj5ZtfC&amp;t=4702">example</a>) or of an instrumentalist's hands (an <a href="https://youtu.be/9lR070t_nFA?list=PLz-8ZbAJhahjvkPtduhnB4TzhVcj5ZtfC&amp;t=4118">example</a>) can add variety and interest. This works particularly well if the switcher operator is familiar with the song and can anticipate when instrumental sections are coming up.</li>
+<li>Choose a preset or manually zoom/pan each camera unless it is “live” (being displayed on the “programme” pane of the multiview monitor).</li>
+<li>Keep one camera on a wide “safety shot” so the switcher operator can cut to this if necessary, e.g. if the preacher starts moving around suddenly during a sermon. Camera 4 is often a good fallback for a wide shot as its quality isn’t the best. Here’s an <a href="https://youtu.be/9lR070t_nFA?list=PLz-8ZbAJhahjvkPtduhnB4TzhVcj5ZtfC&amp;t=2602">example</a> where the preacher caught us off-guard, but we recovered using camera 4.</li>
+<li>After the countdown, start with a wide <a href="https://www.studiobinder.com/blog/what-is-an-establishing-shot-definition-examples/">“establishing shot”</a> to set the scene (as well as the tone/mood). Here’s an <a href="https://youtu.be/9lR070t_nFA?list=PLz-8ZbAJhahjvkPtduhnB4TzhVcj5ZtfC&amp;t=280">example</a>.</li>
+<li>During worship, sometimes a close shot of one or two people in the band (here’s an <a href="https://youtu.be/9lR070t_nFA?list=PLz-8ZbAJhahjvkPtduhnB4TzhVcj5ZtfC&amp;t=4702">example</a>) or of an instrumentalist’s hands (an <a href="https://youtu.be/9lR070t_nFA?list=PLz-8ZbAJhahjvkPtduhnB4TzhVcj5ZtfC&amp;t=4118">example</a>) can add variety and interest. This works particularly well if the switcher operator is familiar with the song and can anticipate when instrumental sections are coming up.</li>
 </ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="audio"><a class="header" href="#audio">Audio</a></h1>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="audio"><a class="header" href="#audio">Audio</a></h1>
 <p>The audio on the live stream is largely determined by the input from the sound desk (or the AV desk when a video is being played), how the vocalists in the band use their microphones, and how the congregation sings.
-But there are a couple of things you can control, using the audio mixer in the ATEM software (see <a href="./software">PC Software</a>).</p>
+But there are a couple of things you can control, using the audio mixer in the ATEM software (see <a href="software">PC Software</a>).</p>
 <p>You can also get a rough idea of the volume by looking at the programme on the multiview monitor. The volume level shows on the left and should occasionally reach -5 dB.</p>
-<p>If you need to hear the audio side of the live stream, use the scope (described in see <a href="./hardware">Hardware</a>):</p>
-<p><img src="https://github.com/user-attachments/assets/470b4bbb-938a-45cf-a07c-1bd01d9e36b6" alt="headphones" /><img src="https://github.com/user-attachments/assets/5d1a1d1e-c192-41cb-9575-ec64f0e544f5" alt="before" /></p>
+<p>If you need to hear the audio side of the live stream, use the scope (described in see <a href="hardware">Hardware</a>):</p>
+<p><img src="https://github.com/user-attachments/assets/470b4bbb-938a-45cf-a07c-1bd01d9e36b6" alt="headphones"><img src="https://github.com/user-attachments/assets/5d1a1d1e-c192-41cb-9575-ec64f0e544f5" alt="before"></p>
 <ol>
 <li>
-<p>Plug the SDI cable attached to an ATEM output into the SDI input socket of the scope.<img src="https://github.com/user-attachments/assets/f7f151e0-2a34-4c07-ae83-e7929f228441" alt="sdi" /></p>
+<p>Plug the SDI cable attached to an ATEM output into the SDI input socket of the scope.<img src="https://github.com/user-attachments/assets/f7f151e0-2a34-4c07-ae83-e7929f228441" alt="sdi"></p>
 </li>
 <li>
-<p>Screw the scope power connector into the scope.<img src="https://github.com/user-attachments/assets/46b5ddbc-8910-4648-b43a-2bf0021740ab" alt="power-and-headphones" /></p>
+<p>Screw the scope power connector into the scope.<img src="https://github.com/user-attachments/assets/46b5ddbc-8910-4648-b43a-2bf0021740ab" alt="power-and-headphones"></p>
 </li>
 <li>
 <p>Plug the headphones into the headphone socket of the scope.</p>
@@ -318,20 +322,26 @@ But there are a couple of things you can control, using the audio mixer in the A
 <p>Turn on the scope by pressing the small power button on the side.</p>
 </li>
 </ol>
-<p>(You could also plug the headphones into the PC, unmute the audio on the PC, and listen to the YouTube stream on Chrome. The big downside of this approach is that there is a considerable lag between what's happening in church and what appears on YouTube.)</p>
+<p>(You could also plug the headphones into the PC, unmute the audio on the PC, and listen to the YouTube stream on Chrome. The big downside of this approach is that there is a considerable lag between what’s happening in church and what appears on YouTube.)</p>
 <p>Keep an eye on the chat sections of the Church Online Platform for comments about the sound quality from the host or the online congregation.</p>
 <h2 id="muting"><a class="header" href="#muting">Muting</a></h2>
-<p>Sometimes it's necessary to mute the sound. For instance, if the service leader asks people to talk to their neighbour, the sound should be muted to avoid picking up individual conversations (this has happened in the past - a particular risk for anyone near a microphone). Also, during the distribution of communion, it is worth muting the sound until the worship band starts playing.</p>
-<p>To mute the sound, use the audio tab (shown below) of the ATEM switcher software on the live streaming PC. There is an XLR audio input which can be muted by clicking "on". Click it again to unmute.</p>
-<p><a href="./images/ATEMAudio.png"><img src="./images/ATEMAudio.png" alt="" /></a></p>
+<p>Sometimes it’s necessary to mute the sound. For instance, if the service leader asks people to talk to their neighbour, the sound should be muted to avoid picking up individual conversations (this has happened in the past - a particular risk for anyone near a microphone). Also, during the distribution of communion, it is worth muting the sound until the worship band starts playing.</p>
+<p>To mute the sound, use the audio tab (shown below) of the ATEM switcher software on the live streaming PC. There is an XLR audio input which can be muted by clicking “on”. Click it again to unmute.</p>
+<p><a href="images/ATEMAudio.png"><img src="images/ATEMAudio.png" alt=""></a></p>
 <h2 id="volume"><a class="header" href="#volume">Volume</a></h2>
 <p>The volume is controlled by the level on the XLR audio input and the Master volume control, both on the udio tab (shown above) of the ATEM switcher software on the live streaming PC.</p>
 <p>To increase the volume, move the XLR and Master sliders up, keeping an eye on the volume level on the multiview monitor.</p>
 <p>To decrease the volume, move the XLR and Master sliders down.</p>
 <p>Initially, both sliders are at about -0.6 dB (this figure is shown <strong>below</strong> the slider - the number above is the maximum reached since power on or the number being clicked).</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="settings"><a class="header" href="#settings">Settings</a></h1>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="settings"><a class="header" href="#settings">Settings</a></h1>
 <h2 id="network-ip-addresses"><a class="header" href="#network-ip-addresses">Network IP addresses</a></h2>
-<div class="table-wrapper"><table><thead><tr><th>Device</th><th>IP address</th></tr></thead><tbody>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Device</th><th>IP address</th></tr>
+</thead>
+<tbody>
 <tr><td>Datavideo encoder</td><td>192.168.0.180</td></tr>
 <tr><td>Camera 1</td><td>192.168.0.181</td></tr>
 <tr><td>Camera 2</td><td>192.168.0.182</td></tr>
@@ -339,119 +349,110 @@ But there are a couple of things you can control, using the audio mixer in the A
 <tr><td>Camera 4</td><td>192.168.0.184</td></tr>
 <tr><td>Panasonic Camera Controller</td><td>192.168.0.188</td></tr>
 <tr><td>Blackmagic ATEM</td><td>192.168.0.189</td></tr>
-</tbody></table>
+</tbody>
+</table>
 </div>
 <h2 id="panasonic-remote-camera-controller-aw-rp50"><a class="header" href="#panasonic-remote-camera-controller-aw-rp50">Panasonic remote camera controller AW-RP50</a></h2>
-<p>Launch the RP50Tool program (see <a href="./software.html">Software</a>) and set the RP1 IP address to 192.168.0.188<sup class="footnote-reference" id="fr-ccip-1"><a href="#footnote-ccip">1</a></sup> on the IP Address tab and click the "Set" button. See the image below.</p>
-<p><a href="./images/RP50IPaddress.png"><img src="./images/RP50IPaddress.png" alt="" /></a></p>
-<p>Then go to the Setting tab and click the "Refresh" button. The IP addresses of the cameras should be as in the screenshot below. If necessary, update the settings and click the "SET" button.</p>
-<p><a href="./images/RP50setting.png"><img src="./images/RP50setting.png" alt="" /></a>
+<p>Launch the RP50Tool program (see <a href="#pc-software">Software</a>) and set the RP1 IP address to 192.168.0.188<sup class="footnote-reference" id="fr-ccip-1"><a href="#footnote-ccip">1</a></sup> on the IP Address tab and click the “Set” button. See the image below.</p>
+<p><a href="images/RP50IPaddress.png"><img src="images/RP50IPaddress.png" alt=""></a></p>
+<p>Then go to the Setting tab and click the “Refresh” button. The IP addresses of the cameras should be as in the screenshot below. If necessary, update the settings and click the “SET” button.</p>
+<p><a href="images/RP50setting.png"><img src="images/RP50setting.png" alt=""></a>
 (click image to view full size)</p>
 <h2 id="datavideo-nvs-34-streaming-encoder"><a class="header" href="#datavideo-nvs-34-streaming-encoder">Datavideo NVS-34 streaming encoder</a></h2>
 <p>Source tab:</p>
-<p><a href="./images/NVS34Source.png"><img src="./images/NVS34Source.png" alt="" /></a>
+<p><a href="images/NVS34Source.png"><img src="images/NVS34Source.png" alt=""></a>
 (click image to view full size)</p>
 <p>Operation mode tab:</p>
-<p>Note: the RTMP URL and Stream Name correspond to the YouTube stream's Stream URL and Stream key, respectively.</p>
-<p><a href="./images/NVS34Operationtop.png"><img src="./images/NVS34Operationtop.png" alt="" /></a>
+<p>Note: the RTMP URL and Stream Name correspond to the YouTube stream’s Stream URL and Stream key, respectively.</p>
+<p><a href="images/NVS34Operationtop.png"><img src="images/NVS34Operationtop.png" alt=""></a>
 (click image to view full size)</p>
-<p><a href="./images/NVS34Operationbottom.png"><img src="./images/NVS34Operationbottom.png" alt="" /></a>
+<p><a href="images/NVS34Operationbottom.png"><img src="images/NVS34Operationbottom.png" alt=""></a>
 (click image to view full size)</p>
 <p>CG tab:</p>
-<p><a href="./images/NVS34CG.png"><img src="./images/NVS34CG.png" alt="" /></a>
+<p><a href="images/NVS34CG.png"><img src="images/NVS34CG.png" alt=""></a>
 (click image to view full size)</p>
 <p>System tab:</p>
-<p><a href="./images/NVS34System.png"><img src="./images/NVS34System.png" alt="" /></a>
+<p><a href="images/NVS34System.png"><img src="images/NVS34System.png" alt=""></a>
 (click image to view full size)</p>
 <hr>
-<ol class="footnote-definition"><li id="footnote-ccip">
-<p>If the IP address of the camera controller has changed, you'll need to use that IP address instead. <a href="#fr-ccip-1">↩</a></p>
+<ol class="footnote-definition">
+<li id="footnote-ccip">
+<p>If the IP address of the camera controller has changed, you’ll need to use that IP address instead. <a href="#fr-ccip-1">↩</a></p>
 </li>
-</ol><div style="break-before: page; page-break-before: always;"></div><h2 id="problem-solving"><a class="header" href="#problem-solving">Problem Solving</a></h2>
-<p>In general, try to narrow down and eventually isolate the cause of the problem. If there is a problem with one or two cameras and you can't fix it before the service starts, you may be able to make do with the remaining cameras.</p>
-<p>Remember the all-important line from "The IT Crowd" TV series: "Have you tried turning it off and back on again?".</p>
-<p>If you get stuck, try asking on the "Streaming" Slack channel or see if there's someone around in church who can help.</p>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="problem-solving-1"><a href="#problem-solving-1" class="header">Problem Solving</a></h1>
+<h2 id="problem-solving"><a class="header" href="#problem-solving">Problem Solving</a></h2>
+<p>In general, try to narrow down and eventually isolate the cause of the problem. If there is a problem with one or two cameras and you can’t fix it before the service starts, you may be able to make do with the remaining cameras.</p>
+<p>Remember the all-important line from “The IT Crowd” TV series: “Have you tried turning it off and back on again?”.</p>
+<p>If you get stuck, try asking on the “Streaming” Slack channel or see if there’s someone around in church who can help.</p>
 <p>The following problems are organised by problem symptoms, each with possible explanations and fixes. If you find a problem not listed here, please tell others about it so it can be added.</p>
-<h2 id="atem-switcher-is-powered-off-no-lights"><a class="header" href="#atem-switcher-is-powered-off-no-lights">ATEM switcher is powered off ("no lights")</a></h2>
-<p>This is often caused by the power cable coming loose when the switcher is slid out of the rack for operation. Reach over the back of the switcher and plug the power cable back in on the right hand side.</p>
+<h2 id="atem-switcher-is-powered-off-no-lights"><a class="header" href="#atem-switcher-is-powered-off-no-lights">ATEM switcher is powered off (“no lights”)</a></h2>
+<p>This is often caused by the power cable coming loose. Reach over the back of the switcher and plug the power cable back in on the right hand side.</p>
 <h2 id="the-multiview-monitor-is-black"><a class="header" href="#the-multiview-monitor-is-black">The multiview monitor is black</a></h2>
 <p>Check the monitor power and display cables are securely plugged in at both ends.</p>
-<h2 id="the-camera-controller-is-powered-off-no-lights"><a class="header" href="#the-camera-controller-is-powered-off-no-lights">The camera controller is powered off ("no lights")</a></h2>
-<p>Check the power cable hasn't come loose and that the switch on the back of the camera controller is in the "on" position.</p>
+<h2 id="the-camera-controller-is-powered-off-no-lights"><a class="header" href="#the-camera-controller-is-powered-off-no-lights">The camera controller is powered off (“no lights”)</a></h2>
+<p>Check the power cable hasn’t come loose and that the switch on the back of the camera controller is in the “on” position.</p>
 <h2 id="the-streaming-pc-display-is-black"><a class="header" href="#the-streaming-pc-display-is-black">The streaming PC display is black</a></h2>
 <p>Check the display power and display cables are securely plugged in at both ends.</p>
 <h2 id="no-stream-appears-on-the-youtube-preview"><a class="header" href="#no-stream-appears-on-the-youtube-preview">No stream appears on the YouTube preview</a></h2>
-<p>One cause of this is that the encoderer is not streaming. Check the STREAM button on the NVS-34 encoder at the top of the live streaming rack. It should be lit up continuously in red.
+<p>One cause of this is that the encoder is not streaming. Check the STREAM button on the NVS-34 encoder at the top of the live streaming rack. It should be lit up continuously in red.
 If it is white or flashing red, there is a problem.</p>
-<p>To fix this, power off the encoder using the power button (a rocker switch with "1" printed above "0") on the front of the encoder, wait 10 seconds, and power back on the encoder. It takes 20 seconds or so to boot up, during which time the four right hand buttons on the encoder light up red.</p>
+<p>To fix this, power off the encoder using the power button (a rocker switch with “1” printed above “0”) on the front of the encoder, wait 10 seconds, and power back on the encoder. It takes 20 seconds or so to boot up, during which time the four right hand buttons on the encoder light up red.</p>
 <p>If the STREAM button is white after boot has completed, you can try pressing and holding it to start it flashing and very occasionally it turns to continuous red. But, ideally, rebooting the encoder will result in the STREAM button lighting up continuous in red.</p>
 <p>You may need to repeat this encoder reboot sequence five or more times before the STREAM button lights up continuously in red.</p>
 <p>Once the STREAM button is lit continuously in red, refresh the YouTube studio web page and see if the preview then displays the live stream. It takes 30-60 seconds or more to preview the stream, so please be patient.</p>
 <h2 id="the-video-of-a-camera-does-not-appear-on-the-multiview-display"><a class="header" href="#the-video-of-a-camera-does-not-appear-on-the-multiview-display">The video of a camera does not appear on the multiview display</a></h2>
-<p>This may be because the camera has not been powered on. Use the camera controller to power all the cameras off and back on.</p>
+<p>This may be because the camera has not been powered on. Use the camera controller to power all the cameras on.</p>
 <p>To see if the camera is powered on, double click the relevant camera icon on the streaming PC desktop. If you see a picture from the camera, it is powered on and the problem may be that the SDI (video) cable is not properly connected to the camera (or to the back of the rack or to the back of the ATEM switcher). Disconnect and reconnect each plug in turn to ensure it is properly connected.</p>
-<h2 id="a-camera-cannot-be-controlled-by-the-camera-controller"><a class="header" href="#a-camera-cannot-be-controlled-by-the-camera-controller">A camera cannot be controlled by the camera controller</a></h2>
-<p>This may be because the power-over-ethernet (PoE) cable has been plugged into the wrong socket on the affected camera. Make sure the cable is plugged into the left-hand socket. When re-plugging PoE cables, it is best to power all the cameras down first and power them back up afterwards.</p>
 <h2 id="the-camera-controller-fails-to-operate-the-cameras"><a class="header" href="#the-camera-controller-fails-to-operate-the-cameras">The camera controller fails to operate the cameras</a></h2>
-<p>The camera controller may still be in menu mode, in which case the "menu" button will be lit. Press the menu button to exit menu mode.</p>
+<p>The camera controller may still be in menu mode, in which case the “menu” button will be lit. Press the menu button to exit menu mode.</p>
 <p>Alternatively, the controller may be operating a group of cameras other than group 1. You need to select group 1, thus:</p>
 <ul>
-<li>Press "menu" and then "8"</li>
-<li>Select "group" by turning then pressing the F1 dial</li>
-<li>Select "group select" by turning then pressing the F2 dial</li>
-<li>(I presume) Press "1" to select group 1.</li>
+<li>Press “menu” and then “8”</li>
+<li>Select “group” by turning then pressing the F1 dial</li>
+<li>Select “group select” by turning then pressing the F2 dial</li>
+<li>(I presume) Press “1” to select group 1.</li>
 </ul>
 <p>Alternatively, it has been known for the camera controller to reset itself to factory defaults.
-Try power-cycling the camera controller to see if this fixes the problem. If not, you may need to go to the setup menu and re-enter the IP address of each of the cameras: 192.168.0.181-184 (for cameras 1-4). The cameras also need to be set to "network" connection rather than "serial". When entering an IP address, press F2 to select each "dotted decimal" number of the IP address in turn and turn F2 to change the current number. Refer to "Changing the camera numbers" on page 34 of the <em>basic</em> manual for the camera controller (available under <a href="../hardware.html">Hardware</a>) for how to set camera IP addresses. The IP address of the camera controller also needs to be set to
-the correct value: 192.168.0.188. If you prefer, you can use the <code>RP50Tool</code> shortcut on the streaming PC desktop to make these changes (but beware that the tool uses the camera controller's IP address to communicate with it, so this will need to be changed as necessary).</p>
-<p>If the camera controller cannot be made to work, try using the camera controller software ("RP50Tool") on the streaming PC.</p>
-<p>If all else fails, you can gain some basic control of the cameras over TCP/IP using the shortcuts on the streaming PC desktop. See <a href="./software.html">Software</a>.</p>
+Try power-cycling the camera controller to see if this fixes the problem. If not, you may need to go to the setup menu and re-enter the IP address of each of the cameras: 192.168.0.181-184 (for cameras 1-4). The cameras also need to be set to “network” connection rather than “serial”. When entering an IP address, press F2 to select each “dotted decimal” number of the IP address in turn and turn F2 to change the current number. Refer to “Changing the camera numbers” on page 34 of the <em>basic</em> manual for the camera controller (available under <a href="../hardware.html">Hardware</a>) for how to set camera IP addresses. The IP address of the camera controller also needs to be set to
+the correct value: 192.168.0.188. If you prefer, you can use the <code>RP50Tool</code> shortcut on the streaming PC desktop to make these changes (but beware that the tool uses the camera controller’s IP address to communicate with it, so this will need to be changed as necessary).</p>
+<p>If the camera controller cannot be made to work, try using the camera controller software (“RP50Tool”) on the streaming PC.</p>
+<p>If all else fails, you can gain some basic control of the cameras over TCP/IP using the shortcuts on the streaming PC desktop. See <a href="#pc-software">Software</a>.</p>
 <h2 id="the-encoder-stream-button-flashes-red"><a class="header" href="#the-encoder-stream-button-flashes-red">The encoder stream button flashes red</a></h2>
-<p>This may be due to the encoder looking at the wrong input. Open up the encoder software on the streaming PC (there's a shortcut on the desktop, with a note of the admin password on the shortcut), select the "source" tab, and ensure that
+<p>This may be due to the encoder looking at the wrong input. Open up the encoder software on the streaming PC (there’s a shortcut on the desktop, with a note of the admin password on the shortcut), select the “source” tab, and ensure that
 the SDI source is selected (rather than HDMI).</p>
 <p>When the encoder is streaming normally, the stream button should be lit red continuously.</p>
-<h2 id="the-go-live-icon-is-greyed-out-on-youtube"><a class="header" href="#the-go-live-icon-is-greyed-out-on-youtube">The "go live" icon is greyed out on YouTube</a></h2>
+<h2 id="the-go-live-icon-is-greyed-out-on-youtube"><a class="header" href="#the-go-live-icon-is-greyed-out-on-youtube">The “go live” icon is greyed out on YouTube</a></h2>
 <p>This may be due to the stream in question having already been used, even if only briefly. You
-need to create a fresh stream. See <a href="./scheduling.html">Scheduling services</a> for instructions.</p>
+need to create a fresh stream. See <a href="#scheduling-services-1">Scheduling services</a> for instructions.</p>
 <h2 id="the-live-stream-does-not-appear-in-the-preview-on-youtube"><a class="header" href="#the-live-stream-does-not-appear-in-the-preview-on-youtube">The live stream does not appear in the preview on YouTube</a></h2>
-<p>This may be because the video encoder in the rack is not yet in streaming mode (the "streaming" button needs to be lit in red). Press the streaming button on the video encoder to start streaming. Note: this isn't usually necessary, so be patient while YouTube connects to the stream as this can take up to 20-30 seconds.</p>
-<h2 id="youtube-shows-no-data-or-poor-connection"><a class="header" href="#youtube-shows-no-data-or-poor-connection">YouTube shows "no data" or "poor connection"</a></h2>
+<p>This may be because the video encoder in the rack is not yet in streaming mode (the “streaming” button needs to be lit in red). Press the streaming button on the video encoder to start streaming. Note: this isn’t usually necessary, so be patient while YouTube connects to the stream as this can take up to 20-30 seconds.</p>
+<h2 id="youtube-shows-no-data-or-poor-connection"><a class="header" href="#youtube-shows-no-data-or-poor-connection">YouTube shows “no data” or “poor connection”</a></h2>
 <p>This may be an intermittent or permanent problem and means that the stream will not record properly.</p>
-<p>You can record the stream to a SD card using the video encoder (NVS-34, at the top of the live streaming rack). Ensure a SD card is inserted and press and hold the
-"RECORD" button for a few seconds. Release the button and, after flashing, it should light up continously red showing that the stream is being recorded to the SD card.</p>
-<p><img src="images/NVS34.jpg" alt="NVS-34" /></p>
-<p>At the end of the service, press the "RECORD" button on the encoder again. This will end the recording
-and the MP4 files on the SD card can be stitched together (each file seems to have a maximum size of 4 GB) and uploaded to YouTube later.</p>
-<p>(If there is a temporary internet outage and the YouTube stream cannot be connected to after the internet is back up, it may be possible to <a href="scheduling.html">create a new stream</a> and record to that.)</p>
-<p>For background information on one such internet problem see <a href="https://github.com/ccwinch/live-streaming-tech-notes/issues/9">this issue</a>.</p>
+<p>Unless this clears up before the start of the service, the live stream will not be possible (and we don’t attempt to record the stream to a SD card like we sometimes used to).</p>
+<p>(If there is a temporary internet outage and the YouTube stream cannot be connected to after the internet is back up, it may be possible to <a href="#scheduling-services-1">create a new stream</a> and use that.)</p>
 <h2 id="the-internet-is-not-accessible-from-the-live-streaming-pc"><a class="header" href="#the-internet-is-not-accessible-from-the-live-streaming-pc">The internet is not accessible from the live streaming PC</a></h2>
-<p>Ensure the AV desk PC is switched on (it doesn't need to be logged in). Also ensure that the
-network splitter mains switch is turned on - this is next to the AV desk mains switch (on the wall, low down, at the right hand side of the sound desk).</p>
-<p>Alternatively, the antivirus/firewall software on the streaming PC may be out of date. Temporarily disable the antivirus/firewall from the network settings to work around this.</p>
-<p>Another cause of losing internet (across the whole site!) is if the camera controller has lost its settings and set its IP address to the default of 192.168.0.10 which conflicts with the church's main internet gateway.
-See <a href="./problems.html#the-camera-controller-fails-to-operate-the-cameras">The camera controller fails to operate the cameras</a> for how to set the camera controller settings back to what they should be.</p>
+<p>The antivirus/firewall software on the streaming PC may be out of date. Temporarily disable the antivirus/firewall from the network settings to work around this.</p>
+<p>Another cause of losing internet (across the whole site!) is if the camera controller has lost its settings and set its IP address to the default of 192.168.0.10 which conflicts with the church’s main internet gateway.
+See <a href="#the-camera-controller-fails-to-operate-the-cameras">The camera controller fails to operate the cameras</a> for how to set the camera controller settings back to what they should be.</p>
 <h2 id="poor-sound-quality-on-the-live-stream"><a class="header" href="#poor-sound-quality-on-the-live-stream">Poor sound quality on the live stream</a></h2>
 <p>Sometimes the host or a member of the online congregation will point out that the sound is
-poor or that there is a specific problem with the sound. Check the sound level on the "live" panel of the multiview monitor. If it seems too low, check with the sound desk operator that the sound desk is correctly set up. If it's still too low, you can boost the volume by using
+poor or that there is a specific problem with the sound. Check the sound level on the “live” panel of the multiview monitor. If it seems too low, check with the sound desk operator that the sound desk is correctly set up. If it’s still too low, you can boost the volume by using
 the ATEM switcher software on the live streaming PC. In the audio tab there is a master volume slider and a xlr slider which can be increased.</p>
 <h2 id="song-words-not-outlined-in-black"><a class="header" href="#song-words-not-outlined-in-black">Song words not outlined in black</a></h2>
 <p>If the song words are no longer outlined in black, reload the ATEM settings (but not during a live stream in case this interrupts it) and save
-the startup state. A good set of ATEM settings is in the Documents folder of the live streaming PC. Reload them using the <a href="software.html">ATEM software</a> and use the ATEM software to save the startup state.</p>
+the startup state. A good set of ATEM settings is in the Documents folder of the live streaming PC. Reload them using the <a href="#pc-software">ATEM software</a> and use the ATEM software to save the startup state.</p>
 <h2 id="christ-church-winchester-logo-not-visible"><a class="header" href="#christ-church-winchester-logo-not-visible">Christ Church Winchester logo not visible</a></h2>
 <p>If the logo does not show, reload the ATEM settings (but not during a live stream in case this interrupts it) and save
-the startup state. A good set of ATEM settings is in the Documents folder of the live streaming PC. Reload them using the <a href="software.html">ATEM software</a> and use the ATEM software to save the startup state.</p>
-<h2 id="robotic-sound-when-the-live-stream-is-displayed-on-screens-in-church"><a class="header" href="#robotic-sound-when-the-live-stream-is-displayed-on-screens-in-church">Robotic sound when the live stream is displayed on screens in church</a></h2>
-<p>Not everyone can hear this problem when it occurs.</p>
-<p>The solution is to use the Roland V-8HD menu to Mute HDMI input #2 from the ATEM (and turn the level down to -70dB to make sure). The menu is shown in the photograph below:</p>
-<p><a href="./images/Rolandmuteinput2.jpg"><img src="./images/Rolandmuteinput2.jpg" alt="" /></a></p>
-<p>For details, see <a href="https://github.com/ccwinch/live-streaming-tech-notes/issues/7">this issue</a>.</p>
-<h2 id="problems-with-the-song-words-or-av-input-camera-5"><a class="header" href="#problems-with-the-song-words-or-av-input-camera-5">Problems with the song words or AV input ("camera 5")</a></h2>
+the startup state. A good set of ATEM settings is in the Documents folder of the live streaming PC. Reload them using the <a href="#pc-software">ATEM software</a> and use the ATEM software to save the startup state.</p>
+<h2 id="problems-with-the-song-words-or-av-input-camera-6"><a class="header" href="#problems-with-the-song-words-or-av-input-camera-6">Problems with the song words or AV input (“camera 6”)</a></h2>
 <p>The AV and live streaming desks may have been powered up in the wrong order.
 This should be impossible following the ABCDE refurbishment: the equipment is powered up in the correct sequence automatically.
 This ensures that the graphics card in the AV PC detects the correct inputs.</p>
-<p>There is also a Microsoft Word document on the AV PC which describes the display arrangement ("3, 4, 1|2", where displays 1 and 2 are mirrored) and EasyWorship settings.</p>
+<p>There is also a Microsoft Word document on the AV PC which describes the display arrangement (“3, 4, 1|2”, where displays 1 and 2 are mirrored) and EasyWorship settings.</p>
 <h2 id="youtube-connection-problems"><a class="header" href="#youtube-connection-problems">YouTube connection problems</a></h2>
-<p>If the live stream fails or YouTube reports buffering problems for more than a second or two, there may be an issue with the internet connection. There's not much you can do about this, but please report it so we can look into it.</p>
+<p>If the live stream fails or YouTube reports buffering problems for more than a second or two, there may be an issue with the internet connection. There’s not much you can do about this, but please report it so we can look into it.</p>
 <h2 id="framerate-problems"><a class="header" href="#framerate-problems">Framerate problems</a></h2>
 <p>Sometimes the YouTube preview shows people moving around much faster than normal.
 This is due to an incorrect framerate being used.</p>
@@ -463,17 +464,17 @@ It may be possible to work around this by power-cycling just the live streaming 
 <p>Another, more reliable, workaround is to use the ATEM software on the live streaming PC to change the video standard and then change it back again, as follows:</p>
 <ol>
 <li>
-<p>Open up the ATEM software (see <a href="./software.html">PC Software</a>).</p>
+<p>Open up the ATEM software (see <a href="#pc-software">PC Software</a>).</p>
 </li>
 <li>
 <p>Click the gear icon to access the settings:
-<a href="./images/framerate1.png"><img src="./images/framerate1.png" alt="" /></a></p>
+<a href="images/framerate1.png"><img src="images/framerate1.png" alt=""></a></p>
 </li>
 <li>
 <p>Use the drop down menu to set the video standard temporarily to 1080p25:
-<a href="./images/framerate2.png"><img src="./images/framerate2.png" alt="" /></a>
+<a href="images/framerate2.png"><img src="images/framerate2.png" alt=""></a>
 and click Set. The setting should now look like this:
-<a href="./images/framerate3.png"><img src="./images/framerate3.png" alt="" /></a>
+<a href="images/framerate3.png"><img src="images/framerate3.png" alt=""></a>
 and the multiview monitor will be black.</p>
 </li>
 <li>
@@ -485,25 +486,29 @@ to 1080p50 and click Set.</p>
 should show people moving at the normal speed.</p>
 </li>
 </ol>
-<div style="break-before: page; page-break-before: always;"></div><h2 id="scheduling-services"><a class="header" href="#scheduling-services">Scheduling Services</a></h2>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="scheduling-services-1"><a href="#scheduling-services-1" class="header">Scheduling Services</a></h1>
+<h2 id="scheduling-services"><a class="header" href="#scheduling-services">Scheduling Services</a></h2>
 <p>Each service needs a YouTube stream. Essentially, you can create a YouTube stream from a past stream.</p>
-<p>This <a href="https://youtu.be/eBEigfqjTKM">8 minute video</a> shows how to schedule a new YouTube stream except that now we are using YouTube as the platform for the online congregation, you should make the stream public and enable "chat" and "chat replay" and there is now no longer a need for a "catch up" playlist, so new YouTube streams do not need to belong to a playlist.</p>
-<p>You may need to schedule a stream in an emergency if you encounter a situation where the stream you want to "go live" has already been used. The "go live" icon is greyed out and you need to schedule a new stream. It's relatively easy to do this from the streaming PC if you hit this problem.</p>
-<p>We've also started adding a custom thumbnail to each stream. There's one for "all in" services and then five 11am and five 7pm thumbnails - one for each week of the month. Download and unzip <a href="./images/youtubethumbnails.zip">this zipfile</a> for the thumbnails.</p>
+<p>This <a href="https://youtu.be/eBEigfqjTKM">8 minute video</a> shows how to schedule a new YouTube stream except that now we are using YouTube as the platform for the online congregation, you should make the stream public and enable “chat” and “chat replay” and there is now no longer a need for a “catch up” playlist, so new YouTube streams do not need to belong to a playlist.</p>
+<p>You may need to schedule a stream in an emergency if you encounter a situation where the stream you want to “go live” has already been used. The “go live” icon is greyed out and you need to schedule a new stream. It’s relatively easy to do this from the streaming PC if you hit this problem.</p>
+<p>We’ve also started adding a custom thumbnail to each stream. There’s one for “all in” services and then five 11am and five 7pm thumbnails - one for each week of the month. Download and unzip <a href="images/youtubethumbnails.zip">this zipfile</a> for the thumbnails.</p>
 <h3 id="weddings-and-funerals"><a class="header" href="#weddings-and-funerals">Weddings and Funerals</a></h3>
-<p>For weddings and funerals, create an unlisted YouTube stream with an appropriate thumbnail. Enable "chat", but disable "chat replay" to be on the safe side.</p>
-<p>Once you've created the stream, look for it in the <a href="https://studio.youtube.com/channel/UCn2CGMGOZT2HqsKvTMTdOQA/videos/live">list of live content</a> in the Christ Church YouTube channel. Click the three dots next to the stream and select "Get sharable link" to get a link which can then be distributed to the family, friends, and others.</p>
-<div style="break-before: page; page-break-before: always;"></div><h2 id="media-players"><a class="header" href="#media-players">Media Players</a></h2>
+<p>For weddings and funerals, create an unlisted YouTube stream with an appropriate thumbnail. Enable “chat”, but disable “chat replay” to be on the safe side.</p>
+<p>Once you’ve created the stream, look for it in the <a href="https://studio.youtube.com/channel/UCn2CGMGOZT2HqsKvTMTdOQA/videos/live">list of live content</a> in the Christ Church YouTube channel. Click the three dots next to the stream and select “Get sharable link” to get a link which can then be distributed to the family, friends, and others.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="media-players-1"><a href="#media-players-1" class="header">Media Players</a></h1>
+<h2 id="media-players"><a class="header" href="#media-players">Media Players</a></h2>
 <p>Media player 1 on the ATEM is used to display an image on the live stream (independently
 of the AV desk).
 This is useful when the stream audio and/or video has been turned off
 or when the live streaming team need to make an announcement to the online congregation.
-(The YouTube live chat isn't as effective since some viewers don't see the chat.)</p>
+(The YouTube live chat isn’t as effective since some viewers don’t see the chat.)</p>
 <p>Examples of when this may be appropriate:</p>
 <ul>
 <li>During part of a communion service.</li>
 <li>When copyrighted material is being used in church.</li>
-<li>During a baptism or dedication at the parents' request.</li>
+<li>During a baptism or dedication at the parents’ request.</li>
 <li>During a sensitive personal testimony.</li>
 </ul>
 <p>To display a given image on the live stream follow these steps:</p>
@@ -512,16 +517,16 @@ or when the live streaming team need to make an announcement to the online congr
 <p>Download the image onto the live streaming PC.</p>
 </li>
 <li>
-<p>Add the image to the ATEM's media pool (see below).</p>
+<p>Add the image to the ATEM’s media pool (see below).</p>
 </li>
 <li>
 <p>Load the image from the media pool to media player 1 as follows:</p>
 <p>a. Open up the ATEM software application on the live streaming PC.</p>
-<p>b. Select the "Media" tab (see the screenshot at the bottom of this page).</p>
+<p>b. Select the “Media” tab (see the screenshot at the bottom of this page).</p>
 <p>c. Drag the required image from the media pool in the centre to media player 1 on the right.</p>
 </li>
 <li>
-<p>On the ATEM, preview media player 1 using either Shift key and "MP 1".</p>
+<p>On the ATEM, preview media player 1 using either Shift key and “MP 1”.</p>
 </li>
 <li>
 <p>Cut at the appropriate time.</p>
@@ -531,67 +536,71 @@ or when the live streaming team need to make an announcement to the online congr
 <ul>
 <li>Media player 2 is dedicated to adding the Christ Church logo to the live stream and
 should not be used for displaying images.</li>
-<li>The term "media player" might give the impression that a video can be played, but this
-isn't the case. AVI, MOV, MP4, and similar formats are not supported. It is apparently possible to display "image sequences", but that seems pretty tricky.</li>
+<li>The term “media player” might give the impression that a video can be played, but this
+isn’t the case. AVI, MOV, MP4, and similar formats are not supported. It is apparently possible to display “image sequences”, but that seems pretty tricky.</li>
 </ul>
-<h3 id="adding-an-image-to-the-atems-media-pool"><a class="header" href="#adding-an-image-to-the-atems-media-pool">Adding an image to the ATEM's media pool</a></h3>
-<p>An image can be added to the ATEM's media pool by following these steps:</p>
+<h3 id="adding-an-image-to-the-atems-media-pool"><a class="header" href="#adding-an-image-to-the-atems-media-pool">Adding an image to the ATEM’s media pool</a></h3>
+<p>An image can be added to the ATEM’s media pool by following these steps:</p>
 <ol>
 <li>Download the image onto the live streaming PC.</li>
 <li>Opening up the ATEM software application on the live streaming PC.</li>
-<li>Select the "Media" tab (see the screenshot below).</li>
+<li>Select the “Media” tab (see the screenshot below).</li>
 <li>Locate the image in the Local Library on the left.</li>
-<li>Drag the image to one of the "stills" slots in the centre.</li>
+<li>Drag the image to one of the “stills” slots in the centre.</li>
 </ol>
-<p><a href="./images/ATEMMedia.png"><img src="./images/ATEMMedia.png" alt="" /></a></p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="song-words"><a class="header" href="#song-words">Song Words</a></h1>
+<p><a href="images/ATEMMedia.png"><img src="images/ATEMMedia.png" alt=""></a></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="song-words"><a class="header" href="#song-words">Song Words</a></h1>
 <p>The following applies to text output from the AV computer including song words, liturgy, and scripture.</p>
 <p>There are two outputs from the AV desk that enable the ATEM to overlay song words on the live stream:</p>
 <ol>
 <li>
 <p>AV output: from EasyWorship running on the AV PC.
 There is a HDMI output of a graphics card in the AV PC which passes, (presumably) via a HDMI to SDI converter, to the live streaming rack.
-The content of this appears on the live streaming multiview monitor as "AV PC" at the bottom left.
+The content of this appears on the live streaming multiview monitor as “AV PC” at the bottom left.
 When a song is displayed on EasyWorship, the words appear here as white on a black background.</p>
 </li>
 <li>
 <p>Alpha channel: from EasyWorship running on the AV PC.
 There is a DiplayPort output of a graphics card in the AV PC which passes, (presumably) via a DisplayPort to HDMI converter, to the live streaming rack.
-The contents of this appears on the live streaming multiview monitor as "HDMI Input" at the bottom right.
-When a song is displayed on EasyWorship, the words appear "thickened" and in white on a black background. The thickening is due to a black outline on the song words.</p>
+The contents of this appears on the live streaming multiview monitor as “HDMI Input” at the bottom right.
+When a song is displayed on EasyWorship, the words appear “thickened” and in white on a black background. The thickening is due to a black outline on the song words.</p>
 </li>
 </ol>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="av-feed"><a class="header" href="#av-feed">AV Feed</a></h1>
-<p>The aux output of the live streaming Blackmagic ATEM is connected to the "Live Stream" input of the AV Blackmagic ATEM.</p>
-<p>The aux output is set, by default, to "clean feed 1" which is the same as the live stream but without the Christ Church logo.
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="av-feed"><a class="header" href="#av-feed">AV Feed</a></h1>
+<p>The aux output of the live streaming Blackmagic ATEM is connected to the “Live Stream” input of the AV Blackmagic ATEM.</p>
+<p>The aux output is set, by default, to “clean feed 1” which is the same as the live stream but without the Christ Church logo.
 So it includes song words if these are shown.</p>
-<p>The AV operator can choose to display one of the cameras directly on the screens in church, but this won't include song words.
+<p>The AV operator can choose to display one of the cameras directly on the screens in church, but this won’t include song words.
 Also, if the AV operator chooses a camera that the live streaming operators then pan or zoom, the congregation will see this happening on the screens.
 The AV operator could coordinate with the live streaming operators for a smooth result.</p>
-<p>However, to include the song words overlaid on a camera output on the screens, the AV operator can choose the "Live Stream" input.
+<p>However, to include the song words overlaid on a camera output on the screens, the AV operator can choose the “Live Stream” input.
 The live streaming operators are then free to choose which camera this displays.</p>
 <p>Note that the ATEM software on the live streaming PC can be used to change what is output by the aux output of the ATEM.
-The default is "clean feed 1" (see above), but it is possible to "pin" the aux output to one of the cameras.
-To do this use the "aux" drop-down menu at the top of the ATEM software application.
-This is handy, for example, for streaming a wide shot which wouldn't be suitable to display on the screens in church.</p>
+The default is “clean feed 1” (see above), but it is possible to “pin” the aux output to one of the cameras.
+To do this use the “aux” drop-down menu at the top of the ATEM software application.
+This is handy, for example, for streaming a wide shot which wouldn’t be suitable to display on the screens in church.</p>
 <h2 id="av-desk-and-the-screens-at-the-front-of-church"><a class="header" href="#av-desk-and-the-screens-at-the-front-of-church">AV desk and the screens at the front of church</a></h2>
 <p>By default, the AV desk displays its output on all the screens in church.
-When the live stream is being displayed and this is showing the preacher, for example, it's best <strong>not</strong> to display the AV output on the front screens (above the stage) because, otherwise, people near the front tend to look at those screens rather than directly at the preacher.</p>
+When the live stream is being displayed and this is showing the preacher, for example, it’s best <strong>not</strong> to display the AV output on the front screens (above the stage) because, otherwise, people near the front tend to look at those screens rather than directly at the preacher.</p>
 <p>To stop the output going to the front screens, use the AV Blackmagic ATEM as follows.</p>
 <ol>
 <li>
-<p>Press the "MACRO" button:
-<a href="./images/AVATEMMacroButton.jpg"><img src="./images/AVATEMMacroButton.jpg" alt="" /></a></p>
+<p>Press the “MACRO” button:
+<a href="images/AVATEMMacroButton.jpg"><img src="images/AVATEMMacroButton.jpg" alt=""></a></p>
 </li>
 <li>
-<p>Use the two left-most macros to stop ("Front Scr to Black") or start ("Front Scr to Program") the AV output being displayed on the screens on the stage:</p>
-<p><a href="./images/AVATEMMacros.jpg"><img src="./images/AVATEMMacros.jpg" alt="" /></a></p>
+<p>Use the two left-most macros to stop (“Front Scr to Black”) or start (“Front Scr to Program”) the AV output being displayed on the screens on the stage:</p>
+<p><a href="images/AVATEMMacros.jpg"><img src="images/AVATEMMacros.jpg" alt=""></a></p>
 </li>
 <li>
-<p>Press the "MACRO" button again to turn off the list of macros.</p>
+<p>Press the “MACRO” button again to turn off the list of macros.</p>
 </li>
 </ol>
-<div style="break-before: page; page-break-before: always;"></div><h2 id="video-tutorials"><a class="header" href="#video-tutorials">Video Tutorials</a></h2>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="tutorials"><a href="#tutorials" class="header">Tutorials</a></h1>
+<h2 id="video-tutorials"><a class="header" href="#video-tutorials">Video Tutorials</a></h2>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=mXTADKmZOnY">Live streaming for beginners</a> - a good place to start</li>
 <li><a href="https://www.youtube.com/watch?v=mYE3LSh2ZKY">Blackmagic video switcher</a> - a tour of the basic functions of the video switcher</li>
@@ -615,6 +624,11 @@ When the live stream is being displayed and this is showing the preacher, for ex
 
         </div>
 
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
 
 
 
@@ -623,13 +637,13 @@ When the live stream is being displayed and this is showing the preacher, for ex
         </script>
 
 
-        <script src="elasticlunr.min.js"></script>
-        <script src="mark.min.js"></script>
-        <script src="searcher.js"></script>
+        <script src="elasticlunr-ef4e11c1.min.js"></script>
+        <script src="mark-09e88c2c.min.js"></script>
+        <script src="searcher-c2a407aa.js"></script>
 
-        <script src="clipboard.min.js"></script>
-        <script src="highlight.js"></script>
-        <script src="book.js"></script>
+        <script src="clipboard-1626706a.min.js"></script>
+        <script src="highlight-abc7f01d.js"></script>
+        <script src="book-a0b12cfe.js"></script>
 
         <!-- Custom JS scripts -->
 

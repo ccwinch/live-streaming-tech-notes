@@ -12,21 +12,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="icon" href="favicon.svg">
-        <link rel="shortcut icon" href="favicon.png">
-        <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/chrome.css">
-        <link rel="stylesheet" href="css/print.css" media="print">
+        <link rel="icon" href="favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="favicon-8114d1fc.png">
+        <link rel="stylesheet" href="css/variables-8adf115d.css">
+        <link rel="stylesheet" href="css/general-2459343d.css">
+        <link rel="stylesheet" href="css/chrome-ae938929.css">
+        <link rel="stylesheet" href="css/print-9e4910d8.css" media="print">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="fonts/fonts-9644e21d.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" id="highlight-css" href="highlight.css">
-        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
-        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+        <link rel="stylesheet" id="mdbook-highlight-css" href="highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
 
         <!-- Custom theme stylesheets -->
 
@@ -36,10 +35,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex.js";
+            window.path_to_searchindex_js = "searchindex-2558672e.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc.js"></script>
+        <script src="toc-e5175835.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -53,7 +52,7 @@
             </div>
         </div>
     </div>
-    <div id="body-container">
+    <div id="mdbook-body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
@@ -82,12 +81,12 @@
             html.classList.add("js");
         </script>
 
-        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
             let sidebar = null;
-            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
@@ -102,39 +101,39 @@
             }
         </script>
 
-        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
             <!-- populated by js -->
             <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
             <noscript>
                 <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
             </noscript>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
             </div>
         </nav>
 
-        <div id="page-wrapper" class="page-wrapper">
+        <div id="mdbook-page-wrapper" class="page-wrapper">
 
             <div class="page">
-                <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
-                            <i class="fa fa-bars"></i>
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
                         </label>
-                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
-                            <i class="fa fa-paint-brush"></i>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
                         </button>
-                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
                         </ul>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
-                            <i class="fa fa-search"></i>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
                         </button>
                     </div>
 
@@ -142,105 +141,96 @@
 
                     <div class="right-buttons">
                         <a href="print.html" title="Print this book" aria-label="Print this book">
-                            <i id="print-button" class="fa fa-print"></i>
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
                         </a>
 
                     </div>
                 </div>
 
-                <div id="search-wrapper" class="hidden">
-                    <form id="searchbar-outer" class="searchbar-outer">
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
                         <div class="search-wrapper">
-                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
                             <div class="spinner-wrapper">
-                                <i class="fa fa-spinner fa-spin"></i>
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
                             </div>
                         </div>
                     </form>
-                    <div id="searchresults-outer" class="searchresults-outer hidden">
-                        <div id="searchresults-header" class="searchresults-header"></div>
-                        <ul id="searchresults">
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
                         </ul>
                     </div>
                 </div>
 
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
                 <script>
-                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
-                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
-                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
 
-                <div id="content" class="content">
+                <div id="mdbook-content" class="content">
                     <main>
                         <h2 id="problem-solving"><a class="header" href="#problem-solving">Problem Solving</a></h2>
-<p>In general, try to narrow down and eventually isolate the cause of the problem. If there is a problem with one or two cameras and you can't fix it before the service starts, you may be able to make do with the remaining cameras.</p>
-<p>Remember the all-important line from "The IT Crowd" TV series: "Have you tried turning it off and back on again?".</p>
-<p>If you get stuck, try asking on the "Streaming" Slack channel or see if there's someone around in church who can help.</p>
+<p>In general, try to narrow down and eventually isolate the cause of the problem. If there is a problem with one or two cameras and you can’t fix it before the service starts, you may be able to make do with the remaining cameras.</p>
+<p>Remember the all-important line from “The IT Crowd” TV series: “Have you tried turning it off and back on again?”.</p>
+<p>If you get stuck, try asking on the “Streaming” Slack channel or see if there’s someone around in church who can help.</p>
 <p>The following problems are organised by problem symptoms, each with possible explanations and fixes. If you find a problem not listed here, please tell others about it so it can be added.</p>
-<h2 id="atem-switcher-is-powered-off-no-lights"><a class="header" href="#atem-switcher-is-powered-off-no-lights">ATEM switcher is powered off ("no lights")</a></h2>
-<p>This is often caused by the power cable coming loose when the switcher is slid out of the rack for operation. Reach over the back of the switcher and plug the power cable back in on the right hand side.</p>
+<h2 id="atem-switcher-is-powered-off-no-lights"><a class="header" href="#atem-switcher-is-powered-off-no-lights">ATEM switcher is powered off (“no lights”)</a></h2>
+<p>This is often caused by the power cable coming loose. Reach over the back of the switcher and plug the power cable back in on the right hand side.</p>
 <h2 id="the-multiview-monitor-is-black"><a class="header" href="#the-multiview-monitor-is-black">The multiview monitor is black</a></h2>
 <p>Check the monitor power and display cables are securely plugged in at both ends.</p>
-<h2 id="the-camera-controller-is-powered-off-no-lights"><a class="header" href="#the-camera-controller-is-powered-off-no-lights">The camera controller is powered off ("no lights")</a></h2>
-<p>Check the power cable hasn't come loose and that the switch on the back of the camera controller is in the "on" position.</p>
+<h2 id="the-camera-controller-is-powered-off-no-lights"><a class="header" href="#the-camera-controller-is-powered-off-no-lights">The camera controller is powered off (“no lights”)</a></h2>
+<p>Check the power cable hasn’t come loose and that the switch on the back of the camera controller is in the “on” position.</p>
 <h2 id="the-streaming-pc-display-is-black"><a class="header" href="#the-streaming-pc-display-is-black">The streaming PC display is black</a></h2>
 <p>Check the display power and display cables are securely plugged in at both ends.</p>
 <h2 id="no-stream-appears-on-the-youtube-preview"><a class="header" href="#no-stream-appears-on-the-youtube-preview">No stream appears on the YouTube preview</a></h2>
-<p>One cause of this is that the encoderer is not streaming. Check the STREAM button on the NVS-34 encoder at the top of the live streaming rack. It should be lit up continuously in red.
+<p>One cause of this is that the encoder is not streaming. Check the STREAM button on the NVS-34 encoder at the top of the live streaming rack. It should be lit up continuously in red.
 If it is white or flashing red, there is a problem.</p>
-<p>To fix this, power off the encoder using the power button (a rocker switch with "1" printed above "0") on the front of the encoder, wait 10 seconds, and power back on the encoder. It takes 20 seconds or so to boot up, during which time the four right hand buttons on the encoder light up red.</p>
+<p>To fix this, power off the encoder using the power button (a rocker switch with “1” printed above “0”) on the front of the encoder, wait 10 seconds, and power back on the encoder. It takes 20 seconds or so to boot up, during which time the four right hand buttons on the encoder light up red.</p>
 <p>If the STREAM button is white after boot has completed, you can try pressing and holding it to start it flashing and very occasionally it turns to continuous red. But, ideally, rebooting the encoder will result in the STREAM button lighting up continuous in red.</p>
 <p>You may need to repeat this encoder reboot sequence five or more times before the STREAM button lights up continuously in red.</p>
 <p>Once the STREAM button is lit continuously in red, refresh the YouTube studio web page and see if the preview then displays the live stream. It takes 30-60 seconds or more to preview the stream, so please be patient.</p>
 <h2 id="the-video-of-a-camera-does-not-appear-on-the-multiview-display"><a class="header" href="#the-video-of-a-camera-does-not-appear-on-the-multiview-display">The video of a camera does not appear on the multiview display</a></h2>
-<p>This may be because the camera has not been powered on. Use the camera controller to power all the cameras off and back on.</p>
+<p>This may be because the camera has not been powered on. Use the camera controller to power all the cameras on.</p>
 <p>To see if the camera is powered on, double click the relevant camera icon on the streaming PC desktop. If you see a picture from the camera, it is powered on and the problem may be that the SDI (video) cable is not properly connected to the camera (or to the back of the rack or to the back of the ATEM switcher). Disconnect and reconnect each plug in turn to ensure it is properly connected.</p>
-<h2 id="a-camera-cannot-be-controlled-by-the-camera-controller"><a class="header" href="#a-camera-cannot-be-controlled-by-the-camera-controller">A camera cannot be controlled by the camera controller</a></h2>
-<p>This may be because the power-over-ethernet (PoE) cable has been plugged into the wrong socket on the affected camera. Make sure the cable is plugged into the left-hand socket. When re-plugging PoE cables, it is best to power all the cameras down first and power them back up afterwards.</p>
 <h2 id="the-camera-controller-fails-to-operate-the-cameras"><a class="header" href="#the-camera-controller-fails-to-operate-the-cameras">The camera controller fails to operate the cameras</a></h2>
-<p>The camera controller may still be in menu mode, in which case the "menu" button will be lit. Press the menu button to exit menu mode.</p>
+<p>The camera controller may still be in menu mode, in which case the “menu” button will be lit. Press the menu button to exit menu mode.</p>
 <p>Alternatively, the controller may be operating a group of cameras other than group 1. You need to select group 1, thus:</p>
 <ul>
-<li>Press "menu" and then "8"</li>
-<li>Select "group" by turning then pressing the F1 dial</li>
-<li>Select "group select" by turning then pressing the F2 dial</li>
-<li>(I presume) Press "1" to select group 1.</li>
+<li>Press “menu” and then “8”</li>
+<li>Select “group” by turning then pressing the F1 dial</li>
+<li>Select “group select” by turning then pressing the F2 dial</li>
+<li>(I presume) Press “1” to select group 1.</li>
 </ul>
 <p>Alternatively, it has been known for the camera controller to reset itself to factory defaults.
-Try power-cycling the camera controller to see if this fixes the problem. If not, you may need to go to the setup menu and re-enter the IP address of each of the cameras: 192.168.0.181-184 (for cameras 1-4). The cameras also need to be set to "network" connection rather than "serial". When entering an IP address, press F2 to select each "dotted decimal" number of the IP address in turn and turn F2 to change the current number. Refer to "Changing the camera numbers" on page 34 of the <em>basic</em> manual for the camera controller (available under <a href="../hardware.html">Hardware</a>) for how to set camera IP addresses. The IP address of the camera controller also needs to be set to
-the correct value: 192.168.0.188. If you prefer, you can use the <code>RP50Tool</code> shortcut on the streaming PC desktop to make these changes (but beware that the tool uses the camera controller's IP address to communicate with it, so this will need to be changed as necessary).</p>
-<p>If the camera controller cannot be made to work, try using the camera controller software ("RP50Tool") on the streaming PC.</p>
+Try power-cycling the camera controller to see if this fixes the problem. If not, you may need to go to the setup menu and re-enter the IP address of each of the cameras: 192.168.0.181-184 (for cameras 1-4). The cameras also need to be set to “network” connection rather than “serial”. When entering an IP address, press F2 to select each “dotted decimal” number of the IP address in turn and turn F2 to change the current number. Refer to “Changing the camera numbers” on page 34 of the <em>basic</em> manual for the camera controller (available under <a href="../hardware.html">Hardware</a>) for how to set camera IP addresses. The IP address of the camera controller also needs to be set to
+the correct value: 192.168.0.188. If you prefer, you can use the <code>RP50Tool</code> shortcut on the streaming PC desktop to make these changes (but beware that the tool uses the camera controller’s IP address to communicate with it, so this will need to be changed as necessary).</p>
+<p>If the camera controller cannot be made to work, try using the camera controller software (“RP50Tool”) on the streaming PC.</p>
 <p>If all else fails, you can gain some basic control of the cameras over TCP/IP using the shortcuts on the streaming PC desktop. See <a href="./software.html">Software</a>.</p>
 <h2 id="the-encoder-stream-button-flashes-red"><a class="header" href="#the-encoder-stream-button-flashes-red">The encoder stream button flashes red</a></h2>
-<p>This may be due to the encoder looking at the wrong input. Open up the encoder software on the streaming PC (there's a shortcut on the desktop, with a note of the admin password on the shortcut), select the "source" tab, and ensure that
+<p>This may be due to the encoder looking at the wrong input. Open up the encoder software on the streaming PC (there’s a shortcut on the desktop, with a note of the admin password on the shortcut), select the “source” tab, and ensure that
 the SDI source is selected (rather than HDMI).</p>
 <p>When the encoder is streaming normally, the stream button should be lit red continuously.</p>
-<h2 id="the-go-live-icon-is-greyed-out-on-youtube"><a class="header" href="#the-go-live-icon-is-greyed-out-on-youtube">The "go live" icon is greyed out on YouTube</a></h2>
+<h2 id="the-go-live-icon-is-greyed-out-on-youtube"><a class="header" href="#the-go-live-icon-is-greyed-out-on-youtube">The “go live” icon is greyed out on YouTube</a></h2>
 <p>This may be due to the stream in question having already been used, even if only briefly. You
 need to create a fresh stream. See <a href="./scheduling.html">Scheduling services</a> for instructions.</p>
 <h2 id="the-live-stream-does-not-appear-in-the-preview-on-youtube"><a class="header" href="#the-live-stream-does-not-appear-in-the-preview-on-youtube">The live stream does not appear in the preview on YouTube</a></h2>
-<p>This may be because the video encoder in the rack is not yet in streaming mode (the "streaming" button needs to be lit in red). Press the streaming button on the video encoder to start streaming. Note: this isn't usually necessary, so be patient while YouTube connects to the stream as this can take up to 20-30 seconds.</p>
-<h2 id="youtube-shows-no-data-or-poor-connection"><a class="header" href="#youtube-shows-no-data-or-poor-connection">YouTube shows "no data" or "poor connection"</a></h2>
+<p>This may be because the video encoder in the rack is not yet in streaming mode (the “streaming” button needs to be lit in red). Press the streaming button on the video encoder to start streaming. Note: this isn’t usually necessary, so be patient while YouTube connects to the stream as this can take up to 20-30 seconds.</p>
+<h2 id="youtube-shows-no-data-or-poor-connection"><a class="header" href="#youtube-shows-no-data-or-poor-connection">YouTube shows “no data” or “poor connection”</a></h2>
 <p>This may be an intermittent or permanent problem and means that the stream will not record properly.</p>
-<p>You can record the stream to a SD card using the video encoder (NVS-34, at the top of the live streaming rack). Ensure a SD card is inserted and press and hold the
-"RECORD" button for a few seconds. Release the button and, after flashing, it should light up continously red showing that the stream is being recorded to the SD card.</p>
-<p><img src="images/NVS34.jpg" alt="NVS-34" /></p>
-<p>At the end of the service, press the "RECORD" button on the encoder again. This will end the recording
-and the MP4 files on the SD card can be stitched together (each file seems to have a maximum size of 4 GB) and uploaded to YouTube later.</p>
-<p>(If there is a temporary internet outage and the YouTube stream cannot be connected to after the internet is back up, it may be possible to <a href="scheduling.html">create a new stream</a> and record to that.)</p>
-<p>For background information on one such internet problem see <a href="https://github.com/ccwinch/live-streaming-tech-notes/issues/9">this issue</a>.</p>
+<p>Unless this clears up before the start of the service, the live stream will not be possible (and we don’t attempt to record the stream to a SD card like we sometimes used to).</p>
+<p>(If there is a temporary internet outage and the YouTube stream cannot be connected to after the internet is back up, it may be possible to <a href="scheduling.html">create a new stream</a> and use that.)</p>
 <h2 id="the-internet-is-not-accessible-from-the-live-streaming-pc"><a class="header" href="#the-internet-is-not-accessible-from-the-live-streaming-pc">The internet is not accessible from the live streaming PC</a></h2>
-<p>Ensure the AV desk PC is switched on (it doesn't need to be logged in). Also ensure that the
-network splitter mains switch is turned on - this is next to the AV desk mains switch (on the wall, low down, at the right hand side of the sound desk).</p>
-<p>Alternatively, the antivirus/firewall software on the streaming PC may be out of date. Temporarily disable the antivirus/firewall from the network settings to work around this.</p>
-<p>Another cause of losing internet (across the whole site!) is if the camera controller has lost its settings and set its IP address to the default of 192.168.0.10 which conflicts with the church's main internet gateway.
+<p>The antivirus/firewall software on the streaming PC may be out of date. Temporarily disable the antivirus/firewall from the network settings to work around this.</p>
+<p>Another cause of losing internet (across the whole site!) is if the camera controller has lost its settings and set its IP address to the default of 192.168.0.10 which conflicts with the church’s main internet gateway.
 See <a href="./problems.html#the-camera-controller-fails-to-operate-the-cameras">The camera controller fails to operate the cameras</a> for how to set the camera controller settings back to what they should be.</p>
 <h2 id="poor-sound-quality-on-the-live-stream"><a class="header" href="#poor-sound-quality-on-the-live-stream">Poor sound quality on the live stream</a></h2>
 <p>Sometimes the host or a member of the online congregation will point out that the sound is
-poor or that there is a specific problem with the sound. Check the sound level on the "live" panel of the multiview monitor. If it seems too low, check with the sound desk operator that the sound desk is correctly set up. If it's still too low, you can boost the volume by using
+poor or that there is a specific problem with the sound. Check the sound level on the “live” panel of the multiview monitor. If it seems too low, check with the sound desk operator that the sound desk is correctly set up. If it’s still too low, you can boost the volume by using
 the ATEM switcher software on the live streaming PC. In the audio tab there is a master volume slider and a xlr slider which can be increased.</p>
 <h2 id="song-words-not-outlined-in-black"><a class="header" href="#song-words-not-outlined-in-black">Song words not outlined in black</a></h2>
 <p>If the song words are no longer outlined in black, reload the ATEM settings (but not during a live stream in case this interrupts it) and save
@@ -248,18 +238,13 @@ the startup state. A good set of ATEM settings is in the Documents folder of the
 <h2 id="christ-church-winchester-logo-not-visible"><a class="header" href="#christ-church-winchester-logo-not-visible">Christ Church Winchester logo not visible</a></h2>
 <p>If the logo does not show, reload the ATEM settings (but not during a live stream in case this interrupts it) and save
 the startup state. A good set of ATEM settings is in the Documents folder of the live streaming PC. Reload them using the <a href="software.html">ATEM software</a> and use the ATEM software to save the startup state.</p>
-<h2 id="robotic-sound-when-the-live-stream-is-displayed-on-screens-in-church"><a class="header" href="#robotic-sound-when-the-live-stream-is-displayed-on-screens-in-church">Robotic sound when the live stream is displayed on screens in church</a></h2>
-<p>Not everyone can hear this problem when it occurs.</p>
-<p>The solution is to use the Roland V-8HD menu to Mute HDMI input #2 from the ATEM (and turn the level down to -70dB to make sure). The menu is shown in the photograph below:</p>
-<p><a href="./images/Rolandmuteinput2.jpg"><img src="./images/Rolandmuteinput2.jpg" alt="" /></a></p>
-<p>For details, see <a href="https://github.com/ccwinch/live-streaming-tech-notes/issues/7">this issue</a>.</p>
-<h2 id="problems-with-the-song-words-or-av-input-camera-5"><a class="header" href="#problems-with-the-song-words-or-av-input-camera-5">Problems with the song words or AV input ("camera 5")</a></h2>
+<h2 id="problems-with-the-song-words-or-av-input-camera-6"><a class="header" href="#problems-with-the-song-words-or-av-input-camera-6">Problems with the song words or AV input (“camera 6”)</a></h2>
 <p>The AV and live streaming desks may have been powered up in the wrong order.
 This should be impossible following the ABCDE refurbishment: the equipment is powered up in the correct sequence automatically.
 This ensures that the graphics card in the AV PC detects the correct inputs.</p>
-<p>There is also a Microsoft Word document on the AV PC which describes the display arrangement ("3, 4, 1|2", where displays 1 and 2 are mirrored) and EasyWorship settings.</p>
+<p>There is also a Microsoft Word document on the AV PC which describes the display arrangement (“3, 4, 1|2”, where displays 1 and 2 are mirrored) and EasyWorship settings.</p>
 <h2 id="youtube-connection-problems"><a class="header" href="#youtube-connection-problems">YouTube connection problems</a></h2>
-<p>If the live stream fails or YouTube reports buffering problems for more than a second or two, there may be an issue with the internet connection. There's not much you can do about this, but please report it so we can look into it.</p>
+<p>If the live stream fails or YouTube reports buffering problems for more than a second or two, there may be an issue with the internet connection. There’s not much you can do about this, but please report it so we can look into it.</p>
 <h2 id="framerate-problems"><a class="header" href="#framerate-problems">Framerate problems</a></h2>
 <p>Sometimes the YouTube preview shows people moving around much faster than normal.
 This is due to an incorrect framerate being used.</p>
@@ -275,13 +260,13 @@ It may be possible to work around this by power-cycling just the live streaming 
 </li>
 <li>
 <p>Click the gear icon to access the settings:
-<a href="./images/framerate1.png"><img src="./images/framerate1.png" alt="" /></a></p>
+<a href="./images/framerate1.png"><img src="./images/framerate1.png" alt=""></a></p>
 </li>
 <li>
 <p>Use the drop down menu to set the video standard temporarily to 1080p25:
-<a href="./images/framerate2.png"><img src="./images/framerate2.png" alt="" /></a>
+<a href="./images/framerate2.png"><img src="./images/framerate2.png" alt=""></a>
 and click Set. The setting should now look like this:
-<a href="./images/framerate3.png"><img src="./images/framerate3.png" alt="" /></a>
+<a href="./images/framerate3.png"><img src="./images/framerate3.png" alt=""></a>
 and the multiview monitor will be black.</p>
 </li>
 <li>
@@ -299,11 +284,11 @@ should show people moving at the normal speed.</p>
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                             <a rel="prev" href="settings.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                                <i class="fa fa-angle-left"></i>
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
                             <a rel="next prefetch" href="scheduling.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
                         <div style="clear: both"></div>
@@ -313,16 +298,21 @@ should show people moving at the normal speed.</p>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                     <a rel="prev" href="settings.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                        <i class="fa fa-angle-left"></i>
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
                     <a rel="next prefetch" href="scheduling.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>
 
         </div>
 
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
 
 
 
@@ -331,13 +321,13 @@ should show people moving at the normal speed.</p>
         </script>
 
 
-        <script src="elasticlunr.min.js"></script>
-        <script src="mark.min.js"></script>
-        <script src="searcher.js"></script>
+        <script src="elasticlunr-ef4e11c1.min.js"></script>
+        <script src="mark-09e88c2c.min.js"></script>
+        <script src="searcher-c2a407aa.js"></script>
 
-        <script src="clipboard.min.js"></script>
-        <script src="highlight.js"></script>
-        <script src="book.js"></script>
+        <script src="clipboard-1626706a.min.js"></script>
+        <script src="highlight-abc7f01d.js"></script>
+        <script src="book-a0b12cfe.js"></script>
 
         <!-- Custom JS scripts -->
 
