@@ -21,6 +21,18 @@
   - [Product description](https://www.blackmagicdesign.com/uk/products/blackmagicvideoassist)
   - [manual](https://documents.blackmagicdesign.com/UserManuals/BlackmagicVideoAssistManual.pdf)
 
+### Schematic diagrams
+
+The following diagrams show how the system was wired after the ABCDE refurbishment in 2025:
+
+* [Audio schematic](./images/Christ\ Church\ Winchester\ Audio\ System\ As-Fitted\ Schematic\ 8-9-2025\ REV2\ \(1\).pdf)
+* [AV schematic](images/Christ\ Church\ Winchester\ AV\ System\ As-Fitted\ Schematic\ 8-9-2025\ REV2\ \(1\).pdf)
+
+Since installation, the following changes have been made:
+
+* The audio feed from the sound desk is now connected to the live streaming Blackmagic video switcher (ATEM) rather than directly into the encoder so the live stream audio can be monitored and controlled by the live streaming operators.
+* An SDI cable connects the aux output of the live streaming Blackmagic video switcher (ATEM) to an input of the AV Blackmagic video switcher, so the live stream can be displayed on screens in church.
+
 ### Blackmagic video assist 7" 12G HDR
 
 The "scope" that's in the live streaming desk drawer can be used for setting the colour and white balance of cameras.
