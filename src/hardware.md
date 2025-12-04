@@ -23,15 +23,18 @@
 
 ### Schematic diagrams
 
-The following diagrams show how the system was wired after the ABCDE refurbishment in 2025:
+The following AV and audio schematic diagrams show how the system was wired after the ABCDE refurbishment in 2025.
 
-* [Audio schematic](./images/Christ\ Church\ Winchester\ Audio\ System\ As-Fitted\ Schematic\ 8-9-2025\ REV2\ \(1\).pdf)
-* [AV schematic](images/Christ\ Church\ Winchester\ AV\ System\ As-Fitted\ Schematic\ 8-9-2025\ REV2\ \(1\).pdf)
+![AV schematic](./images/av-schematic.png)
+Click [here](./images/av-schematic.png) to display the image full size.
+
+![Audio schematic](./images/audio-schematic.png)
+Click [here](./images/audio-schematic.png) to display the image full size.
 
 Since installation, the following changes have been made:
 
-* The audio feed from the sound desk is now connected to the live streaming Blackmagic video switcher (ATEM) rather than directly into the encoder so the live stream audio can be monitored and controlled by the live streaming operators.
-* An SDI cable connects the aux output of the live streaming Blackmagic video switcher (ATEM) to an input of the AV Blackmagic video switcher, so the live stream can be displayed on screens in church.
+* The audio feed from the sound desk is now connected to the live streaming Blackmagic video switcher (ATEM), rather than directly into the encoder, so the live stream audio can be monitored and controlled by the live streaming operators. ([details](https://github.com/ccwinch/live-streaming-tech-notes/issues/18))
+* An SDI cable connects the aux output of the live streaming Blackmagic video switcher (ATEM) to an input of the AV Blackmagic video switcher, so the live stream can be displayed on screens in church. ([details](https://github.com/ccwinch/live-streaming-tech-notes/issues/20))
 
 ### Blackmagic video assist 7" 12G HDR
 
