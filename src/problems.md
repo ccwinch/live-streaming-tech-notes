@@ -37,6 +37,12 @@ You may need to repeat this encoder reboot sequence five or more times before th
 
 Once the STREAM button is lit continuously in red, refresh the YouTube studio web page and see if the preview then displays the live stream. It takes 30-60 seconds or more to preview the stream, so please be patient.
 
+If the stream still does not appear on the preview, the encoder settings may be incorrect and this is covered by the next problem.
+
+## YouTube preview says encoder is not configured properly
+
+See "Datavideo NVS-34 streaming encoder" on the [settings](./settings.md) page for how to configure the encoder settings.
+
 ## The video of a camera does not appear on the multiview display
 
 This may be because the camera has not been powered on. Use the camera controller to power all the cameras on.
