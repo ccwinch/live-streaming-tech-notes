@@ -35,10 +35,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-c88ce482.js";
+            window.path_to_searchindex_js = "searchindex-0d026218.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-e5175835.js"></script>
+        <script src="toc-3da67dd0.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -182,7 +182,7 @@
 <tr><th>Device</th><th>IP address</th></tr>
 </thead>
 <tbody>
-<tr><td>Datavideo encoder</td><td>192.168.0.180</td></tr>
+<tr><td>Datavideo encoder</td><td>192.168.0.139</td></tr>
 <tr><td>Camera 1</td><td>192.168.0.181</td></tr>
 <tr><td>Camera 2</td><td>192.168.0.182</td></tr>
 <tr><td>Camera 3</td><td>192.168.0.183</td></tr>
@@ -199,11 +199,42 @@
 <p><a href="./images/RP50setting.png"><img src="./images/RP50setting.png" alt=""></a>
 (click image to view full size)</p>
 <h2 id="datavideo-nvs-34-streaming-encoder"><a class="header" href="#datavideo-nvs-34-streaming-encoder">Datavideo NVS-34 streaming encoder</a></h2>
+<p>If the above IP address is not correct, find the encoder IP address by running the DeviceFinder application on the live streaming PC.
+Select the interface starting with <code>192</code> and then click the “Scan” button:</p>
+<p><a href="./images/device-finder-scan.jpg"><img src="./images/device-finder-scan.jpg" alt=""></a>
+(click image to view full size)</p>
+<p>The encoder IP address should then be found:</p>
+<p><a href="./images/device-finder-found.jpg"><img src="./images/device-finder-found.jpg" alt=""></a>
+(click image to view full size)</p>
+<p>You can then access the encoder settings by entering the IP address into Google Chrome, e.g.
+<code>http://192.168.0.139</code> (note this link uses <code>http</code> rather than <code>https</code>).</p>
+<p><a href="./images/chrome-encoder.jpg"><img src="./images/chrome-encoder.jpg" alt=""></a>
+(click image to view full size)</p>
+<p>Alternatively, there may be a bookmark for this link, on Chrome’s bookmark bar, entitled “NVS-34 encoder”.</p>
+<p>Use the default account of “admin” and password “000000”.</p>
 <p>Source tab:</p>
 <p><a href="./images/NVS34Source.png"><img src="./images/NVS34Source.png" alt=""></a>
 (click image to view full size)</p>
 <p>Operation mode tab:</p>
-<p>Note: the RTMP URL and Stream Name correspond to the YouTube stream’s Stream URL and Stream key, respectively.</p>
+<p>Click the “Stream” button to access or change the streaming settings.</p>
+<p>The encoder uses Stream Type RTMP for both the primary stream (“Streaming one”) and backup stream (“Streaming two”).</p>
+<p>Most of the settings take the default values, except for the following settings which come from YouTube:</p>
+<ul>
+<li>RTMP URL (also known as “Stream URL”)</li>
+<li>Stream Name (also known as “Stream Key”)</li>
+<li>Account: <code>christchurchwinchesteruk@gmail.com</code></li>
+<li>Password: the Google password for the above account.</li>
+</ul>
+<p>The RTMP URL and Stream Name correspond to the YouTube stream’s Stream URL and Stream key, respectively.
+These can be found on YouTube by previewing a stream (as usual when setting up for streaming).</p>
+<p>The stream key, which is the same for both primary and backup streams, is displayed at the top of the preview with a “copy” icon next to it:</p>
+<p><a href="./images/stream-key.jpg"><img src="./images/stream-key.jpg" alt=""></a>
+(click image to view full size)</p>
+<p>The stream URLs are found further down the same page, with “Copy” buttons next to them:</p>
+<p><a href="./images/stream-url.jpg"><img src="./images/stream-url.jpg" alt=""></a>
+(click image to view full size)</p>
+<p>The stream URL is for the primary stream; the backup server URL is for the backup stream.</p>
+<p>Once the settings have been entered in the following fields on the Operations tab, click “Apply” and then “Start stream”.</p>
 <p><a href="./images/NVS34Operationtop.png"><img src="./images/NVS34Operationtop.png" alt=""></a>
 (click image to view full size)</p>
 <p><a href="./images/NVS34Operationbottom.png"><img src="./images/NVS34Operationbottom.png" alt=""></a>
