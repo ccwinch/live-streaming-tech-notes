@@ -16,6 +16,16 @@ This is often caused by the power cable coming loose. Reach over the back of the
 
 Check the monitor power and display cables are securely plugged in at both ends.
 
+Alternatively, check that both the video standard and the multiview video standard are set to 1080p50 using the menu system at the top right of the ATEM. Use the menu and set buttons to navigate the menu. If they are not set to 1080p50, change them both to this value.
+
+## ATEM switcher preview and programme buttons not working
+
+In aux mode, these buttons may light up blue rather than red or green. The get back to normal mode, press the aux button at the top right of the ATEM.
+
+## Cannot connect ATEM software control application to the ATEM switcher
+
+This may be due to the ATEM switcher having the wrong IP address. To set the correct IP address (`192.168.0.189`), use the menu and set buttons at the top right of the ATEM to navigate to Settings/IP Address and to change its contents. Be sure to connect to "ATEM Television Studio Pro 4K" (since "ATEM Im Person" refers to the ATEM switcher used to control AV).
+
 ## The camera controller is powered off ("no lights")
 
 Check the power cable hasn't come loose and that the switch on the back of the camera controller is in the "on" position.
