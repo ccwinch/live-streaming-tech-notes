@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Overview - Christ Church Winchester: Live streaming tech notes</title>
+        <title>Troubleshooting Guide - Christ Church Winchester: Live streaming tech notes</title>
 
 
         <!-- Custom HTML head -->
@@ -174,30 +174,171 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="live-streaming-tech-notes"><a class="header" href="#live-streaming-tech-notes">Live Streaming Tech Notes</a></h1>
-<p>Here are some technical notes on the CCWinch live streaming setup. See the <a href="https://www.ccwinch.org.uk/streaming">official site</a> for more operational information.</p>
-<p>See also the list of <a href="https://github.com/ccwinch/live-streaming-tech-notes/issues">known issues</a>.</p>
-<p>Contents:</p>
-<ul>
-<li><a href="./hardware.html">Hardware</a> lists the various hardware devices and how they connect together.</li>
-<li><a href="./software.html">PC Software</a> lists the useful programs on the streaming PC.</li>
-<li><a href="./operation.html">Operation</a> provides some tips for streaming a service.</li>
-<li><a href="./audio.html">Audio</a> describes how to mute the sound or change the volume.</li>
-<li><a href="./settings.html">Settings</a> captures various settings for posterity and problem solving.</li>
-<li><a href="./problems.html">Problem Solving</a> lists some problems we’ve encountered in the past with their symptoms and how to fix them.</li>
-<li><a href="./scheduling.html">Scheduling Services</a> describes how to schedule streams on YouTube.</li>
-<li><a href="./mediaplayers.html">Media Players</a> shows how to set the contents of a media player.</li>
-<li><a href="./songwords.html">Song Words</a> describes how words from the AV computer are overlaid on the live stream.</li>
-<li><a href="./av-feed.html">AV Feed</a> describes how to display the live stream on the screens in church.</li>
-<li><a href="./tutorials.html">Tutorials</a> links to some basic tutorials on live streaming.</li>
-</ul>
+                        <h1 id="troubleshooting-guide"><a class="header" href="#troubleshooting-guide">Troubleshooting Guide</a></h1>
+<p>Use the symptom categories below to identify your problem, then follow the link to the fix in <a href="./problems.html">Problem Solving</a>.</p>
+<hr>
+<h2 id="1-hardware--power"><a class="header" href="#1-hardware--power">1. Hardware / Power</a></h2>
+<p><strong>Something has no lights / appears completely off</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>What is off?</th><th>Go to</th></tr>
+</thead>
+<tbody>
+<tr><td>ATEM switcher</td><td><a href="./problems.html#atem-switcher-is-powered-off-no-lights">ATEM switcher is powered off</a></td></tr>
+<tr><td>Camera controller</td><td><a href="./problems.html#the-camera-controller-is-powered-off-no-lights">The camera controller is powered off</a></td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h2 id="2-display--monitor"><a class="header" href="#2-display--monitor">2. Display / Monitor</a></h2>
+<p><strong>A screen is black or shows nothing</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>What is black?</th><th>Go to</th></tr>
+</thead>
+<tbody>
+<tr><td>Multiview monitor</td><td><a href="./problems.html#the-multiview-monitor-is-black">The multiview monitor is black</a></td></tr>
+<tr><td>Streaming PC display</td><td><a href="./problems.html#the-streaming-pc-display-is-black">The streaming PC display is black</a></td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h2 id="3-atem-switcher"><a class="header" href="#3-atem-switcher">3. ATEM Switcher</a></h2>
+<p><strong>The ATEM switcher is behaving unexpectedly</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Symptom</th><th>Go to</th></tr>
+</thead>
+<tbody>
+<tr><td>Preview / programme buttons lit blue instead of red/green</td><td><a href="./problems.html#atem-switcher-preview-and-programme-buttons-not-working">ATEM switcher preview and programme buttons not working</a></td></tr>
+<tr><td>ATEM software cannot connect to the switcher</td><td><a href="./problems.html#cannot-connect-atem-software-control-application-to-the-atem-switcher">Cannot connect ATEM software control application to the ATEM switcher</a></td></tr>
+<tr><td>Video is moving at the wrong speed (too fast) on YouTube</td><td><a href="./problems.html#framerate-problems">Framerate problems</a></td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h2 id="4-cameras"><a class="header" href="#4-cameras">4. Cameras</a></h2>
+<p><strong>A camera is not visible or cannot be controlled</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Symptom</th><th>Go to</th></tr>
+</thead>
+<tbody>
+<tr><td>One or more cameras missing from the multiview display</td><td><a href="./problems.html#the-video-of-a-camera-does-not-appear-on-the-multiview-display">The video of a camera does not appear on the multiview display</a></td></tr>
+<tr><td>Camera controller joystick / buttons have no effect</td><td><a href="./problems.html#the-camera-controller-fails-to-operate-the-cameras">The camera controller fails to operate the cameras</a></td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h2 id="5-encoder--stream"><a class="header" href="#5-encoder--stream">5. Encoder / Stream</a></h2>
+<p><strong>The stream is not reaching YouTube or is not starting</strong></p>
+<p>Start here: is the STREAM button on the NVS-34 encoder lit <strong>continuously red</strong>?</p>
+<pre><code class="language-text">STREAM button state
+├── Not lit (white) or flashing red
+│   ├── Check encoder input source → see "The encoder stream button flashes red" in problems.md
+│   └── Reboot the encoder → see "No stream appears on the YouTube preview" in problems.md
+└── Lit continuously red but stream still missing
+    └── Check encoder settings → see "YouTube preview says encoder is not configured properly" in problems.md
+</code></pre>
+<hr>
+<h2 id="6-youtube--streaming-platform"><a class="header" href="#6-youtube--streaming-platform">6. YouTube / Streaming Platform</a></h2>
+<p><strong>Problems visible on the YouTube side</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Symptom</th><th>Go to</th></tr>
+</thead>
+<tbody>
+<tr><td>No stream in the YouTube preview at all</td><td><a href="./problems.html#no-stream-appears-on-the-youtube-preview">No stream appears on the YouTube preview</a></td></tr>
+<tr><td>Stream does not appear in YouTube preview despite encoder running</td><td><a href="./problems.html#the-live-stream-does-not-appear-in-the-preview-on-youtube">The live stream does not appear in the preview on YouTube</a></td></tr>
+<tr><td>YouTube says “encoder not configured properly”</td><td><a href="./problems.html#youtube-preview-says-encoder-is-not-configured-properly">YouTube preview says encoder is not configured properly</a></td></tr>
+<tr><td>“Go live” button is greyed out</td><td><a href="./problems.html#the-go-live-icon-is-greyed-out-on-youtube">The “go live” icon is greyed out on YouTube</a></td></tr>
+<tr><td>YouTube shows “no data” or “poor connection”</td><td><a href="./problems.html#youtube-shows-no-data-or-poor-connection">YouTube shows “no data” or “poor connection”</a></td></tr>
+<tr><td>YouTube buffering / stream fails mid-service</td><td><a href="./problems.html#youtube-connection-problems">YouTube connection problems</a></td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h2 id="7-internet"><a class="header" href="#7-internet">7. Internet</a></h2>
+<p><strong>The streaming PC cannot reach the internet, or the whole site has lost internet</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Symptom</th><th>Go to</th></tr>
+</thead>
+<tbody>
+<tr><td>Streaming PC only: no internet access</td><td><a href="./problems.html#the-internet-is-not-accessible-from-the-live-streaming-pc">The internet is not accessible from the live streaming PC</a></td></tr>
+<tr><td>Whole site has lost internet</td><td><a href="./problems.html#the-internet-is-not-accessible-from-the-live-streaming-pc">The internet is not accessible from the live streaming PC</a> (check camera controller IP conflict)</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h2 id="8-audio"><a class="header" href="#8-audio">8. Audio</a></h2>
+<p><strong>Sound quality is poor or volume is too low on the stream</strong></p>
+<p>→ <a href="./problems.html#poor-sound-quality-on-the-live-stream">Poor sound quality on the live stream</a></p>
+<hr>
+<h2 id="9-graphics--overlays"><a class="header" href="#9-graphics--overlays">9. Graphics / Overlays</a></h2>
+<p><strong>Song words or the Christ Church logo are not displaying correctly</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Symptom</th><th>Go to</th></tr>
+</thead>
+<tbody>
+<tr><td>Song words have no black outline</td><td><a href="./problems.html#song-words-not-outlined-in-black">Song words not outlined in black</a></td></tr>
+<tr><td>Christ Church Winchester logo not visible</td><td><a href="./problems.html#christ-church-winchester-logo-not-visible">Christ Church Winchester logo not visible</a></td></tr>
+<tr><td>Song words or AV input (“camera 6”) not working</td><td><a href="./problems.html#problems-with-the-song-words-or-av-input-camera-6">Problems with the song words or AV input</a></td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h2 id="quick-reference-all-problems"><a class="header" href="#quick-reference-all-problems">Quick Reference: All Problems</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Problem</th><th>Section in problems.md</th></tr>
+</thead>
+<tbody>
+<tr><td>ATEM switcher has no lights</td><td><a href="./problems.html#atem-switcher-is-powered-off-no-lights">Link</a></td></tr>
+<tr><td>Multiview monitor is black</td><td><a href="./problems.html#the-multiview-monitor-is-black">Link</a></td></tr>
+<tr><td>ATEM preview/programme buttons not working</td><td><a href="./problems.html#atem-switcher-preview-and-programme-buttons-not-working">Link</a></td></tr>
+<tr><td>Cannot connect ATEM software to switcher</td><td><a href="./problems.html#cannot-connect-atem-software-control-application-to-the-atem-switcher">Link</a></td></tr>
+<tr><td>Camera controller has no lights</td><td><a href="./problems.html#the-camera-controller-is-powered-off-no-lights">Link</a></td></tr>
+<tr><td>Streaming PC display is black</td><td><a href="./problems.html#the-streaming-pc-display-is-black">Link</a></td></tr>
+<tr><td>No stream on YouTube preview</td><td><a href="./problems.html#no-stream-appears-on-the-youtube-preview">Link</a></td></tr>
+<tr><td>YouTube says encoder not configured properly</td><td><a href="./problems.html#youtube-preview-says-encoder-is-not-configured-properly">Link</a></td></tr>
+<tr><td>Camera missing from multiview</td><td><a href="./problems.html#the-video-of-a-camera-does-not-appear-on-the-multiview-display">Link</a></td></tr>
+<tr><td>Camera controller not operating cameras</td><td><a href="./problems.html#the-camera-controller-fails-to-operate-the-cameras">Link</a></td></tr>
+<tr><td>Encoder STREAM button flashes red</td><td><a href="./problems.html#the-encoder-stream-button-flashes-red">Link</a></td></tr>
+<tr><td>“Go live” greyed out on YouTube</td><td><a href="./problems.html#the-go-live-icon-is-greyed-out-on-youtube">Link</a></td></tr>
+<tr><td>Stream not appearing in YouTube preview</td><td><a href="./problems.html#the-live-stream-does-not-appear-in-the-preview-on-youtube">Link</a></td></tr>
+<tr><td>YouTube “no data” or “poor connection”</td><td><a href="./problems.html#youtube-shows-no-data-or-poor-connection">Link</a></td></tr>
+<tr><td>No internet on streaming PC</td><td><a href="./problems.html#the-internet-is-not-accessible-from-the-live-streaming-pc">Link</a></td></tr>
+<tr><td>Poor sound quality</td><td><a href="./problems.html#poor-sound-quality-on-the-live-stream">Link</a></td></tr>
+<tr><td>Song words not outlined in black</td><td><a href="./problems.html#song-words-not-outlined-in-black">Link</a></td></tr>
+<tr><td>Logo not visible</td><td><a href="./problems.html#christ-church-winchester-logo-not-visible">Link</a></td></tr>
+<tr><td>Song words / AV input problems</td><td><a href="./problems.html#problems-with-the-song-words-or-av-input-camera-6">Link</a></td></tr>
+<tr><td>YouTube buffering / connection failure</td><td><a href="./problems.html#youtube-connection-problems">Link</a></td></tr>
+<tr><td>Framerate wrong (people moving too fast)</td><td><a href="./problems.html#framerate-problems">Link</a></td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<p><em>If your problem is not listed here, ask on the “Streaming” Slack channel or find someone in church who can help. If you solve an unlisted problem, please add it to <a href="./problems.html">problems.md</a>.</em></p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="settings.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
 
-                            <a rel="next prefetch" href="hardware.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="problems.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
@@ -207,8 +348,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="settings.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
 
-                    <a rel="next prefetch" href="hardware.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="problems.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>
