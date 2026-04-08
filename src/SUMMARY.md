@@ -6,6 +6,7 @@
 - [Operation](./operation.md)
 - [Audio](./audio.md)
 - [Settings](./settings.md)
+- [Troubleshooting Guide](./trouble-shooting.md)
 - [Problem Solving](./problems.md)
 - [Scheduling Services](./scheduling.md)
 - [Media Players](./mediaplayers.md)
