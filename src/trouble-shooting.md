@@ -55,13 +55,13 @@ Use the symptom categories below to identify your problem, then follow the link 
 
 Start here: is the STREAM button on the NVS-34 encoder lit **continuously red**?
 
-```
+```text
 STREAM button state
 ├── Not lit (white) or flashing red
-│   ├── Check encoder input source → [The encoder stream button flashes red](./problems.md#the-encoder-stream-button-flashes-red)
-│   └── Reboot the encoder → [No stream appears on the YouTube preview](./problems.md#no-stream-appears-on-the-youtube-preview)
+│   ├── Check encoder input source → see "The encoder stream button flashes red" in problems.md
+│   └── Reboot the encoder → see "No stream appears on the YouTube preview" in problems.md
 └── Lit continuously red but stream still missing
-    └── Check encoder settings → [YouTube preview says encoder is not configured properly](./problems.md#youtube-preview-says-encoder-is-not-configured-properly)
+    └── Check encoder settings → see "YouTube preview says encoder is not configured properly" in problems.md
 ```
 
 ---
