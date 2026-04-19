@@ -12,6 +12,16 @@
 | Panasonic Camera Controller     | 192.168.0.188     |
 | Blackmagic ATEM                 | 192.168.0.189     |
 
+## Blackmagic ATEM TV Studio Pro 4K
+
+Use the ATEM Television Studio Pro 4K application on the live streaming PC to reload the ATEM settings:
+
+1. Click File -> Restore.
+2. Choose the most recent set of settings saved in a .xml file in the Desktop folder.
+3. Click Restore.
+4. Click File -> Save Startup State so these settings are loaded next time the ATEM is powered up.
+
+
 ## Panasonic remote camera controller AW-RP50
 
 Launch the RP50Tool program (see [Software](./software.md)) and set the RP1 IP address to 192.168.0.188[^ccip] on the IP Address tab and click the "Set" button. See the image below.

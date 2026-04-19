@@ -115,6 +115,10 @@ Sometimes the host or a member of the online congregation will point out that th
 poor or that there is a specific problem with the sound. Check the sound level on the "live" panel of the multiview monitor. If it seems too low, check with the sound desk operator that the sound desk is correctly set up. If it's still too low, you can boost the volume by using
 the ATEM switcher software on the live streaming PC. In the audio tab there is a master volume slider and a xlr slider which can be increased.
 
+## Song words not displayed
+
+If the song words are not displayed when you turn them on, reload the ATEM settings (but not during a live stream in case this interrupts it) and save the startup state. XXXX
+
 ## Song words not outlined in black
 
 If the song words are no longer outlined in black, reload the ATEM settings (but not during a live stream in case this interrupts it) and save
