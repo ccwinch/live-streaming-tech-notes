@@ -18,9 +18,9 @@ Use the ATEM Television Studio Pro 4K application on the live streaming PC to re
 
 1. Click File -> Restore.
 2. Choose the most recent set of settings saved in a .xml file in the Desktop folder.
+**Be careful to choose the settings for the ATEM TV Studio Pro 4K (rather than the "ATEM in person" device used by the AV desk).**
 3. Click Restore.
 4. Click File -> Save Startup State so these settings are loaded next time the ATEM is powered up.
-
 
 ## Panasonic remote camera controller AW-RP50
 
@@ -109,4 +109,3 @@ System tab:
 
 [![](./images/NVS34System.png)](./images/NVS34System.png)
 (click image to view full size)
-

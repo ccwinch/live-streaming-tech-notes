@@ -24,7 +24,7 @@ In aux mode, these buttons may light up blue rather than red or green. The get b
 
 ## Cannot connect ATEM software control application to the ATEM switcher
 
-This may be due to the ATEM switcher having the wrong IP address. To set the correct IP address (`192.168.0.189`), use the menu and set buttons at the top right of the ATEM to navigate to Settings/IP Address and to change its contents. Be sure to connect to "ATEM Television Studio Pro 4K" (since "ATEM Im Person" refers to the ATEM switcher used to control AV).
+This may be due to the ATEM switcher having the wrong IP address. To set the correct IP address (`192.168.0.189`), use the menu and set buttons at the top right of the ATEM to navigate to Settings/IP Address and to change its contents. Be sure to connect to "ATEM Television Studio Pro 4K" (since "ATEM In Person" refers to the ATEM switcher used to control AV).
 
 ## The camera controller is powered off ("no lights")
 
@@ -117,25 +117,16 @@ the ATEM switcher software on the live streaming PC. In the audio tab there is a
 
 ## Song words not displayed
 
-If the song words are not displayed when you turn them on, reload the ATEM settings (but not during a live stream in case this interrupts it) and save the startup state. XXXX
+If the song words are not displayed when you turn them on, [reload the ATEM settings](./settings.md#blackmagic-atem-tv-studio-pro-4k) (but not during a live stream in case this interrupts it) and save the startup state.
 
 ## Song words not outlined in black
 
-If the song words are no longer outlined in black, reload the ATEM settings (but not during a live stream in case this interrupts it) and save
-the startup state. A good set of ATEM settings is in the Documents folder of the live streaming PC. Reload them using the [ATEM software](software.md) and use the ATEM software to save the startup state.
+If the song words are no longer outlined in black, [reload the ATEM settings](./settings.md#blackmagic-atem-tv-studio-pro-4k) (but not during a live stream in case this interrupts it) and save
+the startup state.
 
 ## Christ Church Winchester logo not visible
 
-If the logo does not show, reload the ATEM settings (but not during a live stream in case this interrupts it) and save
-the startup state. A good set of ATEM settings is in the Documents folder of the live streaming PC. Reload them using the [ATEM software](software.md) and use the ATEM software to save the startup state.
-
-## Problems with the song words or AV input ("camera 6")
-
-The AV and live streaming desks may have been powered up in the wrong order.
-This should be impossible following the ABCDE refurbishment: the equipment is powered up in the correct sequence automatically.
-This ensures that the graphics card in the AV PC detects the correct inputs.
-
-There is also a Microsoft Word document on the AV PC which describes the display arrangement ("3, 4, 1|2", where displays 1 and 2 are mirrored) and EasyWorship settings.
+If the logo does not show, [reload the ATEM settings](./settings.md#blackmagic-atem-tv-studio-pro-4k) (but not during a live stream in case this interrupts it).
 
 ## YouTube connection problems
 

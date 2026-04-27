@@ -106,9 +106,9 @@ STREAM button state
 
 | Symptom | Go to |
 |---|---|
+| Song words not displaying | [Song words not displayed](./problems.md#song-words-not-displayed) |
 | Song words have no black outline | [Song words not outlined in black](./problems.md#song-words-not-outlined-in-black) |
 | Christ Church Winchester logo not visible | [Christ Church Winchester logo not visible](./problems.md#christ-church-winchester-logo-not-visible) |
-| Song words or AV input ("camera 6") not working | [Problems with the song words or AV input](./problems.md#problems-with-the-song-words-or-av-input-camera-6) |
 
 ---
 
@@ -134,7 +134,6 @@ STREAM button state
 | Poor sound quality | [Link](./problems.md#poor-sound-quality-on-the-live-stream) |
 | Song words not outlined in black | [Link](./problems.md#song-words-not-outlined-in-black) |
 | Logo not visible | [Link](./problems.md#christ-church-winchester-logo-not-visible) |
-| Song words / AV input problems | [Link](./problems.md#problems-with-the-song-words-or-av-input-camera-6) |
 | YouTube buffering / connection failure | [Link](./problems.md#youtube-connection-problems) |
 | Framerate wrong (people moving too fast) | [Link](./problems.md#framerate-problems) |
 

@@ -11,11 +11,10 @@ Contents:
 * [Operation](./operation.md) provides some tips for streaming a service.
 * [Audio](./audio.md) describes how to mute the sound or change the volume.
 * [Settings](./settings.md) captures various settings for posterity and problem solving.
+* [Troubleshooting Guide](./trouble-shooting.md) groups problems and solutions by category of symptoms.
 * [Problem Solving](./problems.md) lists some problems we've encountered in the past with their symptoms and how to fix them.
 * [Scheduling Services](./scheduling.md) describes how to schedule streams on YouTube.
 * [Media Players](./mediaplayers.md) shows how to set the contents of a media player.
 * [Song Words](./songwords.md) describes how words from the AV computer are overlaid on the live stream.
 * [AV Feed](./av-feed.md) describes how to display the live stream on the screens in church.
 * [Tutorials](./tutorials.md) links to some basic tutorials on live streaming.
-
-
