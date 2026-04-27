@@ -36,7 +36,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-e17dc010.js";
+            window.path_to_searchindex_js = "searchindex-edf6cbdd.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-161a1682.js"></script>
@@ -185,6 +185,7 @@
 <li><a href="#operation">Operation</a> provides some tips for streaming a service.</li>
 <li><a href="#audio">Audio</a> describes how to mute the sound or change the volume.</li>
 <li><a href="#settings">Settings</a> captures various settings for posterity and problem solving.</li>
+<li><a href="#troubleshooting-guide">Troubleshooting Guide</a> groups problems and solutions by category of symptoms.</li>
 <li><a href="#problem-solving-1">Problem Solving</a> lists some problems we’ve encountered in the past with their symptoms and how to fix them.</li>
 <li><a href="#scheduling-services-1">Scheduling Services</a> describes how to schedule streams on YouTube.</li>
 <li><a href="#media-players-1">Media Players</a> shows how to set the contents of a media player.</li>
@@ -367,7 +368,8 @@ But there are a couple of things you can control, using the audio mixer in the A
 <p>Use the ATEM Television Studio Pro 4K application on the live streaming PC to reload the ATEM settings:</p>
 <ol>
 <li>Click File -&gt; Restore.</li>
-<li>Choose the most recent set of settings saved in a .xml file in the Desktop folder.</li>
+<li>Choose the most recent set of settings saved in a .xml file in the Desktop folder.
+<strong>Be careful to choose the settings for the ATEM TV Studio Pro 4K (rather than the “ATEM in person” device used by the AV desk).</strong></li>
 <li>Click Restore.</li>
 <li>Click File -&gt; Save Startup State so these settings are loaded next time the ATEM is powered up.</li>
 </ol>
@@ -546,9 +548,9 @@ These can be found on YouTube by previewing a stream (as usual when setting up f
 <tr><th>Symptom</th><th>Go to</th></tr>
 </thead>
 <tbody>
+<tr><td>Song words not displaying</td><td><a href="#song-words-not-displayed">Song words not displayed</a></td></tr>
 <tr><td>Song words have no black outline</td><td><a href="#song-words-not-outlined-in-black">Song words not outlined in black</a></td></tr>
 <tr><td>Christ Church Winchester logo not visible</td><td><a href="#christ-church-winchester-logo-not-visible">Christ Church Winchester logo not visible</a></td></tr>
-<tr><td>Song words or AV input (“camera 6”) not working</td><td><a href="#problems-with-the-song-words-or-av-input-camera-6">Problems with the song words or AV input</a></td></tr>
 </tbody>
 </table>
 </div>
@@ -578,7 +580,6 @@ These can be found on YouTube by previewing a stream (as usual when setting up f
 <tr><td>Poor sound quality</td><td><a href="#poor-sound-quality-on-the-live-stream">Link</a></td></tr>
 <tr><td>Song words not outlined in black</td><td><a href="#song-words-not-outlined-in-black">Link</a></td></tr>
 <tr><td>Logo not visible</td><td><a href="#christ-church-winchester-logo-not-visible">Link</a></td></tr>
-<tr><td>Song words / AV input problems</td><td><a href="#problems-with-the-song-words-or-av-input-camera-6">Link</a></td></tr>
 <tr><td>YouTube buffering / connection failure</td><td><a href="#youtube-connection-problems">Link</a></td></tr>
 <tr><td>Framerate wrong (people moving too fast)</td><td><a href="#framerate-problems">Link</a></td></tr>
 </tbody>
@@ -601,7 +602,7 @@ These can be found on YouTube by previewing a stream (as usual when setting up f
 <h2 id="atem-switcher-preview-and-programme-buttons-not-working"><a class="header" href="#atem-switcher-preview-and-programme-buttons-not-working">ATEM switcher preview and programme buttons not working</a></h2>
 <p>In aux mode, these buttons may light up blue rather than red or green. The get back to normal mode, press the aux button at the top right of the ATEM.</p>
 <h2 id="cannot-connect-atem-software-control-application-to-the-atem-switcher"><a class="header" href="#cannot-connect-atem-software-control-application-to-the-atem-switcher">Cannot connect ATEM software control application to the ATEM switcher</a></h2>
-<p>This may be due to the ATEM switcher having the wrong IP address. To set the correct IP address (<code>192.168.0.189</code>), use the menu and set buttons at the top right of the ATEM to navigate to Settings/IP Address and to change its contents. Be sure to connect to “ATEM Television Studio Pro 4K” (since “ATEM Im Person” refers to the ATEM switcher used to control AV).</p>
+<p>This may be due to the ATEM switcher having the wrong IP address. To set the correct IP address (<code>192.168.0.189</code>), use the menu and set buttons at the top right of the ATEM to navigate to Settings/IP Address and to change its contents. Be sure to connect to “ATEM Television Studio Pro 4K” (since “ATEM In Person” refers to the ATEM switcher used to control AV).</p>
 <h2 id="the-camera-controller-is-powered-off-no-lights"><a class="header" href="#the-camera-controller-is-powered-off-no-lights">The camera controller is powered off (“no lights”)</a></h2>
 <p>Check the power cable hasn’t come loose and that the switch on the back of the camera controller is in the “on” position.</p>
 <h2 id="the-streaming-pc-display-is-black"><a class="header" href="#the-streaming-pc-display-is-black">The streaming PC display is black</a></h2>
@@ -655,18 +656,12 @@ See <a href="#the-camera-controller-fails-to-operate-the-cameras">The camera con
 poor or that there is a specific problem with the sound. Check the sound level on the “live” panel of the multiview monitor. If it seems too low, check with the sound desk operator that the sound desk is correctly set up. If it’s still too low, you can boost the volume by using
 the ATEM switcher software on the live streaming PC. In the audio tab there is a master volume slider and a xlr slider which can be increased.</p>
 <h2 id="song-words-not-displayed"><a class="header" href="#song-words-not-displayed">Song words not displayed</a></h2>
-<p>If the song words are not displayed when you turn them on, reload the ATEM settings (but not during a live stream in case this interrupts it) and save the startup state. XXXX</p>
+<p>If the song words are not displayed when you turn them on, <a href="#blackmagic-atem-tv-studio-pro-4k">reload the ATEM settings</a> (but not during a live stream in case this interrupts it) and save the startup state.</p>
 <h2 id="song-words-not-outlined-in-black"><a class="header" href="#song-words-not-outlined-in-black">Song words not outlined in black</a></h2>
-<p>If the song words are no longer outlined in black, reload the ATEM settings (but not during a live stream in case this interrupts it) and save
-the startup state. A good set of ATEM settings is in the Documents folder of the live streaming PC. Reload them using the <a href="#pc-software">ATEM software</a> and use the ATEM software to save the startup state.</p>
+<p>If the song words are no longer outlined in black, <a href="#blackmagic-atem-tv-studio-pro-4k">reload the ATEM settings</a> (but not during a live stream in case this interrupts it) and save
+the startup state.</p>
 <h2 id="christ-church-winchester-logo-not-visible"><a class="header" href="#christ-church-winchester-logo-not-visible">Christ Church Winchester logo not visible</a></h2>
-<p>If the logo does not show, reload the ATEM settings (but not during a live stream in case this interrupts it) and save
-the startup state. A good set of ATEM settings is in the Documents folder of the live streaming PC. Reload them using the <a href="#pc-software">ATEM software</a> and use the ATEM software to save the startup state.</p>
-<h2 id="problems-with-the-song-words-or-av-input-camera-6"><a class="header" href="#problems-with-the-song-words-or-av-input-camera-6">Problems with the song words or AV input (“camera 6”)</a></h2>
-<p>The AV and live streaming desks may have been powered up in the wrong order.
-This should be impossible following the ABCDE refurbishment: the equipment is powered up in the correct sequence automatically.
-This ensures that the graphics card in the AV PC detects the correct inputs.</p>
-<p>There is also a Microsoft Word document on the AV PC which describes the display arrangement (“3, 4, 1|2”, where displays 1 and 2 are mirrored) and EasyWorship settings.</p>
+<p>If the logo does not show, <a href="#blackmagic-atem-tv-studio-pro-4k">reload the ATEM settings</a> (but not during a live stream in case this interrupts it).</p>
 <h2 id="youtube-connection-problems"><a class="header" href="#youtube-connection-problems">YouTube connection problems</a></h2>
 <p>If the live stream fails or YouTube reports buffering problems for more than a second or two, there may be an issue with the internet connection. There’s not much you can do about this, but please report it so we can look into it.</p>
 <h2 id="framerate-problems"><a class="header" href="#framerate-problems">Framerate problems</a></h2>
@@ -767,7 +762,8 @@ isn’t the case. AVI, MOV, MP4, and similar formats are not supported. It is ap
 <p><a href="images/ATEMMedia.png"><img src="images/ATEMMedia.png" alt=""></a></p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="song-words"><a class="header" href="#song-words">Song Words</a></h1>
-<p>The following applies to text output from the AV computer including song words, liturgy, and scripture.</p>
+<p>The following applies to text output from the AV computer including song words, liturgy, and scripture.
+If song words are not displaying, <a href="#blackmagic-atem-tv-studio-pro-4k">reload the ATEM settings</a>.</p>
 <p>There are two outputs from the AV desk that enable the ATEM to overlay song words on the live stream:</p>
 <ol>
 <li>
