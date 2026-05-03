@@ -22,6 +22,10 @@ Use the ATEM Television Studio Pro 4K application on the live streaming PC to re
 3. Click Restore.
 4. Click File -> Save Startup State so these settings are loaded next time the ATEM is powered up.
 
+If the application does not connect to the ATEM, this may be due to the ATEM switcher having the wrong IP address. To set the correct IP address (`192.168.0.189`), use the menu and set buttons at the top right of the ATEM to navigate to Settings/IP Address and to change its contents:
+
+[![](./images/ATEMIP.jpg)](./images/ATEMIP.jpg)
+
 ## Panasonic remote camera controller AW-RP50
 
 Launch the RP50Tool program (see [Software](./software.md)) and set the RP1 IP address to 192.168.0.188[^ccip] on the IP Address tab and click the "Set" button. See the image below.
