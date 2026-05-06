@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-f429671a.js";
+            window.path_to_searchindex_js = "searchindex-a2f66546.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-161a1682.js"></script>
@@ -192,8 +192,13 @@
 </tbody>
 </table>
 </div>
-<h2 id="blackmagic-atem-tv-studio-pro-4k"><a class="header" href="#blackmagic-atem-tv-studio-pro-4k">Blackmagic ATEM TV Studio Pro 4K</a></h2>
-<p>Use the ATEM Television Studio Pro 4K application on the live streaming PC to reload the ATEM settings:</p>
+<h2 id="blackmagic-atem-tv-studio-pro-4k-settings"><a class="header" href="#blackmagic-atem-tv-studio-pro-4k-settings">Blackmagic ATEM TV Studio Pro 4K settings</a></h2>
+<p>This section describes how to use the ATEM Television Studio Pro 4K application on the live streaming PC to reload the ATEM settings.</p>
+<p>Start the application and connect to the ATEM TV Studio Pro 4K (<strong>not</strong> the “ATEM in person” device, as this belongs to the AV desk).</p>
+<p>If the application does not connect to the ATEM, this may be due to the ATEM switcher having the wrong IP address. To set the correct IP address (<code>192.168.0.189</code>), use the menu and set buttons at the top right of the ATEM to navigate to Settings/IP Address and to change its contents:</p>
+<p><a href="./images/ATEMIP.jpg"><img src="./images/ATEMIP.jpg" alt=""></a></p>
+<p>Once you’ve set the IP address, connect to the ATEM using the PC application.</p>
+<p>Once you’ve connected to the live streaming ATEM, you can reload the settings as follows:</p>
 <ol>
 <li>Click File -&gt; Restore.</li>
 <li>Choose the most recent set of settings saved in a .xml file in the Desktop folder.
@@ -201,16 +206,21 @@
 <li>Click Restore.</li>
 <li>Click File -&gt; Save Startup State so these settings are loaded next time the ATEM is powered up.</li>
 </ol>
-<p>If the application does not connect to the ATEM, this may be due to the ATEM switcher having the wrong IP address. To set the correct IP address (<code>192.168.0.189</code>), use the menu and set buttons at the top right of the ATEM to navigate to Settings/IP Address and to change its contents:</p>
-<p><a href="./images/ATEMIP.jpg"><img src="./images/ATEMIP.jpg" alt=""></a></p>
 <h2 id="panasonic-remote-camera-controller-aw-rp50"><a class="header" href="#panasonic-remote-camera-controller-aw-rp50">Panasonic remote camera controller AW-RP50</a></h2>
 <p>Launch the RP50Tool program (see <a href="./software.html">Software</a>) and set the RP1 IP address to 192.168.0.188<sup class="footnote-reference" id="fr-ccip-1"><a href="#footnote-ccip">1</a></sup> on the IP Address tab and click the “Set” button. See the image below.</p>
 <p><a href="./images/RP50IPaddress.png"><img src="./images/RP50IPaddress.png" alt=""></a></p>
 <p>Then go to the Setting tab and click the “Refresh” button. The IP addresses of the cameras should be as in the screenshot below. If necessary, update the settings and click the “SET” button.</p>
 <p><a href="./images/RP50setting.png"><img src="./images/RP50setting.png" alt=""></a>
 (click image to view full size)</p>
-<h2 id="datavideo-nvs-34-streaming-encoder"><a class="header" href="#datavideo-nvs-34-streaming-encoder">Datavideo NVS-34 streaming encoder</a></h2>
-<p>If the above IP address is not correct, find the encoder IP address by running the DeviceFinder application on the live streaming PC.
+<h2 id="datavideo-nvs-34-streaming-encoder-settings"><a class="header" href="#datavideo-nvs-34-streaming-encoder-settings">Datavideo NVS-34 streaming encoder settings</a></h2>
+<p>This section describes how to configure the encoder settings using Chrome to access the encoder’s website.</p>
+<p>First, you need to browse to the encoder’s homepage and log in.
+There should be a bookmark for the homepage, on Chrome’s bookmark bar, entitled “NVS-34 encoder”.</p>
+<p>Log in using the default account of “admin” and password “000000”.</p>
+<p>If you managed to log in, skip the next section to configure the encoder.</p>
+<p>If the encoder’s homepage was not found, read the next section.</p>
+<h3 id="finding-the-encoders-homepage"><a class="header" href="#finding-the-encoders-homepage">Finding the encoder’s homepage</a></h3>
+<p>First you need to find the encoder’s IP address by running the DeviceFinder application on the live streaming PC.
 Select the interface starting with <code>192</code> and then click the “Scan” button:</p>
 <p><a href="./images/device-finder-scan.jpg"><img src="./images/device-finder-scan.jpg" alt=""></a>
 (click image to view full size)</p>
@@ -221,13 +231,9 @@ Select the interface starting with <code>192</code> and then click the “Scan�
 <code>http://192.168.0.139</code> (note this link uses <code>http</code> rather than <code>https</code>).</p>
 <p><a href="./images/chrome-encoder.jpg"><img src="./images/chrome-encoder.jpg" alt=""></a>
 (click image to view full size)</p>
-<p>Alternatively, there may be a bookmark for this link, on Chrome’s bookmark bar, entitled “NVS-34 encoder”.</p>
-<p>Use the default account of “admin” and password “000000”.</p>
-<p>Source tab:</p>
-<p><a href="./images/NVS34Source.png"><img src="./images/NVS34Source.png" alt=""></a>
-(click image to view full size)</p>
-<p>Operation mode tab:</p>
-<p>Click the “Stream” button to access or change the streaming settings.</p>
+<h3 id="configuring-the-encoder-settings"><a class="header" href="#configuring-the-encoder-settings">Configuring the encoder settings</a></h3>
+<p>Once you have logged in to the encoder’s homepage, you’ll see a number of tabs.
+Click on the Operation mode tab and then click the “Stream” button to access or change the streaming settings.</p>
 <p>The encoder uses Stream Type RTMP for both the primary stream (“Streaming one”) and backup stream (“Streaming two”).</p>
 <p>Most of the settings take the default values, except for the following settings which come from YouTube:</p>
 <ul>
@@ -250,6 +256,7 @@ These can be found on YouTube by previewing a stream (as usual when setting up f
 (click image to view full size)</p>
 <p><a href="./images/NVS34Operationbottom.png"><img src="./images/NVS34Operationbottom.png" alt=""></a>
 (click image to view full size)</p>
+<p>You probably won’t need to change any other settings, but here are screenshots of some of the other tabs just in case.</p>
 <p>CG tab:</p>
 <p><a href="./images/NVS34CG.png"><img src="./images/NVS34CG.png" alt=""></a>
 (click image to view full size)</p>
