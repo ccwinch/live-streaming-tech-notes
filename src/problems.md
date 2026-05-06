@@ -18,7 +18,7 @@ Check the monitor power and display cables are securely plugged in at both ends.
 
 Try power-cycling the ATEM.
 
-If this doesn't solve the problem, [reload the ATEM settings](./settings.md#blackmagic-atem-tv-studio-pro-4k).
+If this doesn't solve the problem, [reload the ATEM settings](./settings.md#blackmagic-atem-tv-studio-pro-4k-settings).
 
 Alternatively, check that both the video standard and the multiview video standard are set to 1080p50 using the menu system at the top right of the ATEM. Use the menu and set buttons to navigate the menu. If they are not set to 1080p50, change them both to this value.
 
@@ -59,7 +59,7 @@ If the stream still does not appear on the preview, the encoder settings may be 
 
 ## YouTube preview says encoder is not configured properly
 
-See "Datavideo NVS-34 streaming encoder" on the [settings](./settings.md) page for how to configure the encoder settings.
+See [Datavideo NVS-34 streaming encoder settings](./settings.md#datavideo-nvs-34-streaming-encoder-settings) for how to configure the encoder settings.
 
 ## The video of a camera does not appear on the multiview display
 
@@ -125,16 +125,16 @@ the ATEM switcher software on the live streaming PC. In the audio tab there is a
 
 ## Song words not displayed
 
-If the song words are not displayed when you turn them on, [reload the ATEM settings](./settings.md#blackmagic-atem-tv-studio-pro-4k) (but not during a live stream in case this interrupts it) and save the startup state.
+If the song words are not displayed when you turn them on, [reload the ATEM settings](./settings.md#blackmagic-atem-tv-studio-pro-4k-settings) (but not during a live stream in case this interrupts it) and save the startup state.
 
 ## Song words not outlined in black
 
-If the song words are no longer outlined in black, [reload the ATEM settings](./settings.md#blackmagic-atem-tv-studio-pro-4k) (but not during a live stream in case this interrupts it) and save
+If the song words are no longer outlined in black, [reload the ATEM settings](./settings.md#blackmagic-atem-tv-studio-pro-4k-settings) (but not during a live stream in case this interrupts it) and save
 the startup state.
 
 ## Christ Church Winchester logo not visible
 
-If the logo does not show, [reload the ATEM settings](./settings.md#blackmagic-atem-tv-studio-pro-4k) (but not during a live stream in case this interrupts it).
+If the logo does not show, [reload the ATEM settings](./settings.md#blackmagic-atem-tv-studio-pro-4k-settings) (but not during a live stream in case this interrupts it).
 
 ## YouTube connection problems
 

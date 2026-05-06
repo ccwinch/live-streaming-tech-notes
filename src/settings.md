@@ -12,9 +12,19 @@
 | Panasonic Camera Controller     | 192.168.0.188     |
 | Blackmagic ATEM                 | 192.168.0.189     |
 
-## Blackmagic ATEM TV Studio Pro 4K
+## Blackmagic ATEM TV Studio Pro 4K settings
 
-Use the ATEM Television Studio Pro 4K application on the live streaming PC to reload the ATEM settings:
+This section describes how to use the ATEM Television Studio Pro 4K application on the live streaming PC to reload the ATEM settings.
+
+Start the application and connect to the ATEM TV Studio Pro 4K (**not** the "ATEM in person" device, as this belongs to the AV desk).
+
+If the application does not connect to the ATEM, this may be due to the ATEM switcher having the wrong IP address. To set the correct IP address (`192.168.0.189`), use the menu and set buttons at the top right of the ATEM to navigate to Settings/IP Address and to change its contents:
+
+[![](./images/ATEMIP.jpg)](./images/ATEMIP.jpg)
+
+Once you've set the IP address, connect to the ATEM using the PC application.
+
+Once you've connected to the live streaming ATEM, you can reload the settings as follows:
 
 1. Click File -> Restore.
 2. Choose the most recent set of settings saved in a .xml file in the Desktop folder.
@@ -22,14 +32,9 @@ Use the ATEM Television Studio Pro 4K application on the live streaming PC to re
 3. Click Restore.
 4. Click File -> Save Startup State so these settings are loaded next time the ATEM is powered up.
 
-If the application does not connect to the ATEM, this may be due to the ATEM switcher having the wrong IP address. To set the correct IP address (`192.168.0.189`), use the menu and set buttons at the top right of the ATEM to navigate to Settings/IP Address and to change its contents:
-
-[![](./images/ATEMIP.jpg)](./images/ATEMIP.jpg)
-
 ## Panasonic remote camera controller AW-RP50
 
 Launch the RP50Tool program (see [Software](./software.md)) and set the RP1 IP address to 192.168.0.188[^ccip] on the IP Address tab and click the "Set" button. See the image below.
-
 
 [![](./images/RP50IPaddress.png)](./images/RP50IPaddress.png)
 
@@ -40,9 +45,22 @@ Then go to the Setting tab and click the "Refresh" button. The IP addresses of t
 
 [^ccip]: If the IP address of the camera controller has changed, you'll need to use that IP address instead.
 
-## Datavideo NVS-34 streaming encoder
+## Datavideo NVS-34 streaming encoder settings
 
-If the above IP address is not correct, find the encoder IP address by running the DeviceFinder application on the live streaming PC.
+This section describes how to configure the encoder settings using Chrome to access the encoder's website.
+
+First, you need to browse to the encoder's homepage and log in.
+There should be a bookmark for the homepage, on Chrome's bookmark bar, entitled "NVS-34 encoder".
+
+Log in using the default account of "admin" and password "000000".
+
+If you managed to log in, skip the next section to configure the encoder.
+
+If the encoder's homepage was not found, read the next section.
+
+### Finding the encoder's homepage
+
+First you need to find the encoder's IP address by running the DeviceFinder application on the live streaming PC.
 Select the interface starting with `192` and then click the "Scan" button:
 
 [![](./images/device-finder-scan.jpg)](./images/device-finder-scan.jpg)
@@ -59,18 +77,10 @@ You can then access the encoder settings by entering the IP address into Google 
 [![](./images/chrome-encoder.jpg)](./images/chrome-encoder.jpg)
 (click image to view full size)
 
-Alternatively, there may be a bookmark for this link, on Chrome's bookmark bar, entitled "NVS-34 encoder".
+### Configuring the encoder settings
 
-Use the default account of "admin" and password "000000".
-
-Source tab:
-
-[![](./images/NVS34Source.png)](./images/NVS34Source.png)
-(click image to view full size)
-
-Operation mode tab:
-
-Click the "Stream" button to access or change the streaming settings.
+Once you have logged in to the encoder's homepage, you'll see a number of tabs.
+Click on the Operation mode tab and then click the "Stream" button to access or change the streaming settings.
 
 The encoder uses Stream Type RTMP for both the primary stream ("Streaming one") and backup stream ("Streaming two").
 
@@ -103,6 +113,8 @@ Once the settings have been entered in the following fields on the Operations ta
 
 [![](./images/NVS34Operationbottom.png)](./images/NVS34Operationbottom.png)
 (click image to view full size)
+
+You probably won't need to change any other settings, but here are screenshots of some of the other tabs just in case.
 
 CG tab:
 

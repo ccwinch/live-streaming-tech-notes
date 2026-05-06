@@ -1,7 +1,7 @@
 # Song Words
 
 The following applies to text output from the AV computer including song words, liturgy, and scripture.
-If song words are not displaying, [reload the ATEM settings](./settings.md#blackmagic-atem-tv-studio-pro-4k).
+If song words are not displaying, [reload the ATEM settings](./settings.md#blackmagic-atem-tv-studio-pro-4k-settings).
 
 There are two outputs from the AV desk that enable the ATEM to overlay song words on the live stream:
 
