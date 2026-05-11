@@ -4,7 +4,6 @@
 
 | Device                          | IP address        |
 |---------------------------------|-------------------|
-| Datavideo encoder               | 192.168.0.139     |
 | Camera 1                        | 192.168.0.181     |
 | Camera 2                        | 192.168.0.182     |
 | Camera 3                        | 192.168.0.183     |
@@ -49,14 +48,7 @@ Then go to the Setting tab and click the "Refresh" button. The IP addresses of t
 
 This section describes how to configure the encoder settings using Chrome to access the encoder's website.
 
-First, you need to browse to the encoder's homepage and log in.
-There should be a bookmark for the homepage, on Chrome's bookmark bar, entitled "NVS-34 encoder".
-
-Log in using the default account of "admin" and password "000000".
-
-If you managed to log in, skip the next section to configure the encoder.
-
-If the encoder's homepage was not found, read the next section.
+The following sections describe how to find the encoder's homepage, log in, and configure the encoder settings.
 
 ### Finding the encoder's homepage
 
@@ -76,6 +68,10 @@ You can then access the encoder settings by entering the IP address into Google 
 
 [![](./images/chrome-encoder.jpg)](./images/chrome-encoder.jpg)
 (click image to view full size)
+
+### Logging in
+
+Log in using the default account of "admin" and password "000000".
 
 ### Configuring the encoder settings
 
@@ -122,6 +118,9 @@ CG tab:
 (click image to view full size)
 
 System tab:
+
+The screenshot below is out of date. The encoder needs to be configured with dhcp enabled.
+**The encoder no longer works when a static IP address is used.**
 
 [![](./images/NVS34System.png)](./images/NVS34System.png)
 (click image to view full size)
