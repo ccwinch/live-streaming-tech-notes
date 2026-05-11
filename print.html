@@ -36,7 +36,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-a2f66546.js";
+            window.path_to_searchindex_js = "searchindex-29350a05.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-161a1682.js"></script>
@@ -354,7 +354,6 @@ But there are a couple of things you can control, using the audio mixer in the A
 <tr><th>Device</th><th>IP address</th></tr>
 </thead>
 <tbody>
-<tr><td>Datavideo encoder</td><td>192.168.0.139</td></tr>
 <tr><td>Camera 1</td><td>192.168.0.181</td></tr>
 <tr><td>Camera 2</td><td>192.168.0.182</td></tr>
 <tr><td>Camera 3</td><td>192.168.0.183</td></tr>
@@ -386,11 +385,7 @@ But there are a couple of things you can control, using the audio mixer in the A
 (click image to view full size)</p>
 <h2 id="datavideo-nvs-34-streaming-encoder-settings"><a class="header" href="#datavideo-nvs-34-streaming-encoder-settings">Datavideo NVS-34 streaming encoder settings</a></h2>
 <p>This section describes how to configure the encoder settings using Chrome to access the encoder’s website.</p>
-<p>First, you need to browse to the encoder’s homepage and log in.
-There should be a bookmark for the homepage, on Chrome’s bookmark bar, entitled “NVS-34 encoder”.</p>
-<p>Log in using the default account of “admin” and password “000000”.</p>
-<p>If you managed to log in, skip the next section to configure the encoder.</p>
-<p>If the encoder’s homepage was not found, read the next section.</p>
+<p>The following sections describe how to find the encoder’s homepage, log in, and configure the encoder settings.</p>
 <h3 id="finding-the-encoders-homepage"><a class="header" href="#finding-the-encoders-homepage">Finding the encoder’s homepage</a></h3>
 <p>First you need to find the encoder’s IP address by running the DeviceFinder application on the live streaming PC.
 Select the interface starting with <code>192</code> and then click the “Scan” button:</p>
@@ -403,6 +398,8 @@ Select the interface starting with <code>192</code> and then click the “Scan�
 <code>http://192.168.0.139</code> (note this link uses <code>http</code> rather than <code>https</code>).</p>
 <p><a href="images/chrome-encoder.jpg"><img src="images/chrome-encoder.jpg" alt=""></a>
 (click image to view full size)</p>
+<h3 id="logging-in"><a class="header" href="#logging-in">Logging in</a></h3>
+<p>Log in using the default account of “admin” and password “000000”.</p>
 <h3 id="configuring-the-encoder-settings"><a class="header" href="#configuring-the-encoder-settings">Configuring the encoder settings</a></h3>
 <p>Once you have logged in to the encoder’s homepage, you’ll see a number of tabs.
 Click on the Operation mode tab and then click the “Stream” button to access or change the streaming settings.</p>
@@ -433,6 +430,8 @@ These can be found on YouTube by previewing a stream (as usual when setting up f
 <p><a href="images/NVS34CG.png"><img src="images/NVS34CG.png" alt=""></a>
 (click image to view full size)</p>
 <p>System tab:</p>
+<p>The screenshot below is out of date. The encoder needs to be configured with dhcp enabled.
+<strong>The encoder no longer works when a static IP address is used.</strong></p>
 <p><a href="images/NVS34System.png"><img src="images/NVS34System.png" alt=""></a>
 (click image to view full size)</p>
 <hr>
